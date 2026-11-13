@@ -26,7 +26,7 @@
 		{ key: 'price', label: 'PRICE', simple: false, cell: () => 'soon', sort: () => 0 }
 	];
 	const pf = (i: Item) => i.penFacts;
-	const tiered = (v: number | null | undefined, t: string | null | undefined) => (v == null ? '—' : `${v} gf${t ? ` · ${t}` : ''}`);
+	const tiered = (v: number | null | undefined, t: string | null | undefined) => (v == null ? '—' : `${v} gf${t ? ` · ${t} tier` : ''}`);
 	const PEN_COLS: Col[] = [
 		{ key: 'p-iaf', label: 'IAF', simple: true, big: true, cell: (i) => tiered(pf(i)?.iaf, pf(i)?.iafTier), sort: (a, b) => (pf(a)?.iaf ?? 1e9) - (pf(b)?.iaf ?? 1e9) },
 		{ key: 'p-max', label: 'MAX PRESSURE', simple: true, big: true, cell: (i) => tiered(pf(i)?.max, pf(i)?.maxTier), sort: (a, b) => (pf(a)?.max ?? -1) - (pf(b)?.max ?? -1) },

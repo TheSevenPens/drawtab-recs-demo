@@ -334,7 +334,7 @@ export function cardFacts(i: Item, units: Units = 'mm'): [string, string][] {
 	if (i.kind === 'pen') {
 		// Tiers only on cards; the gram-force values are on the pen's page.
 		const p = i.penFacts;
-		const tier = (m: PressureMetric, t: string | null | undefined) => (t ? `tier ${t} · ${tierWord(m, t)}` : 'no data');
+		const tier = (m: PressureMetric, t: string | null | undefined) => (t ? `${t} tier` : 'no data');
 		out.push(['IAF', tier('IAF', p?.iafTier)]);
 		out.push(['max pressure', tier('MAX', p?.maxTier)]);
 		out.push(['buttons', p?.buttons != null ? String(p.buttons) : 'no data']);

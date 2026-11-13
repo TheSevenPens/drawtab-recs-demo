@@ -2,7 +2,7 @@
 	// Short version of a pen's pressure results for tablet pages: range, median
 	// and tier for IAF and max pressure. The charts live on the pen page.
 	import { base } from '$app/paths';
-	import { PRESSURE_DEF, PRESSURE_TITLE, penHref, tierWord, type Pen, type PressureMetric } from './catalog';
+	import { PRESSURE_DEF, PRESSURE_TITLE, penHref, type Pen, type PressureMetric } from './catalog';
 
 	let { pen }: { pen: Pen } = $props();
 	const rows = $derived([
@@ -22,7 +22,7 @@
 			{#if r}
 				<div class="v">{r.median}<span class="unit">gf</span><span class="lbl">median</span></div>
 				<div class="range">{r.units.length > 1 ? `range ${r.min} to ${r.max} gf` : 'one pen tested'}</div>
-				{#if r.tier}<span class="tier">tier {r.tier} · {tierWord(m as PressureMetric, r.tier)}</span>{/if}
+				{#if r.tier}<span class="tier">{r.tier} tier</span>{/if}
 			{:else}
 				<div class="v none">not measured yet</div>
 			{/if}

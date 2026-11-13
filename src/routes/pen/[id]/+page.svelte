@@ -3,7 +3,7 @@
 	import '$lib/detail.css';
 	import Hero from '$lib/Hero.svelte';
 	import PressureSection from '$lib/PressureSection.svelte';
-	import { PRESSURE_TITLE, TYPE_LABEL, longDate, monthYear, penHref, tabletHref, tierClass, tierWord, type TabletRef } from '$lib/catalog';
+	import { PRESSURE_TITLE, TYPE_LABEL, longDate, monthYear, penHref, tabletHref, tierClass, type TabletRef } from '$lib/catalog';
 
 	let { data } = $props();
 	const p = $derived(data.pen);
@@ -17,7 +17,7 @@
 	type Tile = [string, string | null, string, string?, string?];
 	const pTile = (k: string, m: 'IAF' | 'MAX', r: typeof p.pressureIaf): Tile =>
 		r
-			? [k, `${r.median} gf`, r.units.length > 1 ? `range ${r.min} to ${r.max} gf` : 'one pen tested', 'median', r.tier ? `tier ${r.tier} · ${tierWord(m, r.tier)}` : undefined]
+			? [k, `${r.median} gf`, r.units.length > 1 ? `range ${r.min} to ${r.max} gf` : 'one pen tested', 'median', r.tier ? `${r.tier} tier` : undefined]
 			: [k, 'no data', ''];
 	const glance = $derived(
 		(
@@ -145,7 +145,7 @@
 				<div class="split">
 					{#each peers as [m, t, list] (m)}
 						<section aria-label="same {m === 'IAF' ? 'IAF' : 'max pressure'} tier">
-							<h3 class="peerhead">{PRESSURE_TITLE[m]}: tier {t} · {tierWord(m, t ?? null)}</h3>
+							<h3 class="peerhead">{PRESSURE_TITLE[m]}: {t} tier</h3>
 							{#if list.length}
 								<ul class="list">
 									{#each list as o (o.pen.id)}

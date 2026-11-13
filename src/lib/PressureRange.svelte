@@ -1,7 +1,7 @@
 <script lang="ts">
 	// One pen's IAF or max pressure: the pens Seven tested as dots over a thin
 	// tier strip, with the median marked and labelled.
-	import { PRESSURE_BANDS, PRESSURE_DEF, PRESSURE_TITLE, tierWord, type PressureMetric, type PressureRange } from './catalog';
+	import { PRESSURE_BANDS, PRESSURE_DEF, PRESSURE_TITLE, type PressureMetric, type PressureRange } from './catalog';
 
 	let { metric, data }: { metric: PressureMetric; data: PressureRange | null } = $props();
 
@@ -10,7 +10,6 @@
 	const x = (v: number) => (Math.min(Math.max(v, 0), top) / top) * 100;
 	const pct = (v: number) => `${x(v)}%`;
 	const bands = $derived(PRESSURE_BANDS[metric]);
-	const word = $derived(data ? tierWord(metric, data.tier) : null);
 	const fmt = (v: number) => `${v} gf`;
 
 	// Stack dots that would overlap, so every pen stays visible.
@@ -37,7 +36,7 @@
 <div class="pr">
 	<div class="head">
 		<h3>{PRESSURE_TITLE[metric]}</h3>
-		{#if data?.tier}<span class="tier">tier {data.tier}{word ? ` · ${word}` : ''}</span>{/if}
+		{#if data?.tier}<span class="tier">{data.tier} tier</span>{/if}
 	</div>
 	<p class="def">{PRESSURE_DEF[metric]}</p>
 
