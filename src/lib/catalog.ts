@@ -129,8 +129,8 @@ export const PRESSURE_BANDS: Record<PressureMetric, { lo: number; hi: number | n
 };
 export const PRESSURE_TITLE: Record<PressureMetric, string> = { IAF: 'initial activation force (IAF)', MAX: 'maximum pressure' };
 export const PRESSURE_DEF: Record<PressureMetric, string> = {
-	IAF: 'The lowest physical force required for the pen to detect pressure. Lower is better.',
-	MAX: 'The first physical force at which the pen reaches 100% pressure.'
+	IAF: 'The lowest physical force at which the pen reports non-zero pressure (above 0%). Lower is better.',
+	MAX: 'The first physical force at which the pen reaches 100% pressure. Higher is better, up to about 900 gf.'
 };
 export const tierWord = (m: PressureMetric, tier: string | null) => PRESSURE_BANDS[m].find((b) => b.tier === tier)?.word ?? null;
 

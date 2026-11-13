@@ -26,6 +26,10 @@
 			return { ...u, row };
 		});
 	});
+	// Tiers that hold at least one pen besides the median's own tier get a lighter shade.
+	const touched = $derived(
+		new Set(data ? data.units.map((u) => bands.find((b) => u.value >= b.lo && (b.hi === null || u.value < b.hi))?.tier) : [])
+	);
 	const rows = $derived(Math.max(1, ...placed.map((u) => u.row + 1)));
 	const plotH = $derived(rows * (DOT + 2) + 26);
 </script>
@@ -42,9 +46,6 @@
 
 		<div class="chart" role="img" aria-label="{PRESSURE_TITLE[metric]}: median {fmt(data.median)}, from {fmt(data.min)} to {fmt(data.max)} across {data.units.length} pens">
 			<div class="plot" style:height="{plotH}px">
-				{#if data.units.length > 1}
-					<div class="range" style:left={pct(data.min)} style:width="calc({pct(data.max)} - {pct(data.min)})"></div>
-				{/if}
 				{#each placed as u (u.unit)}
 					<div class="dot" style:left={pct(u.value)} style:bottom="{8 + u.row * (DOT + 2)}px" title={fmt(u.value)}></div>
 				{/each}
@@ -52,7 +53,7 @@
 			</div>
 			<div class="strip">
 				{#each bands as b (b.tier)}
-					<div class="seg" class:on={b.tier === data.tier} style:left={pct(b.lo)} style:width="calc({pct(b.hi ?? top)} - {pct(b.lo)})">
+					<div class="seg" class:on={b.tier === data.tier} class:touched={b.tier !== data.tier && touched.has(b.tier)} style:left={pct(b.lo)} style:width="calc({pct(b.hi ?? top)} - {pct(b.lo)})">
 						<span class="letter">{b.tier}</span>
 					</div>
 				{/each}
@@ -136,13 +137,6 @@
 	.plot {
 		position: relative;
 	}
-	.range {
-		position: absolute;
-		bottom: 12px;
-		height: 2px;
-		background: var(--text);
-		opacity: 0.18;
-	}
 	.dot {
 		position: absolute;
 		width: 10px;
@@ -181,6 +175,13 @@
 	}
 	.seg.on {
 		background: var(--band);
+	}
+	.seg.touched::before {
+		content: '';
+		position: absolute;
+		inset: 0;
+		background: var(--band);
+		opacity: 0.35;
 	}
 	.letter {
 		position: absolute;
