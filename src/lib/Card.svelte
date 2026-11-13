@@ -6,18 +6,19 @@
 	let { item, expert = false }: { item: Item; expert?: boolean } = $props();
 	const href = $derived(deviceHref(base, item));
 	const facts = $derived(cardFacts(item, units.value));
-	const notes = $derived(sortedNotes(item).slice(0, expert ? 9 : 1));
+	// Pen cards stay short: the release row says "(expected)" instead of a note.
+	const notes = $derived(item.kind === 'pen' ? [] : sortedNotes(item).slice(0, expert ? 9 : 1));
 	const flags = $derived(
 		[
 			item.status === 'DISCONTINUED' ? 'discontinued' : null,
-			item.ratingBasis === 'SPECS_ONLY' ? 'not released yet' : null,
+			item.ratingBasis === 'SPECS_ONLY' && item.kind !== 'pen' ? 'not released yet' : null,
 			item.kind === 'family' ? 'product family' : null,
 			...item.lists.map((l) => LIST_LABEL[l] ?? l.toLowerCase())
 		].filter(Boolean) as string[]
 	);
 </script>
 
-<a class="card tier-{tierClass(item.rating)}" {href}>
+<a class="card tier-{tierClass(item.rating)}" class:pen={item.kind === 'pen'} {href}>
 	<div class="band">
 		<div class="top"><span class="size">{sizeLabel(item)}</span></div>
 		<div class="brand">{item.brandName}</div>
@@ -115,6 +116,17 @@
 		background: rgba(0, 0, 0, 0.3);
 		font: 500 0.875rem var(--mono);
 		letter-spacing: 0.03em;
+	}
+	/* Pens have no size line, so their band can be shorter. */
+	.card.pen .band {
+		padding-top: 0.8rem;
+		padding-bottom: 1.9rem;
+	}
+	.card.pen .top {
+		display: none;
+	}
+	.card.pen .brand {
+		margin-top: 0;
 	}
 	.model.blank {
 		visibility: hidden;

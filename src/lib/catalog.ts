@@ -82,6 +82,8 @@ export interface Item {
 		iafTier: string | null;
 		max: number | null;
 		maxTier: string | null;
+		buttons: number | null;
+		eraser: boolean | null;
 		includedWith: number;
 		compatibleWith: number;
 	};
@@ -330,12 +332,15 @@ export function cardFacts(i: Item, units: Units = 'mm'): [string, string][] {
 	const s = i.specs;
 	const out: [string, string][] = [];
 	if (i.kind === 'pen') {
+		// Tiers only on cards; the gram-force values are on the pen's page.
 		const p = i.penFacts;
-		if (p?.iaf != null) out.push(['IAF', `${p.iaf} gf${p.iafTier ? `, tier ${p.iafTier}` : ''}`]);
-		if (p?.max != null) out.push(['max pressure', `${p.max} gf${p.maxTier ? `, tier ${p.maxTier}` : ''}`]);
-		if (p?.includedWith) out.push(['included with', `${p.includedWith} tablet${p.includedWith === 1 ? '' : 's'}`]);
+		const tier = (m: PressureMetric, t: string | null | undefined) => (t ? `tier ${t} · ${tierWord(m, t)}` : 'no data');
+		out.push(['IAF', tier('IAF', p?.iafTier)]);
+		out.push(['max pressure', tier('MAX', p?.maxTier)]);
+		out.push(['buttons', p?.buttons != null ? String(p.buttons) : 'no data']);
+		out.push(['eraser', p?.eraser === true ? 'yes' : p?.eraser === false ? 'no' : 'no data']);
 		const rel = monthYear(i.released) ?? (i.year ? String(i.year) : null);
-		if (rel) out.push(['released', rel]);
+		if (rel) out.push(['released', i.ratingBasis === 'SPECS_ONLY' ? `${rel} (expected)` : rel]);
 		return out;
 	}
 	if (i.kind === 'family') {

@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-13T17:50:53.546Z",
+  "builtAt": "2026-11-13T18:21:07.851Z",
   "source": {
     "drawTabDataCommit": "ce897fd",
     "schemaVersion": 1
@@ -10441,6 +10441,8 @@
         "iafTier": null,
         "max": null,
         "maxTier": null,
+        "buttons": 2,
+        "eraser": null,
         "includedWith": 2,
         "compatibleWith": 0
       }
@@ -10524,6 +10526,8 @@
         "iafTier": "B",
         "max": 615.9,
         "maxTier": "S",
+        "buttons": 3,
+        "eraser": false,
         "includedWith": 12,
         "compatibleWith": 2
       }
@@ -10607,6 +10611,8 @@
         "iafTier": "B",
         "max": 734.5,
         "maxTier": "S",
+        "buttons": 2,
+        "eraser": true,
         "includedWith": 15,
         "compatibleWith": 10
       }
@@ -10690,6 +10696,8 @@
         "iafTier": "C",
         "max": 484.9,
         "maxTier": "A",
+        "buttons": 3,
+        "eraser": true,
         "includedWith": 6,
         "compatibleWith": 1
       }
@@ -10773,6 +10781,8 @@
         "iafTier": null,
         "max": null,
         "maxTier": null,
+        "buttons": null,
+        "eraser": null,
         "includedWith": 1,
         "compatibleWith": 0
       }
@@ -10856,6 +10866,8 @@
         "iafTier": null,
         "max": null,
         "maxTier": null,
+        "buttons": 1,
+        "eraser": false,
         "includedWith": 1,
         "compatibleWith": 0
       }
@@ -10939,6 +10951,8 @@
         "iafTier": "C",
         "max": 538.5,
         "maxTier": "S",
+        "buttons": 2,
+        "eraser": false,
         "includedWith": 3,
         "compatibleWith": 0
       }
@@ -11022,6 +11036,8 @@
         "iafTier": "C",
         "max": 502,
         "maxTier": "S",
+        "buttons": 2,
+        "eraser": false,
         "includedWith": 3,
         "compatibleWith": 1
       }
@@ -11105,6 +11121,8 @@
         "iafTier": "C",
         "max": 376.1,
         "maxTier": "B",
+        "buttons": null,
+        "eraser": null,
         "includedWith": 13,
         "compatibleWith": 1
       }
@@ -11188,6 +11206,8 @@
         "iafTier": "B",
         "max": 247.2,
         "maxTier": "C",
+        "buttons": null,
+        "eraser": null,
         "includedWith": 1,
         "compatibleWith": 9
       }
@@ -11271,6 +11291,8 @@
         "iafTier": "B",
         "max": 300.3,
         "maxTier": "B",
+        "buttons": null,
+        "eraser": null,
         "includedWith": 7,
         "compatibleWith": 0
       }
@@ -11354,6 +11376,8 @@
         "iafTier": "D",
         "max": 567.5,
         "maxTier": "S",
+        "buttons": 2,
+        "eraser": false,
         "includedWith": 0,
         "compatibleWith": 18
       }
@@ -11437,6 +11461,8 @@
         "iafTier": "D",
         "max": 751.4,
         "maxTier": "S",
+        "buttons": 2,
+        "eraser": true,
         "includedWith": 2,
         "compatibleWith": 18
       }
@@ -11520,6 +11546,8 @@
         "iafTier": "C",
         "max": 388.6,
         "maxTier": "B",
+        "buttons": null,
+        "eraser": null,
         "includedWith": 8,
         "compatibleWith": 0
       }
@@ -11603,6 +11631,8 @@
         "iafTier": "D",
         "max": 217.5,
         "maxTier": "C",
+        "buttons": 2,
+        "eraser": false,
         "includedWith": 17,
         "compatibleWith": 1
       }
@@ -11686,6 +11716,8 @@
         "iafTier": "B",
         "max": 353.9,
         "maxTier": "B",
+        "buttons": null,
+        "eraser": null,
         "includedWith": 3,
         "compatibleWith": 0
       }
@@ -11769,6 +11801,8 @@
         "iafTier": null,
         "max": null,
         "maxTier": null,
+        "buttons": null,
+        "eraser": null,
         "includedWith": 3,
         "compatibleWith": 0
       }
@@ -11852,6 +11886,8 @@
         "iafTier": "D",
         "max": 324.5,
         "maxTier": "B",
+        "buttons": 2,
+        "eraser": false,
         "includedWith": 3,
         "compatibleWith": 0
       }
@@ -11935,6 +11971,8 @@
         "iafTier": "C",
         "max": 433.6,
         "maxTier": "A",
+        "buttons": 2,
+        "eraser": false,
         "includedWith": 4,
         "compatibleWith": 0
       }
@@ -12018,6 +12056,8 @@
         "iafTier": "C",
         "max": 422.9,
         "maxTier": "A",
+        "buttons": 2,
+        "eraser": false,
         "includedWith": 2,
         "compatibleWith": 4
       }
@@ -12101,6 +12141,8 @@
         "iafTier": "D",
         "max": 242.4,
         "maxTier": "C",
+        "buttons": 2,
+        "eraser": false,
         "includedWith": 5,
         "compatibleWith": 4
       }
@@ -12184,6 +12226,8 @@
         "iafTier": "A",
         "max": 354.7,
         "maxTier": "B",
+        "buttons": null,
+        "eraser": null,
         "includedWith": 2,
         "compatibleWith": 0
       }
@@ -12267,6 +12311,8 @@
         "iafTier": "D",
         "max": 259.3,
         "maxTier": "C",
+        "buttons": null,
+        "eraser": null,
         "includedWith": 5,
         "compatibleWith": 0
       }
@@ -12350,6 +12396,8 @@
         "iafTier": null,
         "max": null,
         "maxTier": null,
+        "buttons": 2,
+        "eraser": false,
         "includedWith": 3,
         "compatibleWith": 0
       }
@@ -12433,6 +12481,8 @@
         "iafTier": "D",
         "max": 333.4,
         "maxTier": "B",
+        "buttons": 1,
+        "eraser": false,
         "includedWith": 1,
         "compatibleWith": 7
       }
@@ -12516,6 +12566,8 @@
         "iafTier": "F",
         "max": 244.3,
         "maxTier": "C",
+        "buttons": 2,
+        "eraser": false,
         "includedWith": 7,
         "compatibleWith": 0
       }

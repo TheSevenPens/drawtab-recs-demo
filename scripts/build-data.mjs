@@ -413,6 +413,8 @@ for (const p of penOut) {
       iafTier: p.pressureIaf?.tier ?? null,
       max: p.pressureMax?.median ?? null,
       maxTier: p.pressureMax?.tier ?? null,
+      buttons: p.buttons,
+      eraser: p.eraser,
       includedWith: p.includedWith.length,
       compatibleWith: p.worksWith.length,
     },
