@@ -65,7 +65,6 @@
 
 	// Facet counts leave their own facet out, so each count says what you'd get by picking it.
 	const count = (skip: string, pred: (i: Item) => boolean) => items.filter((i) => matches(i, f, skip) && pred(i)).length;
-	const typeCounts = $derived(Object.fromEntries(TYPES.map((t) => [t, count('type', (i) => i.type === t)])));
 	const inType = $derived(items.filter((i) => i.type === f.type).length);
 	const sorts = $derived(Object.entries(SORTS).filter(([k]) => f.type !== 'PEN' || !/^(size|weight|price)/.test(k)));
 	const ratings = $derived([...catalog.ratingScale, NOT_RATED].filter((r) => items.some((i) => ratingKey(i) === r)));
@@ -155,7 +154,7 @@
 
 	<nav class="pivot" aria-label="Category">
 		{#each TYPES as t (t)}
-			<button aria-pressed={f.type === t} onclick={() => setType(t)}>{TYPE_PLURAL[t]}<span class="n">{typeCounts[t]}</span></button>
+			<button aria-pressed={f.type === t} onclick={() => setType(t)}>{TYPE_PLURAL[t]}</button>
 		{/each}
 	</nav>
 
@@ -412,13 +411,6 @@
 	.pivot button[aria-pressed='true'] {
 		color: var(--text);
 		font-weight: 400;
-	}
-	.pivot .n {
-		font-size: 0.45em;
-		font-weight: 600;
-		letter-spacing: 0;
-		margin-left: 0.3em;
-		vertical-align: super;
 	}
 
 	/* Slim filter bar that stays in reach while scrolling. */

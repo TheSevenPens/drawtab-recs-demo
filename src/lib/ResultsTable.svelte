@@ -26,10 +26,10 @@
 		{ key: 'price', label: 'PRICE', simple: true, cell: (i) => (i.price?.current ? `${money(i.price.current.amount)} as of ${monthYear(i.price.current.date)}` : i.price?.from ? `from ${money(i.price.from.amount)}` : '—'), sort: (a, b) => (priceOf(a) ?? 1e9) - (priceOf(b) ?? 1e9) }
 	];
 	const pf = (i: Item) => i.penFacts;
-	const tiered = (v: number | null | undefined, t: string | null | undefined) => (v == null ? '—' : `${v} gf${t ? ` · ${t} tier` : ''}`);
+	const tierOnly = (t: string | null | undefined) => (t ? `${t} tier` : '—');
 	const PEN_COLS: Col[] = [
-		{ key: 'p-iaf', label: 'IAF', simple: true, big: true, cell: (i) => tiered(pf(i)?.iaf, pf(i)?.iafTier), sort: (a, b) => (pf(a)?.iaf ?? 1e9) - (pf(b)?.iaf ?? 1e9) },
-		{ key: 'p-max', label: 'MAX PRESSURE', simple: true, big: true, cell: (i) => tiered(pf(i)?.max, pf(i)?.maxTier), sort: (a, b) => (pf(a)?.max ?? -1) - (pf(b)?.max ?? -1) },
+		{ key: 'p-iaf', label: 'IAF', simple: true, cell: (i) => tierOnly(pf(i)?.iafTier), sort: (a, b) => (pf(a)?.iaf ?? 1e9) - (pf(b)?.iaf ?? 1e9) },
+		{ key: 'p-max', label: 'MAX PRESSURE', simple: true, cell: (i) => tierOnly(pf(i)?.maxTier), sort: (a, b) => (pf(a)?.max ?? -1) - (pf(b)?.max ?? -1) },
 		{ key: 'p-levels', label: 'LEVELS', simple: false, cell: (i) => or(i.specs.pressure), sort: (a, b) => (a.specs.pressure ?? 0) - (b.specs.pressure ?? 0) },
 		{ key: 'p-tilt', label: 'TILT', simple: false, cell: (i) => yn(pf(i)?.tilt), sort: () => 0 },
 		{ key: 'p-weight', label: 'WEIGHT', simple: false, cell: (i) => or(i.specs.weight, ' g'), sort: (a, b) => (a.specs.weight ?? 1e9) - (b.specs.weight ?? 1e9) },
@@ -37,7 +37,10 @@
 		COLS.find((c) => c.key === 'released')!
 	];
 	const isPen = $derived(list.length > 0 && list.every((i) => i.kind === 'pen'));
-	const cols = $derived((isPen ? PEN_COLS : COLS).filter((c) => expert || c.simple));
+	// Columns that restate the page's one type, or don't apply to it, are left out.
+	const oneType = $derived(list.length > 0 && list.every((i) => i.type === list[0].type) ? list[0].type : null);
+	const hidden = $derived(new Set([oneType ? 'type' : '', oneType === 'PENTABLET' ? 'res' : ''].filter(Boolean)));
+	const cols = $derived((isPen ? PEN_COLS : COLS).filter((c) => (expert || c.simple) && !hidden.has(c.key)));
 
 	let sortKey: string | null = $state(null);
 	let dir = $state(1);
