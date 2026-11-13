@@ -162,8 +162,8 @@
 		<section class="bar" aria-label="Filters">
 			{#if sizes.length}
 				<div class="chips sizes" role="group" aria-label="Size">
-					{#each sizes as [l, a, b] (l)}
-						<button class="chip" aria-pressed={sizeOn(a, b)} onclick={() => setSize(a, b)}>{l}</button>
+					{#each sizes as [l, a, b, range] (l)}
+						<button class="chip" aria-pressed={sizeOn(a, b)} title={range} onclick={() => setSize(a, b)}>{l}</button>
 					{/each}
 				</div>
 				<span class="sep" aria-hidden="true"></span>
@@ -426,7 +426,7 @@
 		z-index: 5;
 		margin: 0 -2rem;
 		padding: 0 2rem;
-		background: rgba(238, 234, 228, 0.88);
+		background: rgba(242, 239, 234, 0.88);
 		backdrop-filter: blur(10px);
 		-webkit-backdrop-filter: blur(10px);
 		border-top: 1px solid var(--line);

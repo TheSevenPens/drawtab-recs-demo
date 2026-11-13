@@ -536,14 +536,11 @@ export const SORTS: Record<string, [string, (a: Item, b: Item) => number]> = {
 	'iaf-asc': ['pen IAF, lowest', (a, b) => (iafOf(a) ?? 1e9) - (iafOf(b) ?? 1e9) || byRating(a, b)]
 };
 
-/** Size choices: small/medium/large words once one device type is picked, inch ranges otherwise. */
-export function sizeChoices(type: DeviceType | ''): [string, number | null, number | null][] {
+/** Size choices: small/medium/large words once one device type is picked (the inch range is the
+ * fourth element, for a tooltip), inch ranges otherwise. */
+export function sizeChoices(type: DeviceType | ''): [string, number | null, number | null, string?][] {
 	if (!type) return SIZE_RANGES;
-	return SIZE_WORDS[type].map(([w, a, b]) => [
-		`${w} · ${a === null ? `under ${b}` : b === null ? `${a}+` : `${a}–${b}`}″`,
-		a,
-		b
-	]);
+	return SIZE_WORDS[type].map(([w, a, b]) => [w, a, b, `${a === null ? `under ${b}″` : b === null ? `${a}″ and up` : `${a}–${b}″`} diagonal`]);
 }
 
 /** URL segment for an item. Family ids ("family:ipad") lose the colon, which Windows can't put in a file name. */
