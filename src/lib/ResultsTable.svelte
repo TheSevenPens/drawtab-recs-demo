@@ -17,10 +17,10 @@
 		{ key: 'pen', label: 'PEN', simple: true, cell: (i) => (i.pen ? penLabel(i.pen) : '—'), sort: (a, b) => (a.pen?.name ?? '').localeCompare(b.pen?.name ?? '') },
 		{ key: 'srgb', label: 'sRGB', simple: false, cell: (i) => or(i.specs.srgb, '%'), sort: (a, b) => (a.specs.srgb ?? 0) - (b.specs.srgb ?? 0) },
 		{ key: 'weight', label: 'WEIGHT', simple: false, cell: (i) => or(i.specs.weight, ' g'), sort: (a, b) => (a.specs.weight ?? 1e9) - (b.specs.weight ?? 1e9) },
-		{ key: 'tilt', label: 'TILT', simple: false, cell: (i) => (i.specs.tilt ? `±${i.specs.tilt}°` : '—'), sort: (a, b) => (a.specs.tilt ?? 0) - (b.specs.tilt ?? 0) },
+		{ key: 'tilt', label: 'TILT', simple: false, cell: (i) => (i.specs.tilt == null ? '—' : i.specs.tilt > 0 ? 'yes' : 'no'), sort: (a, b) => (a.specs.tilt ?? 0) - (b.specs.tilt ?? 0) },
 		{ key: 'stand', label: 'STAND', simple: false, cell: (i) => (i.specs.includedStand ? 'in box' : i.specs.legs ? 'legs' : yn(i.specs.includedStand)), sort: () => 0 },
 		{ key: 'wireless', label: 'WIRELESS', simple: false, cell: (i) => yn(i.specs.bluetooth), sort: () => 0 },
-		{ key: 'iaf', label: 'PEN IAF', simple: false, big: true, cell: (i) => or(i.pen?.iaf, ' gf'), sort: (a, b) => (a.pen?.iaf ?? 1e9) - (b.pen?.iaf ?? 1e9) },
+		{ key: 'iaf', label: 'PEN IAF', simple: false, big: true, cell: (i) => (i.pen?.iafTier ? `${i.pen.iafTier} tier` : '—'), sort: (a, b) => (a.pen?.iaf ?? 1e9) - (b.pen?.iaf ?? 1e9) },
 		{ key: 'released', label: 'RELEASED', simple: true, cell: (i) => monthYear(i.released) ?? or(i.year), sort: (a, b) => (releaseTime(a.released) || 0) - (releaseTime(b.released) || 0) },
 		{ key: 'notes', label: 'NOTES', simple: false, cell: (i) => (i.notes.length ? `${i.notes.length}${i.notes.some((n) => n.kind === 'WARNING') ? ' ⚠' : ''}` : ''), sort: (a, b) => a.notes.length - b.notes.length },
 		{ key: 'price', label: 'PRICE', simple: true, cell: (i) => (i.price?.current ? `${money(i.price.current.amount)} as of ${monthYear(i.price.current.date)}` : i.price?.from ? `from ${money(i.price.from.amount)}` : '—'), sort: (a, b) => (priceOf(a) ?? 1e9) - (priceOf(b) ?? 1e9) }
@@ -39,7 +39,11 @@
 	const isPen = $derived(list.length > 0 && list.every((i) => i.kind === 'pen'));
 	// Columns that restate the page's one type, or don't apply to it, are left out.
 	const oneType = $derived(list.length > 0 && list.every((i) => i.type === list[0].type) ? list[0].type : null);
-	const hidden = $derived(new Set([oneType ? 'type' : '', oneType === 'PENTABLET' ? 'res' : ''].filter(Boolean)));
+	const HIDE_BY_TYPE: Partial<Record<string, string[]>> = {
+		PENTABLET: ['res', 'srgb', 'stand'],
+		PENDISPLAY: ['srgb', 'stand', 'wireless']
+	};
+	const hidden = $derived(new Set(oneType ? ['type', ...(HIDE_BY_TYPE[oneType] ?? [])] : []));
 	const cols = $derived((isPen ? PEN_COLS : COLS).filter((c) => (expert || c.simple) && !hidden.has(c.key)));
 
 	let sortKey: string | null = $state(null);
