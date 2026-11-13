@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	// Compact, bold page header for device, pen and family pages: brand big and
 	// first, the name, and the model number in a mono chip, all within ~200px.
 	type Link = { href: string; label: string; primary?: boolean };
@@ -27,17 +28,41 @@
 		links?: Link[];
 		context?: { href: string; label: string } | null;
 	} = $props();
+
+	// "pop out": open this page in its own small window (to sit beside the list, or
+	// on a stream). The window's name marks it, and survives navigating inside it,
+	// so a popped-out window drops the back link and the pop-out button.
+	const POP = 'recs-pop';
+	let popped = $state(false);
+	onMount(() => {
+		popped = window.name.startsWith(POP);
+		if (popped) document.documentElement.classList.add('popped');
+	});
+	function popOut() {
+		const w = Math.min(820, screen.availWidth);
+		const h = Math.min(960, screen.availHeight);
+		const win = window.open(location.href, `${POP}:${location.pathname}`, `popup,width=${w},height=${h}`);
+		win?.focus();
+	}
 </script>
 
 <header class="hero">
 	<div class="ghost" aria-hidden="true">{brand.toUpperCase()}</div>
 	<div class="inner">
 		<div class="top">
-			<a class="back" href={back.href}>
-				<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M15 18l-6-6 6-6"></path></svg>
-				{back.label}
-			</a>
+			{#if !popped}
+				<a class="back" href={back.href}>
+					<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M15 18l-6-6 6-6"></path></svg>
+					{back.label}
+				</a>
+			{/if}
 			{#if context}<a class="context" href={context.href}>{context.label}</a>{/if}
+			{#if !popped}
+				<button class="pop" onclick={popOut} title="Open this page in its own window">
+					<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M14 4h6v6"></path><path d="M20 4l-9 9"></path><path d="M18 14v6H4V6h6"></path></svg>
+					pop out
+				</button>
+			{/if}
 		</div>
 		<div class="brandrow">
 			<span class="brand">{brand.toUpperCase()}</span>
@@ -105,6 +130,23 @@
 	}
 	.context {
 		opacity: 0.85;
+	}
+	.pop {
+		margin-left: auto;
+		display: inline-flex;
+		align-items: center;
+		gap: 0.4rem;
+		min-height: 32px;
+		padding: 0 0.7rem;
+		border: 1px solid rgba(255, 255, 255, 0.55);
+		background: transparent;
+		color: #fff;
+		font: inherit;
+		font-size: 0.85rem;
+		cursor: pointer;
+	}
+	.pop:hover {
+		background: rgba(255, 255, 255, 0.15);
 	}
 	.back:hover,
 	.context:hover {
