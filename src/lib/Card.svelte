@@ -22,7 +22,7 @@
 		<div class="top"><span class="size">{sizeLabel(item)}</span></div>
 		<div class="brand">{item.brandName}</div>
 		<div class="name">{shortName(item)}</div>
-		{#if item.kind !== 'family' && item.modelId && item.modelId.toLowerCase() !== shortName(item).toLowerCase()}<span class="model">{item.modelId}</span>{/if}
+		{#if item.kind !== 'family' && item.modelId && item.modelId.toLowerCase() !== shortName(item).toLowerCase()}<span class="model">{item.modelId}</span>{:else}<span class="model blank" aria-hidden="true">&nbsp;</span>{/if}
 		<span class="word">{ratingWord(item)}</span>
 	</div>
 	<div class="body">
@@ -42,9 +42,13 @@
 </a>
 
 <style>
+	/* The band and body are rows of the parent grid (subgrid), so every band
+	   in a grid row is the same height even when a name wraps. */
 	.card {
-		display: flex;
-		flex-direction: column;
+		display: grid;
+		grid-template-rows: subgrid;
+		grid-row: span 2;
+		row-gap: 0;
 		text-decoration: none;
 		color: var(--text);
 		background: var(--wash);
@@ -111,6 +115,9 @@
 		background: rgba(0, 0, 0, 0.3);
 		font: 500 0.875rem var(--mono);
 		letter-spacing: 0.03em;
+	}
+	.model.blank {
+		visibility: hidden;
 	}
 	.body {
 		padding: 0.9rem 1.25rem 1.1rem;
