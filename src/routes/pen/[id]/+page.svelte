@@ -13,18 +13,23 @@
 	const notes = $derived([...(p.notes ?? [])].sort((a, b) => (a.kind === 'WARNING' ? -1 : 0) - (b.kind === 'WARNING' ? -1 : 0)));
 	const history = $derived([...(p.history ?? [])].reverse());
 
-	type Tile = [string, string | null, string];
+	// [label, value, hint, small label after the value, tier badge]
+	type Tile = [string, string | null, string, string?, string?];
+	const pTile = (k: string, m: 'IAF' | 'MAX', r: typeof p.pressureIaf): Tile =>
+		r
+			? [k, `${r.median} gf`, r.units.length > 1 ? `range ${r.min} to ${r.max} gf` : 'one pen tested', 'median', r.tier ? `tier ${r.tier} · ${tierWord(m, r.tier)}` : undefined]
+			: [k, 'no data', ''];
 	const glance = $derived(
 		(
 			[
 				['PRESSURE', p.pressure ? `${p.pressure} levels` : null, ''],
 				['TILT', yn(p.tilt), ''],
-				['IAF', p.pressureIaf ? `${p.pressureIaf.median} gf` : null, p.pressureIaf ? `median, tier ${p.pressureIaf.tier} (${tierWord('IAF', p.pressureIaf.tier)})` : ''],
-				['MAX PRESSURE', p.pressureMax ? `${p.pressureMax.median} gf` : null, p.pressureMax ? `median, tier ${p.pressureMax.tier} (${tierWord('MAX', p.pressureMax.tier)})` : ''],
+				pTile('IAF', 'IAF', p.pressureIaf),
+				pTile('MAX PRESSURE', 'MAX', p.pressureMax),
 				['BUTTONS', p.buttons != null ? String(p.buttons) : null, ''],
 				['ERASER', p.eraser === true ? 'yes' : p.eraser === false ? 'no' : 'not recorded', ''],
 				['WEIGHT', p.weight ? `${p.weight} g` : null, ''],
-				['SIZE', p.length ? `${p.length} mm` : null, p.diameter ? `${p.diameter} mm across` : ''],
+				['SIZE', p.length ? `${p.length} mm` : null, p.diameter ? `${p.diameter} mm diameter` : ''],
 				['TECH', tech(p.tech), '']
 			] as Tile[]
 		).filter((x) => x[1])
@@ -118,11 +123,12 @@
 		<section aria-labelledby="p-glance">
 			<h2 id="p-glance">at a glance</h2>
 			<div class="tiles">
-				{#each glance as [k, v, hint] (k)}
-					<div class="tile">
+				{#each glance as [k, v, hint, sub, badge] (k)}
+					<div class="tile" class:badged={badge}>
 						<div class="k">{k}</div>
-						<div class="v">{v}</div>
+						<div class="v">{v}{#if sub}<span class="vsub">{sub}</span>{/if}</div>
 						{#if hint}<div class="hint">{hint}</div>{/if}
+						{#if badge}<span class="badge">{badge}</span>{/if}
 					</div>
 				{/each}
 			</div>
