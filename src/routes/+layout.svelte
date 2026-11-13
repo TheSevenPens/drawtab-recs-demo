@@ -12,7 +12,7 @@
 		} catch {}
 	});
 	$effect(() => {
-		document.body.classList.toggle('big', big);
+		document.documentElement.classList.toggle('big', big);
 	});
 	function toggleBig() {
 		big = !big;
@@ -85,8 +85,10 @@
 		--scale: 1;
 		color-scheme: light;
 	}
-	:global(body.big) {
-		--scale: 1.2;
+	/* On <html>, not <body>: the root font size below is computed on <html>, which can't
+	   see a variable set on its child. (It was on body, so the toggle did nothing.) */
+	:global(html.big) {
+		--scale: 1.25;
 	}
 	:global(html) {
 		font-size: calc(16px * var(--scale));
