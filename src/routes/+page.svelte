@@ -12,6 +12,10 @@
 		TYPES,
 		TYPE_PLURAL,
 		CONTEXT_LABEL,
+		PRICE_BANDS,
+		PRICE_DISCLAIMER,
+		inPriceBand,
+		priceOf,
 		defaultFilters,
 		filtersFromHash,
 		filtersToHash,
@@ -32,8 +36,8 @@
 
 	let f: Filters = $state(defaultFilters());
 	let ready = $state(false);
-	let open: 'brand' | 'rating' | 'released' | 'more' | null = $state(null);
-	const toggleOpen = (k: 'brand' | 'rating' | 'released' | 'more') => (open = open === k ? null : k);
+	let open: 'brand' | 'rating' | 'released' | 'price' | 'more' | null = $state(null);
+	const toggleOpen = (k: 'brand' | 'rating' | 'released' | 'price' | 'more') => (open = open === k ? null : k);
 
 	onMount(() => {
 		f = filtersFromHash(location.hash);
@@ -63,7 +67,7 @@
 	const count = (skip: string, pred: (i: Item) => boolean) => items.filter((i) => matches(i, f, skip) && pred(i)).length;
 	const typeCounts = $derived(Object.fromEntries(TYPES.map((t) => [t, count('type', (i) => i.type === t)])));
 	const inType = $derived(items.filter((i) => i.type === f.type).length);
-	const sorts = $derived(Object.entries(SORTS).filter(([k]) => f.type !== 'PEN' || !/^(size|weight)/.test(k)));
+	const sorts = $derived(Object.entries(SORTS).filter(([k]) => f.type !== 'PEN' || !/^(size|weight|price)/.test(k)));
 	const ratings = $derived([...catalog.ratingScale, NOT_RATED].filter((r) => items.some((i) => ratingKey(i) === r)));
 	const brands = $derived(
 		[...new Map(items.map((i) => [i.brand, i.brandName])).entries()].sort((a, b) => a[1].localeCompare(b[1]))
@@ -82,6 +86,13 @@
 			f.diagMin = a === null ? '' : String(a);
 			f.diagMax = b === null ? '' : String(b);
 		}
+	}
+	const bandOn = (a: number | null, b: number | null) => f.priceMin === (a === null ? '' : String(a)) && f.priceMax === (b === null ? '' : String(b));
+	const priceOn = $derived(f.priceMin !== '' || f.priceMax !== '');
+	function setBand(a: number | null, b: number | null) {
+		const off = bandOn(a, b);
+		f.priceMin = off || a === null ? '' : String(a);
+		f.priceMax = off || b === null ? '' : String(b);
 	}
 	function toggle(set: Set<string>, v: string): Set<string> {
 		const n = new Set(set);
@@ -167,6 +178,11 @@
 			<button class="drop" aria-expanded={open === 'released'} class:on={f.recent} onclick={() => toggleOpen('released')}>
 				{f.recent ? RECENT.find(([y]) => y === f.recent)?.[1] : 'released'} <span class="caret" aria-hidden="true">▾</span>
 			</button>
+			{#if f.type !== 'PEN'}
+				<button class="drop" aria-expanded={open === 'price'} class:on={priceOn} onclick={() => toggleOpen('price')}>
+					{priceOn ? PRICE_BANDS.find(([, a, b]) => bandOn(a, b))?.[0] ?? 'price' : 'price'} <span class="caret" aria-hidden="true">▾</span>
+				</button>
+			{/if}
 			{#if f.mode === 'expert' && f.type !== 'PEN'}
 				<button class="drop" aria-expanded={open === 'more'} class:on={moreCount} onclick={() => toggleOpen('more')}>
 					{moreCount ? `more · ${moreCount}` : 'more'} <span class="caret" aria-hidden="true">▾</span>
@@ -177,7 +193,6 @@
 			<label class="sortlbl">sort
 				<select bind:value={f.sort}>
 					{#each sorts as [k, [l]] (k)}<option value={k}>{l}</option>{/each}
-					<option disabled>price (coming soon)</option>
 				</select>
 			</label>
 			<span class="total"><strong>{list.length}</strong>&nbsp;of {inType}</span>
@@ -207,6 +222,13 @@
 							<button class="chip" aria-pressed={f.recent === y} onclick={() => (f.recent = y)}>{l}<span class="n">{count('recent', (i) => !y || releaseTime(i.released) >= recentCutoff(y))}</span></button>
 						{/each}
 					</div>
+				{:else if open === 'price'}
+					<div class="chips">
+						{#each PRICE_BANDS as [l, a, b] (l)}
+							<button class="chip" aria-pressed={bandOn(a, b)} onclick={() => setBand(a, b)}>{l}<span class="n">{count('price', (i) => inPriceBand(priceOf(i), a, b))}</span></button>
+						{/each}
+					</div>
+					<p class="pnote">{PRICE_DISCLAIMER}</p>
 				{:else if open === 'more'}
 					<div class="more">
 						<div class="group">
@@ -277,6 +299,7 @@
 			Ratings by Seven Pens. Specs from <a href="https://github.com/TheSevenPens/DrawTabData">DrawTabData</a>{catalog.source.drawTabDataCommit ? ` @ ${catalog.source.drawTabDataCommit}` : ''},
 			built {catalog.builtAt.slice(0, 10)}. IAF is initial activation force, measured by Seven.
 		</p>
+		<p>{PRICE_DISCLAIMER}</p>
 		{#if catalog.issues.length + catalog.notCovered.length}
 			<details>
 				<summary>Data gaps found while building this ({catalog.issues.length + catalog.notCovered.length})</summary>
@@ -553,6 +576,12 @@
 	}
 	.done {
 		margin-top: 0.4rem;
+	}
+	.pnote {
+		margin: 0.6rem 0 0;
+		max-width: 46rem;
+		font-size: 0.85rem;
+		color: var(--text-3);
 	}
 	.empty {
 		font-size: 1.25rem;

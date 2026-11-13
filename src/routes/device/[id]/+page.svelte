@@ -4,6 +4,7 @@
 	import Hero from '$lib/Hero.svelte';
 	import UnitsSwitch from '$lib/UnitsSwitch.svelte';
 	import PressureSummary from '$lib/PressureSummary.svelte';
+	import PriceSection from '$lib/PriceSection.svelte';
 	import { units } from '$lib/units.svelte';
 	import {
 		CONTEXT_LABEL,
@@ -14,6 +15,8 @@
 		familyHref,
 		longDate,
 		monthYear,
+		money,
+		priceWhere,
 		penHref,
 		penLabel,
 		previousRating,
@@ -46,6 +49,7 @@
 					: ['DISPLAY', s.activeDiagIn ? `${s.activeDiagIn}″` : null, area ? `active area ${area}` : ''],
 				i.type !== 'PENTABLET' ? ['RESOLUTION', s.resolution, [(s.pixelsW ?? 0) >= 3840 ? '4K' : null, s.laminated ? 'laminated' : null, s.panel].filter(Boolean).join(', ')] : null,
 				i.type !== 'PENTABLET' ? ['COLOR', s.srgb ? `${s.srgb}% sRGB` : null, [s.adobeRgb && `${s.adobeRgb}% Adobe RGB`, s.dciP3 && `${s.dciP3}% DCI-P3`].filter(Boolean).join(', ')] : null,
+				['PRICE', i.price?.current ? money(i.price.current.amount) : null, i.price?.current ? priceWhere(i.price.current) : '', '#d-price'],
 				['WEIGHT', s.weight ? (s.weight >= 1000 ? `${(s.weight / 1000).toFixed(2).replace(/0$/, '')} kg` : `${s.weight} g`) : null, s.weight ? lb(s.weight) : ''],
 				['PEN', i.pen ? penLabel(i.pen) : null, pen?.pressureIaf ? `IAF median ${pen.pressureIaf.median} gf` : '', i.pen ? penHref(base, i.pen.id) : undefined],
 				['TILT', s.tilt ? `±${s.tilt}°` : s.tilt === 0 ? 'none' : null, ''],
@@ -83,8 +87,7 @@
 				['Bluetooth', yn(s.bluetooth)],
 				['VESA', yn(s.vesa)],
 				['Ports', s.ports.join(', ').replaceAll('_', '-') || null],
-				['Battery', s.battery && `${s.battery} mAh`],
-								['Price', 'coming soon']
+				['Battery', s.battery && `${s.battery} mAh`]
 			] as [string, unknown][]
 		).filter(([, v]) => v !== null && v !== undefined && v !== '' && v !== 0) as [string, string][]
 	);
@@ -185,6 +188,11 @@
 						</div>
 					{/each}
 				</div>
+			</section>
+
+			<section aria-labelledby="d-price-h" id="d-price">
+				<h2 id="d-price-h">price</h2>
+				<PriceSection price={i.price} />
 			</section>
 
 			<div class="split">

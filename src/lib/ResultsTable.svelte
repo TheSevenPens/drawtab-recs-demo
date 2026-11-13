@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { base } from '$app/paths';
 	import { goto } from '$app/navigation';
-	import { areaLabel, penLabel, deviceHref, TYPE_LABEL, diagOf, monthYear, ratingWord, releaseTime, resolutionLabel, shortName, sizeLabel, tierClass, type Item } from './catalog';
+	import { areaLabel, penLabel, deviceHref, TYPE_LABEL, diagOf, monthYear, money, priceOf, ratingWord, releaseTime, resolutionLabel, shortName, sizeLabel, tierClass, type Item } from './catalog';
 
 	import { units } from './units.svelte';
 	let { list, expert = false }: { list: Item[]; expert?: boolean } = $props();
@@ -23,7 +23,7 @@
 		{ key: 'iaf', label: 'PEN IAF', simple: false, big: true, cell: (i) => or(i.pen?.iaf, ' gf'), sort: (a, b) => (a.pen?.iaf ?? 1e9) - (b.pen?.iaf ?? 1e9) },
 		{ key: 'released', label: 'RELEASED', simple: true, cell: (i) => monthYear(i.released) ?? or(i.year), sort: (a, b) => (releaseTime(a.released) || 0) - (releaseTime(b.released) || 0) },
 		{ key: 'notes', label: 'NOTES', simple: false, cell: (i) => (i.notes.length ? `${i.notes.length}${i.notes.some((n) => n.kind === 'WARNING') ? ' ⚠' : ''}` : ''), sort: (a, b) => a.notes.length - b.notes.length },
-		{ key: 'price', label: 'PRICE', simple: false, cell: () => 'soon', sort: () => 0 }
+		{ key: 'price', label: 'PRICE', simple: true, cell: (i) => (i.price?.current ? `${money(i.price.current.amount)} · ${monthYear(i.price.current.date)}` : i.price?.from ? `from ${money(i.price.from.amount)}` : '—'), sort: (a, b) => (priceOf(a) ?? 1e9) - (priceOf(b) ?? 1e9) }
 	];
 	const pf = (i: Item) => i.penFacts;
 	const tiered = (v: number | null | undefined, t: string | null | undefined) => (v == null ? '—' : `${v} gf${t ? ` · ${t} tier` : ''}`);
@@ -80,7 +80,7 @@
 						{#if i.kind !== 'family' && i.modelId.toLowerCase() !== shortName(i).toLowerCase()}<div><span class="model">{i.modelId}</span></div>{/if}
 					</td>
 					{#each cols as c (c.key)}
-						<td class:big={c.big} class:dim={c.key === 'price'}>{c.cell(i)}</td>
+						<td class:big={c.big}>{c.cell(i)}</td>
 					{/each}
 				</tr>
 			{/each}
@@ -162,8 +162,5 @@
 		font-size: 1.35rem;
 		font-weight: 300;
 		white-space: nowrap;
-	}
-	td.dim {
-		color: var(--text-4);
 	}
 </style>

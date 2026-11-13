@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-13T18:21:07.851Z",
+  "builtAt": "2026-11-13T18:45:11.217Z",
   "source": {
     "drawTabDataCommit": "ce897fd",
     "schemaVersion": 1
@@ -595,7 +595,45 @@
       "akaNote": null,
       "notesUrl": null,
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/wacom.tablet.dtk168",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 699.95,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "Wacom store",
+          "url": "https://estore.wacom.com/en-us/wacom-cintiq-16-dtk168k0a.html",
+          "basis": "Current displayed retail"
+        },
+        "launch": {
+          "amount": 699.95,
+          "date": "2025-06-05",
+          "precision": "day",
+          "seller": "Wacom store",
+          "url": "https://www.postmagazine.com/Press-Center/Daily-News/2025/Wacom-debuts-three-new-Cintiq-pen-displays.aspx",
+          "basis": "reported launch price"
+        },
+        "launchKind": "LAUNCH",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 699.95,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Wacom store",
+            "url": "https://estore.wacom.com/en-us/wacom-cintiq-16-dtk168k0a.html",
+            "basis": "Current displayed retail"
+          },
+          {
+            "kind": "LAUNCH",
+            "amount": 699.95,
+            "date": "2025-06-05",
+            "precision": "day",
+            "seller": "Wacom store",
+            "url": "https://www.postmagazine.com/Press-Center/Daily-News/2025/Wacom-debuts-three-new-Cintiq-pen-displays.aspx",
+            "basis": "reported launch price"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -710,7 +748,45 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/wacom/wacom-cintiq/wacom-dth246-notes",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/wacom.tablet.dtk246",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 1299.95,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "Wacom store",
+          "url": "https://estore.wacom.com/en-us/wacom-cintiq-24-dtk246k0a.html",
+          "basis": "Current displayed retail"
+        },
+        "launch": {
+          "amount": 1299.95,
+          "date": "2025-06-05",
+          "precision": "day",
+          "seller": "Wacom store",
+          "url": "https://www.postmagazine.com/Press-Center/Daily-News/2025/Wacom-debuts-three-new-Cintiq-pen-displays.aspx",
+          "basis": "reported launch price"
+        },
+        "launchKind": "LAUNCH",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 1299.95,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Wacom store",
+            "url": "https://estore.wacom.com/en-us/wacom-cintiq-24-dtk246k0a.html",
+            "basis": "Current displayed retail"
+          },
+          {
+            "kind": "LAUNCH",
+            "amount": 1299.95,
+            "date": "2025-06-05",
+            "precision": "day",
+            "seller": "Wacom store",
+            "url": "https://www.postmagazine.com/Press-Center/Daily-News/2025/Wacom-debuts-three-new-Cintiq-pen-displays.aspx",
+            "basis": "reported launch price"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [],
       "articles": [],
@@ -808,7 +884,45 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/wacom/wacom-cintiq/wacom-dth246-notes",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/wacom.tablet.dth246",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 1499.95,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "Wacom store",
+          "url": "https://estore.wacom.com/en-us/wacom-cintiq-24-touch-dth246k0a.html",
+          "basis": "Current displayed retail"
+        },
+        "launch": {
+          "amount": 1499.95,
+          "date": "2025-06-05",
+          "precision": "day",
+          "seller": "Wacom store",
+          "url": "https://www.postmagazine.com/Press-Center/Daily-News/2025/Wacom-debuts-three-new-Cintiq-pen-displays.aspx",
+          "basis": "reported launch price"
+        },
+        "launchKind": "LAUNCH",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 1499.95,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Wacom store",
+            "url": "https://estore.wacom.com/en-us/wacom-cintiq-24-touch-dth246k0a.html",
+            "basis": "Current displayed retail"
+          },
+          {
+            "kind": "LAUNCH",
+            "amount": 1499.95,
+            "date": "2025-06-05",
+            "precision": "day",
+            "seller": "Wacom store",
+            "url": "https://www.postmagazine.com/Press-Center/Daily-News/2025/Wacom-debuts-three-new-Cintiq-pen-displays.aspx",
+            "basis": "reported launch price"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -929,7 +1043,45 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/wacom/wacom-intuos-pro-2025/wacom-ptkx70-notes",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/wacom.tablet.ptk870",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 499.95,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "Wacom store",
+          "url": "https://estore.wacom.com/en-us/wacom-intuos-pro-large-l-ptk870k0a.html",
+          "basis": "Displayed new-product retail price; excludes tax/shipping"
+        },
+        "launch": {
+          "amount": 499.95,
+          "date": "2025-02-12",
+          "precision": "day",
+          "seller": "prnewswire.com",
+          "url": "https://www.prnewswire.com/news-releases/wacom-redesigns-its-flagship-intuos-pro-pen-tablet-to-deliver-an-exceptional-workflow-302374882.html",
+          "basis": "Standard retail package launch recommended price, USD"
+        },
+        "launchKind": "LAUNCH",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 499.95,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Wacom store",
+            "url": "https://estore.wacom.com/en-us/wacom-intuos-pro-large-l-ptk870k0a.html",
+            "basis": "Displayed new-product retail price; excludes tax/shipping"
+          },
+          {
+            "kind": "LAUNCH",
+            "amount": 499.95,
+            "date": "2025-02-12",
+            "precision": "day",
+            "seller": "prnewswire.com",
+            "url": "https://www.prnewswire.com/news-releases/wacom-redesigns-its-flagship-intuos-pro-pen-tablet-to-deliver-an-exceptional-workflow-302374882.html",
+            "basis": "Standard retail package launch recommended price, USD"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -1079,7 +1231,45 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/wacom/wacom-intuos-pro-2025/wacom-ptkx70-notes",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/wacom.tablet.ptk670",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 379.95,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "Wacom store",
+          "url": "https://estore.wacom.com/en-us/wacom-intuos-pro-medium-m-ptk670k0a.html",
+          "basis": "Displayed new-product retail price; excludes tax/shipping"
+        },
+        "launch": {
+          "amount": 379.95,
+          "date": "2025-02-12",
+          "precision": "day",
+          "seller": "prnewswire.com",
+          "url": "https://www.prnewswire.com/news-releases/wacom-redesigns-its-flagship-intuos-pro-pen-tablet-to-deliver-an-exceptional-workflow-302374882.html",
+          "basis": "Standard retail package launch recommended price, USD"
+        },
+        "launchKind": "LAUNCH",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 379.95,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Wacom store",
+            "url": "https://estore.wacom.com/en-us/wacom-intuos-pro-medium-m-ptk670k0a.html",
+            "basis": "Displayed new-product retail price; excludes tax/shipping"
+          },
+          {
+            "kind": "LAUNCH",
+            "amount": 379.95,
+            "date": "2025-02-12",
+            "precision": "day",
+            "seller": "prnewswire.com",
+            "url": "https://www.prnewswire.com/news-releases/wacom-redesigns-its-flagship-intuos-pro-pen-tablet-to-deliver-an-exceptional-workflow-302374882.html",
+            "basis": "Standard retail package launch recommended price, USD"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -1235,7 +1425,45 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/wacom/wacom-intuos-pro-2025/wacom-ptkx70-notes",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/wacom.tablet.ptk470",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 249.95,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "Wacom store",
+          "url": "https://estore.wacom.com/en-us/wacom-intuos-pro-small-s-ptk470k0a.html",
+          "basis": "Displayed new-product retail price; excludes tax/shipping"
+        },
+        "launch": {
+          "amount": 249.95,
+          "date": "2025-02-12",
+          "precision": "day",
+          "seller": "prnewswire.com",
+          "url": "https://www.prnewswire.com/news-releases/wacom-redesigns-its-flagship-intuos-pro-pen-tablet-to-deliver-an-exceptional-workflow-302374882.html",
+          "basis": "Standard retail package launch recommended price, USD"
+        },
+        "launchKind": "LAUNCH",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 249.95,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Wacom store",
+            "url": "https://estore.wacom.com/en-us/wacom-intuos-pro-small-s-ptk470k0a.html",
+            "basis": "Displayed new-product retail price; excludes tax/shipping"
+          },
+          {
+            "kind": "LAUNCH",
+            "amount": 249.95,
+            "date": "2025-02-12",
+            "precision": "day",
+            "seller": "prnewswire.com",
+            "url": "https://www.prnewswire.com/news-releases/wacom-redesigns-its-flagship-intuos-pro-pen-tablet-to-deliver-an-exceptional-workflow-302374882.html",
+            "basis": "Standard retail package launch recommended price, USD"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -1385,7 +1613,54 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/wacom/wacom-movink/wacom-dth135-notes",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/wacom.tablet.dth135",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 599.95,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "Wacom store",
+          "url": "https://estore.wacom.com/en-us/wacom-movink-dth135k0a.html",
+          "basis": "Current displayed retail"
+        },
+        "launch": {
+          "amount": 749.9,
+          "date": "2024-04-24",
+          "precision": "day",
+          "seller": "Wacom store",
+          "url": "https://www.prnewswire.com/news-releases/introducing-wacom-movink-the-first-oled-pen-display-developed-and-designed-for-creative-professionals-and-the-thinnest-and-lightest-wacom-pen-display-ever-302123820.html",
+          "basis": "announced launch price as printed"
+        },
+        "launchKind": "LAUNCH",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 599.95,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Wacom store",
+            "url": "https://estore.wacom.com/en-us/wacom-movink-dth135k0a.html",
+            "basis": "Current displayed retail"
+          },
+          {
+            "kind": "RETAIL",
+            "amount": 749.95,
+            "date": "2024-05-13",
+            "precision": "day",
+            "seller": "Wacom store",
+            "url": "https://www.cgchannel.com/2024/05/wacom-launches-new-mobile-movink-pen-display/",
+            "basis": "Dated observed retail"
+          },
+          {
+            "kind": "LAUNCH",
+            "amount": 749.9,
+            "date": "2024-04-24",
+            "precision": "day",
+            "seller": "Wacom store",
+            "url": "https://www.prnewswire.com/news-releases/introducing-wacom-movink-the-first-oled-pen-display-developed-and-designed-for-creative-professionals-and-the-thinnest-and-lightest-wacom-pen-display-ever-302123820.html",
+            "basis": "announced launch price as printed"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -1524,7 +1799,54 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/huion/huion-gt1902-notes",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/huion.tablet.gt1902",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 879,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "Huion store",
+          "url": "https://store.huion.com/products/kamvas-pro-19",
+          "basis": "current posted new retail"
+        },
+        "launch": {
+          "amount": 1099,
+          "date": "2024-01-09",
+          "precision": "day",
+          "seller": "Huion store",
+          "url": "https://www.parkablogs.com/content/huion-released-kamvas-pro-19-27-and-kamvas-slate-10-ces-2024",
+          "basis": "launch announced retail"
+        },
+        "launchKind": "LAUNCH",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 879,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Huion store",
+            "url": "https://store.huion.com/products/kamvas-pro-19",
+            "basis": "current posted new retail"
+          },
+          {
+            "kind": "LIST",
+            "amount": 1099,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Huion store",
+            "url": "https://store.huion.com/products/kamvas-pro-19",
+            "basis": "Current list / crossed-out price, not historical MSRP"
+          },
+          {
+            "kind": "LAUNCH",
+            "amount": 1099,
+            "date": "2024-01-09",
+            "precision": "day",
+            "seller": "Huion store",
+            "url": "https://www.parkablogs.com/content/huion-released-kamvas-pro-19-27-and-kamvas-slate-10-ces-2024",
+            "basis": "launch announced retail"
+          }
+        ]
+      },
       "inBox": [
         "Kamvas Pro 19 Pen Display",
         "PD Power Adapter",
@@ -1718,7 +2040,54 @@
       "akaNote": null,
       "notesUrl": null,
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/huion.tablet.gt2701",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 1599,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "Huion store",
+          "url": "https://store.huion.com/products/kamvas-pro-27",
+          "basis": "current posted new retail"
+        },
+        "launch": {
+          "amount": 1999,
+          "date": "2024-01-09",
+          "precision": "day",
+          "seller": "Huion store",
+          "url": "https://www.parkablogs.com/content/huion-released-kamvas-pro-19-27-and-kamvas-slate-10-ces-2024",
+          "basis": "launch announced retail"
+        },
+        "launchKind": "LAUNCH",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 1599,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Huion store",
+            "url": "https://store.huion.com/products/kamvas-pro-27",
+            "basis": "current posted new retail"
+          },
+          {
+            "kind": "LIST",
+            "amount": 1999,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Huion store",
+            "url": "https://store.huion.com/products/kamvas-pro-27",
+            "basis": "Current list / crossed-out price, not historical MSRP"
+          },
+          {
+            "kind": "LAUNCH",
+            "amount": 1999,
+            "date": "2024-01-09",
+            "precision": "day",
+            "seller": "Huion store",
+            "url": "https://www.parkablogs.com/content/huion-released-kamvas-pro-19-27-and-kamvas-slate-10-ces-2024",
+            "basis": "launch announced retail"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [],
       "articles": [],
@@ -1810,7 +2179,54 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/wacom/wacom-cintiq-pro/",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/wacom.tablet.dth172",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 2499.95,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "Wacom store",
+          "url": "https://estore.wacom.com/en-us/wacom-cintiq-pro-17-dth172k0a.html",
+          "basis": "Current displayed retail"
+        },
+        "launch": {
+          "amount": 2499.95,
+          "date": "2023-10-19",
+          "precision": "day",
+          "seller": "Wacom store",
+          "url": "https://www.prnewswire.com/news-releases/wacom-accelerates-the-advancement-of-the-creative-technology-industry-with-the-expansion-of-its-best-in-class-cintiq-pro-product-line-301961013.html",
+          "basis": "announced launch price"
+        },
+        "launchKind": "LAUNCH",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 2499.95,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Wacom store",
+            "url": "https://estore.wacom.com/en-us/wacom-cintiq-pro-17-dth172k0a.html",
+            "basis": "Current displayed retail"
+          },
+          {
+            "kind": "CURRENT",
+            "amount": 2199.95,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "B&H",
+            "url": "https://www.bhphotovideo.com/c/product/1790420-REG/wacom_dth172k0a_cintiq_pro_17_creative.html",
+            "basis": "Alternative offer"
+          },
+          {
+            "kind": "LAUNCH",
+            "amount": 2499.95,
+            "date": "2023-10-19",
+            "precision": "day",
+            "seller": "Wacom store",
+            "url": "https://www.prnewswire.com/news-releases/wacom-accelerates-the-advancement-of-the-creative-technology-industry-with-the-expansion-of-its-best-in-class-cintiq-pro-product-line-301961013.html",
+            "basis": "announced launch price"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -1925,7 +2341,45 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/wacom/wacom-cintiq-pro/wacom-dth227-notes",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/wacom.tablet.dth227",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 2999.95,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "Wacom store",
+          "url": "https://estore.wacom.com/en-us/wacom-cintiq-pro-22-dth227k0a.html",
+          "basis": "Current displayed retail"
+        },
+        "launch": {
+          "amount": 2999.95,
+          "date": "2023-10-19",
+          "precision": "day",
+          "seller": "Wacom store",
+          "url": "https://www.prnewswire.com/news-releases/wacom-accelerates-the-advancement-of-the-creative-technology-industry-with-the-expansion-of-its-best-in-class-cintiq-pro-product-line-301961013.html",
+          "basis": "announced launch price"
+        },
+        "launchKind": "LAUNCH",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 2999.95,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Wacom store",
+            "url": "https://estore.wacom.com/en-us/wacom-cintiq-pro-22-dth227k0a.html",
+            "basis": "Current displayed retail"
+          },
+          {
+            "kind": "LAUNCH",
+            "amount": 2999.95,
+            "date": "2023-10-19",
+            "precision": "day",
+            "seller": "Wacom store",
+            "url": "https://www.prnewswire.com/news-releases/wacom-accelerates-the-advancement-of-the-creative-technology-industry-with-the-expansion-of-its-best-in-class-cintiq-pro-product-line-301961013.html",
+            "basis": "announced launch price"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [],
       "articles": [],
@@ -2035,7 +2489,45 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/wacom/wacom-cintiq-pro/wacom-dth271-notes",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/wacom.tablet.dth271",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 3499.95,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "Wacom store",
+          "url": "https://estore.wacom.com/en-us/wacom-cintiq-pro-27-interactive-pen-display-dth271k0a.html",
+          "basis": "Current displayed retail"
+        },
+        "launch": {
+          "amount": 3499.95,
+          "date": "2022-09-28",
+          "precision": "day",
+          "seller": "Wacom store",
+          "url": "https://www.prnewswire.com/news-releases/wacom-cintiq-pro-27-pen-display-engineered-for-harmony-301635200.html",
+          "basis": "suggested retail price"
+        },
+        "launchKind": "LAUNCH",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 3499.95,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Wacom store",
+            "url": "https://estore.wacom.com/en-us/wacom-cintiq-pro-27-interactive-pen-display-dth271k0a.html",
+            "basis": "Current displayed retail"
+          },
+          {
+            "kind": "LAUNCH",
+            "amount": 3499.95,
+            "date": "2022-09-28",
+            "precision": "day",
+            "seller": "Wacom store",
+            "url": "https://www.prnewswire.com/news-releases/wacom-cintiq-pro-27-pen-display-engineered-for-harmony-301635200.html",
+            "basis": "suggested retail price"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -2195,7 +2687,28 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/wacom/wacom-cintiq-pro/wacom-dth167-notes",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/wacom.tablet.dth167",
-      "price": null,
+      "price": {
+        "launch": {
+          "amount": 1499.95,
+          "date": "2021-10-26",
+          "precision": "day",
+          "seller": "Wacom store",
+          "url": "https://www.prnewswire.com/news-releases/new-wacom-cintiq-pro-16-for-digital-artists-and-designers-301407311.html",
+          "basis": "announced launch price"
+        },
+        "launchKind": "LAUNCH",
+        "history": [
+          {
+            "kind": "LAUNCH",
+            "amount": 1499.95,
+            "date": "2021-10-26",
+            "precision": "day",
+            "seller": "Wacom store",
+            "url": "https://www.prnewswire.com/news-releases/new-wacom-cintiq-pro-16-for-digital-artists-and-designers-301407311.html",
+            "basis": "announced launch price"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -2328,7 +2841,45 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/wacom/wacom-intuos-pro-2017/wacom-pthx60-notes",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/wacom.tablet.pth460",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 249.95,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "Wacom store",
+          "url": "https://www.coolgraphicstuff.com/products/wacom-intuos-pro-pen-touch-small-pth460k0a",
+          "basis": "Displayed new-product retail price; excludes tax/shipping"
+        },
+        "launch": {
+          "amount": 249.95,
+          "date": "2019-05-09",
+          "precision": "day",
+          "seller": "prnewswire.com",
+          "url": "https://www.prnewswire.com/news-releases/wacoms-new-intuos-pro-small-completes-advanced-line-of-pen-tablets-300845936.html",
+          "basis": "Standard retail package launch recommended price, USD"
+        },
+        "launchKind": "LAUNCH",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 249.95,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Wacom store",
+            "url": "https://www.coolgraphicstuff.com/products/wacom-intuos-pro-pen-touch-small-pth460k0a",
+            "basis": "Displayed new-product retail price; excludes tax/shipping"
+          },
+          {
+            "kind": "LAUNCH",
+            "amount": 249.95,
+            "date": "2019-05-09",
+            "precision": "day",
+            "seller": "prnewswire.com",
+            "url": "https://www.prnewswire.com/news-releases/wacoms-new-intuos-pro-small-completes-advanced-line-of-pen-tablets-300845936.html",
+            "basis": "Standard retail package launch recommended price, USD"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -2442,7 +2993,45 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/wacom/wacom-intuos-pro-2017/wacom-pthx60-notes",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/wacom.tablet.pth860",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 499.99,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "Office Depot",
+          "url": "https://www.officedepot.com/a/products/9787707/Wacom-Intuos-Pro-Pen-Tablet-Large/",
+          "basis": "Displayed unavailable listing only, NOT a confirmed purchasable offer"
+        },
+        "launch": {
+          "amount": 499.95,
+          "date": "2017-01-04",
+          "precision": "day",
+          "seller": "prnewswire.com",
+          "url": "https://www.prnewswire.com/news-releases/the-pen-tablet-that-works-the-way-you-do-the-new-wacom-intuos-pro-300385728.html",
+          "basis": "Standard retail package launch recommended price, USD"
+        },
+        "launchKind": "LAUNCH",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 499.99,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Office Depot",
+            "url": "https://www.officedepot.com/a/products/9787707/Wacom-Intuos-Pro-Pen-Tablet-Large/",
+            "basis": "Displayed unavailable listing only, NOT a confirmed purchasable offer"
+          },
+          {
+            "kind": "LAUNCH",
+            "amount": 499.95,
+            "date": "2017-01-04",
+            "precision": "day",
+            "seller": "prnewswire.com",
+            "url": "https://www.prnewswire.com/news-releases/the-pen-tablet-that-works-the-way-you-do-the-new-wacom-intuos-pro-300385728.html",
+            "basis": "Standard retail package launch recommended price, USD"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -2550,7 +3139,45 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/wacom/wacom-intuos-pro-2017/wacom-pthx60-notes",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/wacom.tablet.pth660",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 189.99,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "Office Depot",
+          "url": "https://www.officedepot.com/a/products/9562925/Wacom-Intuos-Pro-Medium-Graphics-Tablet/",
+          "basis": "Displayed clearance listing only, NOT a confirmed purchasable offer"
+        },
+        "launch": {
+          "amount": 349.95,
+          "date": "2017-01-04",
+          "precision": "day",
+          "seller": "prnewswire.com",
+          "url": "https://www.prnewswire.com/news-releases/the-pen-tablet-that-works-the-way-you-do-the-new-wacom-intuos-pro-300385728.html",
+          "basis": "Standard retail package launch recommended price, USD"
+        },
+        "launchKind": "LAUNCH",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 189.99,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Office Depot",
+            "url": "https://www.officedepot.com/a/products/9562925/Wacom-Intuos-Pro-Medium-Graphics-Tablet/",
+            "basis": "Displayed clearance listing only, NOT a confirmed purchasable offer"
+          },
+          {
+            "kind": "LAUNCH",
+            "amount": 349.95,
+            "date": "2017-01-04",
+            "precision": "day",
+            "seller": "prnewswire.com",
+            "url": "https://www.prnewswire.com/news-releases/the-pen-tablet-that-works-the-way-you-do-the-new-wacom-intuos-pro-300385728.html",
+            "basis": "Standard retail package launch recommended price, USD"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -2670,7 +3297,45 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/huion/huion-g940l-notes",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/huion.tablet.g940l",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 199,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "Huion store",
+          "url": "https://store.huion.com/products/inspiroy-giano-v2",
+          "basis": "Advertised new retail price"
+        },
+        "launch": {
+          "amount": 199,
+          "date": "2026-10-14",
+          "precision": "day",
+          "seller": "store.huion.com",
+          "url": "https://store.huion.com/posts/introduce-huion-inspiroy-giano-v2",
+          "basis": "Manufacturer introduction announcement price, U.S. region"
+        },
+        "launchKind": "RETAIL",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 199,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Huion store",
+            "url": "https://store.huion.com/products/inspiroy-giano-v2",
+            "basis": "Advertised new retail price"
+          },
+          {
+            "kind": "RETAIL",
+            "amount": 199,
+            "date": "2026-10-14",
+            "precision": "day",
+            "seller": "store.huion.com",
+            "url": "https://store.huion.com/posts/introduce-huion-inspiroy-giano-v2",
+            "basis": "Manufacturer introduction announcement price, U.S. region"
+          }
+        ]
+      },
       "inBox": [
         "Inspiroy Giano V2 Pen Tablet",
         "Battery-free Pen",
@@ -2779,7 +3444,45 @@
       "akaNote": null,
       "notesUrl": null,
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/huion.tablet.q640m",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 159,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "Huion store",
+          "url": "https://store.huion.com/products/inspiroy-dial-2-v2",
+          "basis": "Advertised new retail price"
+        },
+        "launch": {
+          "amount": 159,
+          "date": "2026-09-09",
+          "precision": "day",
+          "seller": "store.huion.com",
+          "url": "https://store.huion.com/posts/introduce-huion-inspiroy-dial-2-v2",
+          "basis": "Manufacturer launch announcement price, U.S. region"
+        },
+        "launchKind": "RETAIL",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 159,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Huion store",
+            "url": "https://store.huion.com/products/inspiroy-dial-2-v2",
+            "basis": "Advertised new retail price"
+          },
+          {
+            "kind": "RETAIL",
+            "amount": 159,
+            "date": "2026-09-09",
+            "precision": "day",
+            "seller": "store.huion.com",
+            "url": "https://store.huion.com/posts/introduce-huion-inspiroy-dial-2-v2",
+            "basis": "Manufacturer launch announcement price, U.S. region"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -2880,7 +3583,45 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/huion/huion-gs2203-notes",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/huion.tablet.gs2203",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 599,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "Huion store",
+          "url": "https://store.huion.com/products/kamvas-22-gen-3",
+          "basis": "current posted new retail"
+        },
+        "launch": {
+          "amount": 599,
+          "date": "2026-03-03",
+          "precision": "day",
+          "seller": "Huion store",
+          "url": "https://www.notebookcheck.net/Huion-launches-affordable-22-inch-QHD-Wacom-alternative-pen-display-with-90-Hz-refresh-rate-and-RGB-ambient-lighting.1240260.0.html",
+          "basis": "launch announced retail"
+        },
+        "launchKind": "LAUNCH",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 599,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Huion store",
+            "url": "https://store.huion.com/products/kamvas-22-gen-3",
+            "basis": "current posted new retail"
+          },
+          {
+            "kind": "LAUNCH",
+            "amount": 599,
+            "date": "2026-03-03",
+            "precision": "day",
+            "seller": "Huion store",
+            "url": "https://www.notebookcheck.net/Huion-launches-affordable-22-inch-QHD-Wacom-alternative-pen-display-with-90-Hz-refresh-rate-and-RGB-ambient-lighting.1240260.0.html",
+            "basis": "launch announced retail"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -3014,7 +3755,54 @@
       "akaNote": null,
       "notesUrl": null,
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/xppen.tablet.md160uh",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 799.99,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "XP-Pen store",
+          "url": "https://www.xp-pen.com/store/buy/artist-ultra-16.html",
+          "basis": "Current displayed retail"
+        },
+        "launch": {
+          "amount": 899.99,
+          "date": "2025-09-26",
+          "precision": "day",
+          "seller": "XP-Pen store",
+          "url": "https://www.prnewswire.co.uk/news-releases/xppen-launches-artist-ultra-16-redefining-professional-pen-displays-with-next-gen-touch-solution-and-4k-oled-302564494.html",
+          "basis": "Manufacturer-announced launch retail price"
+        },
+        "launchKind": "LAUNCH",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 799.99,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "XP-Pen store",
+            "url": "https://www.xp-pen.com/store/buy/artist-ultra-16.html",
+            "basis": "Current displayed retail"
+          },
+          {
+            "kind": "LIST",
+            "amount": 899.99,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "XP-Pen store",
+            "url": "https://www.xp-pen.com/store/buy/artist-ultra-16.html",
+            "basis": "Current list / crossed-out price, not historical MSRP"
+          },
+          {
+            "kind": "LAUNCH",
+            "amount": 899.99,
+            "date": "2025-09-26",
+            "precision": "day",
+            "seller": "XP-Pen store",
+            "url": "https://www.prnewswire.co.uk/news-releases/xppen-launches-artist-ultra-16-redefining-professional-pen-displays-with-next-gen-touch-solution-and-4k-oled-302564494.html",
+            "basis": "Manufacturer-announced launch retail price"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -3161,7 +3949,45 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/huion/huion-gs1563-notes",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/huion.tablet.gs1563",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 499,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "Huion store",
+          "url": "https://store.huion.com/products/kamvas-16-gen-3",
+          "basis": "current posted new retail"
+        },
+        "launch": {
+          "amount": 499,
+          "date": "2025-01-07",
+          "precision": "day",
+          "seller": "Huion store",
+          "url": "https://www.huion.com/news/huion-unveils-kamvas-16-gen3-at-ces-2025",
+          "basis": "launch announced retail"
+        },
+        "launchKind": "LAUNCH",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 499,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Huion store",
+            "url": "https://store.huion.com/products/kamvas-16-gen-3",
+            "basis": "current posted new retail"
+          },
+          {
+            "kind": "LAUNCH",
+            "amount": 499,
+            "date": "2025-01-07",
+            "precision": "day",
+            "seller": "Huion store",
+            "url": "https://www.huion.com/news/huion-unveils-kamvas-16-gen3-at-ces-2025",
+            "basis": "launch announced retail"
+          }
+        ]
+      },
       "inBox": [
         "Kamvas 16 (Gen 3) ×1",
         "Foldable Stand ST300 ×1",
@@ -3315,7 +4141,54 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/huion/huion-gs1333-notes",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/huion.tablet.gs1333",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 209,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "Huion store",
+          "url": "https://store.huion.com/products/kamvas-13-gen-3",
+          "basis": "current posted new retail"
+        },
+        "launch": {
+          "amount": 249,
+          "date": "2024-09-02",
+          "precision": "day",
+          "seller": "Huion store",
+          "url": "https://www.notebookcheck.net/Huion-unveils-13-3-inch-Kamvas-13-Gen-3-pen-tablet-for-graphic-designers-photographers-and-3D-artists.883138.0.html",
+          "basis": "launch MSRP"
+        },
+        "launchKind": "LAUNCH",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 209,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Huion store",
+            "url": "https://store.huion.com/products/kamvas-13-gen-3",
+            "basis": "current posted new retail"
+          },
+          {
+            "kind": "LIST",
+            "amount": 249,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Huion store",
+            "url": "https://store.huion.com/products/kamvas-13-gen-3",
+            "basis": "Current list / crossed-out price, not historical MSRP"
+          },
+          {
+            "kind": "LAUNCH",
+            "amount": 249,
+            "date": "2024-09-02",
+            "precision": "day",
+            "seller": "Huion store",
+            "url": "https://www.notebookcheck.net/Huion-unveils-13-3-inch-Kamvas-13-Gen-3-pen-tablet-for-graphic-designers-photographers-and-3D-artists.883138.0.html",
+            "basis": "launch MSRP"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -3448,7 +4321,54 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/xppen/xppen-md180uh-notes",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/xppen.tablet.md180uh",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 764.99,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "XP-Pen store",
+          "url": "https://www.xp-pen.com/store/buy/artist-pro-19-gen2.html",
+          "basis": "Current displayed retail"
+        },
+        "launch": {
+          "amount": 899.99,
+          "date": "2024-08-26",
+          "precision": "day",
+          "seller": "XP-Pen store",
+          "url": "https://www.xp-pen.com/news/artist-pro-19-gen-2-released.html",
+          "basis": "Manufacturer-announced launch retail price"
+        },
+        "launchKind": "LAUNCH",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 764.99,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "XP-Pen store",
+            "url": "https://www.xp-pen.com/store/buy/artist-pro-19-gen2.html",
+            "basis": "Current displayed retail"
+          },
+          {
+            "kind": "LIST",
+            "amount": 899.99,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "XP-Pen store",
+            "url": "https://www.xp-pen.com/store/buy/artist-pro-19-gen2.html",
+            "basis": "Current list / crossed-out price, not historical MSRP"
+          },
+          {
+            "kind": "LAUNCH",
+            "amount": 899.99,
+            "date": "2024-08-26",
+            "precision": "day",
+            "seller": "XP-Pen store",
+            "url": "https://www.xp-pen.com/news/artist-pro-19-gen-2-released.html",
+            "basis": "Manufacturer-announced launch retail price"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -3599,7 +4519,54 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/xppen/xppen-md220qh-notes",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/xppen.tablet.md220qh",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 599.99,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "XP-Pen store",
+          "url": "https://www.xp-pen.com/store/buy/artist-pro-22-gen2.html",
+          "basis": "Current displayed retail"
+        },
+        "launch": {
+          "amount": 699,
+          "date": "2025-01-10",
+          "precision": "day",
+          "seller": "XP-Pen store",
+          "url": "https://www.xp-pen.com/news/artist-pro-22-gen-2-released.html",
+          "basis": "Manufacturer-announced launch retail price"
+        },
+        "launchKind": "LAUNCH",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 599.99,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "XP-Pen store",
+            "url": "https://www.xp-pen.com/store/buy/artist-pro-22-gen2.html",
+            "basis": "Current displayed retail"
+          },
+          {
+            "kind": "LIST",
+            "amount": 699.99,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "XP-Pen store",
+            "url": "https://www.xp-pen.com/store/buy/artist-pro-22-gen2.html",
+            "basis": "Current list / crossed-out price, not historical MSRP"
+          },
+          {
+            "kind": "LAUNCH",
+            "amount": 699,
+            "date": "2025-01-10",
+            "precision": "day",
+            "seller": "XP-Pen store",
+            "url": "https://www.xp-pen.com/news/artist-pro-22-gen-2-released.html",
+            "basis": "Manufacturer-announced launch retail price"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -3734,7 +4701,63 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/xppen/xppen-md160qh-notes",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/xppen.tablet.md160qh",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 499.99,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "XP-Pen store",
+          "url": "https://www.xp-pen.com/store/buy/artist-pro-16-gen2.html",
+          "basis": "Current displayed retail"
+        },
+        "launch": {
+          "amount": 599,
+          "date": "2023-08-19",
+          "precision": "day",
+          "seller": "XP-Pen store",
+          "url": "https://www.parkablogs.com/content/xppen-just-released-artist-pro-16-gen-2",
+          "basis": "Contemporaneous reviewer-reported official retail price"
+        },
+        "launchKind": "LAUNCH",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 499.99,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "XP-Pen store",
+            "url": "https://www.xp-pen.com/store/buy/artist-pro-16-gen2.html",
+            "basis": "Current displayed retail"
+          },
+          {
+            "kind": "LIST",
+            "amount": 599.99,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "XP-Pen store",
+            "url": "https://www.xp-pen.com/store/buy/artist-pro-16-gen2.html",
+            "basis": "Current list / crossed-out price, not historical MSRP"
+          },
+          {
+            "kind": "LAUNCH",
+            "amount": 599,
+            "date": "2023-08-19",
+            "precision": "day",
+            "seller": "XP-Pen store",
+            "url": "https://www.parkablogs.com/content/xppen-just-released-artist-pro-16-gen-2",
+            "basis": "Contemporaneous reviewer-reported official retail price"
+          },
+          {
+            "kind": "RETAIL",
+            "amount": 539,
+            "date": "2023-08-19",
+            "precision": "day",
+            "seller": "XP-Pen store",
+            "url": "https://www.parkablogs.com/content/xppen-just-released-artist-pro-16-gen-2",
+            "basis": "Dated observed retail"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -3891,7 +4914,63 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/xppen/xppen-md140fh-notes",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/xppen.tablet.md140fh",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 302.99,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "XP-Pen store",
+          "url": "https://www.xp-pen.com/store/buy/artist-pro-14-gen2.html",
+          "basis": "Current displayed retail"
+        },
+        "launch": {
+          "amount": 419.99,
+          "date": "2023-07-18",
+          "precision": "day",
+          "seller": "XP-Pen store",
+          "url": "https://www.parkablogs.com/index.php/content/review-xppen-artist-pro-14-2nd-gen",
+          "basis": "Contemporaneous reviewer-reported official retail price"
+        },
+        "launchKind": "LAUNCH",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 302.99,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "XP-Pen store",
+            "url": "https://www.xp-pen.com/store/buy/artist-pro-14-gen2.html",
+            "basis": "Current displayed retail"
+          },
+          {
+            "kind": "LIST",
+            "amount": 419.99,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "XP-Pen store",
+            "url": "https://www.xp-pen.com/store/buy/artist-pro-14-gen2.html",
+            "basis": "Current list / crossed-out price, not historical MSRP"
+          },
+          {
+            "kind": "LAUNCH",
+            "amount": 419.99,
+            "date": "2023-07-18",
+            "precision": "day",
+            "seller": "XP-Pen store",
+            "url": "https://www.parkablogs.com/index.php/content/review-xppen-artist-pro-14-2nd-gen",
+            "basis": "Contemporaneous reviewer-reported official retail price"
+          },
+          {
+            "kind": "RETAIL",
+            "amount": 377.99,
+            "date": "2023-07-18",
+            "precision": "day",
+            "seller": "XP-Pen store",
+            "url": "https://www.parkablogs.com/index.php/content/review-xppen-artist-pro-14-2nd-gen",
+            "basis": "Dated observed retail"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -4018,7 +5097,45 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/xencelabs/xencelabs-lph2412ua-notes",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/xencelabs.tablet.lph2412ua",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 1574,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "B&H",
+          "url": "https://www.bhphotovideo.com/c/product/1756980-REG/xencelabs_xmpd24us_pen_display_24.html",
+          "basis": "displayed new retail"
+        },
+        "launch": {
+          "amount": 1899,
+          "date": "2023-03-22",
+          "precision": "day",
+          "seller": "Xencelabs store",
+          "url": "https://www.globenewswire.com/news-release/2023/03/22/2632632/0/en/xencelabs-unveils-new-pen-display-24-studio-series.html",
+          "basis": "manufacturer announced launch / preorder price"
+        },
+        "launchKind": "LAUNCH",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 1574,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "B&H",
+            "url": "https://www.bhphotovideo.com/c/product/1756980-REG/xencelabs_xmpd24us_pen_display_24.html",
+            "basis": "displayed new retail"
+          },
+          {
+            "kind": "LAUNCH",
+            "amount": 1899,
+            "date": "2023-03-22",
+            "precision": "day",
+            "seller": "Xencelabs store",
+            "url": "https://www.globenewswire.com/news-release/2023/03/22/2632632/0/en/xencelabs-unveils-new-pen-display-24-studio-series.html",
+            "basis": "manufacturer announced launch / preorder price"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -4135,7 +5252,45 @@
       "akaNote": null,
       "notesUrl": null,
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/xppen.tablet.mt1172b",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 149.99,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "XP-Pen store",
+          "url": "https://www.xp-pen.com/store/buy/deco-pro-gen2.html",
+          "basis": "Current advertised retail"
+        },
+        "launch": {
+          "amount": 169.99,
+          "date": "2023-07-26",
+          "precision": "day",
+          "seller": "parkablogs.com",
+          "url": "https://www.parkablogs.com/index.php/content/review-xppen-deco-pro-gen-2-pen-tablet",
+          "basis": "Launch/preorder-era stated regular retail; MSRP label not explicit"
+        },
+        "launchKind": "RETAIL",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 149.99,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "XP-Pen store",
+            "url": "https://www.xp-pen.com/store/buy/deco-pro-gen2.html",
+            "basis": "Current advertised retail"
+          },
+          {
+            "kind": "RETAIL",
+            "amount": 169.99,
+            "date": "2023-07-26",
+            "precision": "day",
+            "seller": "parkablogs.com",
+            "url": "https://www.parkablogs.com/index.php/content/review-xppen-deco-pro-gen-2-pen-tablet",
+            "basis": "Launch/preorder-era stated regular retail; MSRP label not explicit"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [],
       "articles": [],
@@ -4227,7 +5382,45 @@
       "akaNote": null,
       "notesUrl": null,
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/xppen.tablet.mt0962b",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 111.99,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "XP-Pen store",
+          "url": "https://www.xp-pen.com/store/buy/deco-pro-gen2.html",
+          "basis": "Current advertised retail"
+        },
+        "launch": {
+          "amount": 139.99,
+          "date": "2023-07-26",
+          "precision": "day",
+          "seller": "parkablogs.com",
+          "url": "https://www.parkablogs.com/index.php/content/review-xppen-deco-pro-gen-2-pen-tablet",
+          "basis": "Launch/preorder-era stated regular retail; MSRP label not explicit"
+        },
+        "launchKind": "RETAIL",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 111.99,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "XP-Pen store",
+            "url": "https://www.xp-pen.com/store/buy/deco-pro-gen2.html",
+            "basis": "Current advertised retail"
+          },
+          {
+            "kind": "RETAIL",
+            "amount": 139.99,
+            "date": "2023-07-26",
+            "precision": "day",
+            "seller": "parkablogs.com",
+            "url": "https://www.parkablogs.com/index.php/content/review-xppen-deco-pro-gen-2-pen-tablet",
+            "basis": "Launch/preorder-era stated regular retail; MSRP label not explicit"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [],
       "articles": [],
@@ -4319,7 +5512,45 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/xppen/xppen-mt1592b-notes",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/xppen.tablet.mt1592b",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 159.99,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "XP-Pen store",
+          "url": "https://www.xp-pen.com/store/buy/deco-pro-gen2.html",
+          "basis": "Current advertised retail"
+        },
+        "launch": {
+          "amount": 199.99,
+          "date": "2023-07-26",
+          "precision": "day",
+          "seller": "parkablogs.com",
+          "url": "https://www.parkablogs.com/index.php/content/review-xppen-deco-pro-gen-2-pen-tablet",
+          "basis": "Launch/preorder-era stated regular retail; MSRP label not explicit"
+        },
+        "launchKind": "RETAIL",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 159.99,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "XP-Pen store",
+            "url": "https://www.xp-pen.com/store/buy/deco-pro-gen2.html",
+            "basis": "Current advertised retail"
+          },
+          {
+            "kind": "RETAIL",
+            "amount": 199.99,
+            "date": "2023-07-26",
+            "precision": "day",
+            "seller": "parkablogs.com",
+            "url": "https://www.parkablogs.com/index.php/content/review-xppen-deco-pro-gen-2-pen-tablet",
+            "basis": "Launch/preorder-era stated regular retail; MSRP label not explicit"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -4451,7 +5682,45 @@
       "akaNote": null,
       "notesUrl": null,
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/huion.tablet.q630m",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 127.99,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "Huion store",
+          "url": "https://store.huion.com/products/inspiroy-dial-2",
+          "basis": "Advertised new retail price"
+        },
+        "launch": {
+          "amount": 159.99,
+          "date": "2022-08-16",
+          "precision": "day",
+          "seller": "parkablogs.com",
+          "url": "https://www.parkablogs.com/content/review-huion-inspiroy-dial-2-q630m-pen-tablet",
+          "basis": "Official retail price stated in launch-era review"
+        },
+        "launchKind": "RETAIL",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 127.99,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Huion store",
+            "url": "https://store.huion.com/products/inspiroy-dial-2",
+            "basis": "Advertised new retail price"
+          },
+          {
+            "kind": "RETAIL",
+            "amount": 159.99,
+            "date": "2022-08-16",
+            "precision": "day",
+            "seller": "parkablogs.com",
+            "url": "https://www.parkablogs.com/content/review-huion-inspiroy-dial-2-q630m-pen-tablet",
+            "basis": "Official retail price stated in launch-era review"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -4711,7 +5980,54 @@
       "akaNote": null,
       "notesUrl": null,
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/huion.tablet.gt156v2",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 339,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "Huion store",
+          "url": "https://store.huion.com/products/kamvas-pro-16-v2",
+          "basis": "current posted new retail"
+        },
+        "launch": {
+          "amount": 399,
+          "date": "2025-10-16",
+          "precision": "day",
+          "seller": "Huion store",
+          "url": "https://www.parkablogs.com/index.php/content/huion-kamvas-pro-16-v2-pen-display-review",
+          "basis": "early observed retail"
+        },
+        "launchKind": "RETAIL",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 339,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Huion store",
+            "url": "https://store.huion.com/products/kamvas-pro-16-v2",
+            "basis": "current posted new retail"
+          },
+          {
+            "kind": "LIST",
+            "amount": 399,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Huion store",
+            "url": "https://store.huion.com/products/kamvas-pro-16-v2",
+            "basis": "Current list / crossed-out price, not historical MSRP"
+          },
+          {
+            "kind": "RETAIL",
+            "amount": 399,
+            "date": "2025-10-16",
+            "precision": "day",
+            "seller": "Huion store",
+            "url": "https://www.parkablogs.com/index.php/content/huion-kamvas-pro-16-v2-pen-display-review",
+            "basis": "early observed retail"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -4827,7 +6143,54 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/xppen/xppen-cd121fh-notes",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/xppen.tablet.cd121fh",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 209.99,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "XP-Pen store",
+          "url": "https://www.xp-pen.com/store/buy/artist-12-3rd.html",
+          "basis": "Current displayed retail"
+        },
+        "launch": {
+          "amount": 239.99,
+          "date": "2025-10-20",
+          "precision": "day",
+          "seller": "XP-Pen store",
+          "url": "https://www.xp-pen.com/news/artist-12-3rd-launched.html",
+          "basis": "Manufacturer-announced launch retail price"
+        },
+        "launchKind": "LAUNCH",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 209.99,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "XP-Pen store",
+            "url": "https://www.xp-pen.com/store/buy/artist-12-3rd.html",
+            "basis": "Current displayed retail"
+          },
+          {
+            "kind": "LIST",
+            "amount": 239.99,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "XP-Pen store",
+            "url": "https://www.xp-pen.com/store/buy/artist-12-3rd.html",
+            "basis": "Current list / crossed-out price, not historical MSRP"
+          },
+          {
+            "kind": "LAUNCH",
+            "amount": 239.99,
+            "date": "2025-10-20",
+            "precision": "day",
+            "seller": "XP-Pen store",
+            "url": "https://www.xp-pen.com/news/artist-12-3rd-launched.html",
+            "basis": "Manufacturer-announced launch retail price"
+          }
+        ]
+      },
       "inBox": [
         "Drawing Display x 1",
         "X4 Smart Chip Stylus x 1",
@@ -4997,7 +6360,45 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/huion/huion-l610-notes",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/huion.tablet.l610",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 89.99,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "Huion store",
+          "url": "https://store.huion.com/products/inspiroy-frego-m",
+          "basis": "Advertised new retail price"
+        },
+        "launch": {
+          "amount": 99.99,
+          "date": "2024-08-23",
+          "precision": "day",
+          "seller": "parkablogs.com",
+          "url": "https://www.parkablogs.com/index.php/comment/32915",
+          "basis": "Launch-era retail (not independently verified MSRP)"
+        },
+        "launchKind": "RETAIL",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 89.99,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Huion store",
+            "url": "https://store.huion.com/products/inspiroy-frego-m",
+            "basis": "Advertised new retail price"
+          },
+          {
+            "kind": "RETAIL",
+            "amount": 99.99,
+            "date": "2024-08-23",
+            "precision": "day",
+            "seller": "parkablogs.com",
+            "url": "https://www.parkablogs.com/index.php/comment/32915",
+            "basis": "Launch-era retail (not independently verified MSRP)"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -5143,7 +6544,45 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/huion/huion-l610-notes",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/huion.tablet.l310",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 67.99,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "Huion store",
+          "url": "https://store.huion.com/products/inspiroy-frego-s",
+          "basis": "Advertised new retail price"
+        },
+        "launch": {
+          "amount": 79.99,
+          "date": "2024-08-23",
+          "precision": "day",
+          "seller": "parkablogs.com",
+          "url": "https://www.parkablogs.com/index.php/comment/32915",
+          "basis": "Launch-era retail (not independently verified MSRP)"
+        },
+        "launchKind": "RETAIL",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 67.99,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Huion store",
+            "url": "https://store.huion.com/products/inspiroy-frego-s",
+            "basis": "Advertised new retail price"
+          },
+          {
+            "kind": "RETAIL",
+            "amount": 79.99,
+            "date": "2024-08-23",
+            "precision": "day",
+            "seller": "parkablogs.com",
+            "url": "https://www.parkablogs.com/index.php/comment/32915",
+            "basis": "Launch-era retail (not independently verified MSRP)"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [],
       "articles": [],
@@ -5243,7 +6682,45 @@
       "akaNote": "Original SKU with more accessories. Same tablet.",
       "notesUrl": null,
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/xencelabs.tablet.lph1612ua",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 719,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "B&H",
+          "url": "https://www.bhphotovideo.com/c/product/1931475-REG/xencelabs_xepd16lgb_pen_display_16_lite.html",
+          "basis": "displayed new retail"
+        },
+        "launch": {
+          "amount": 799,
+          "date": "2025-11-05",
+          "precision": "day",
+          "seller": "Xencelabs store",
+          "url": "https://www.globenewswire.com/news-release/2025/11/05/3181290/0/en/The-4K-OLED-Xencelabs-Pen-Display-16-Lite-Now-Available.html",
+          "basis": "manufacturer announced launch price"
+        },
+        "launchKind": "LAUNCH",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 719,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "B&H",
+            "url": "https://www.bhphotovideo.com/c/product/1931475-REG/xencelabs_xepd16lgb_pen_display_16_lite.html",
+            "basis": "displayed new retail"
+          },
+          {
+            "kind": "LAUNCH",
+            "amount": 799,
+            "date": "2025-11-05",
+            "precision": "day",
+            "seller": "Xencelabs store",
+            "url": "https://www.globenewswire.com/news-release/2025/11/05/3181290/0/en/The-4K-OLED-Xencelabs-Pen-Display-16-Lite-Now-Available.html",
+            "basis": "manufacturer announced launch price"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -5385,7 +6862,63 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/xppen/xppen-md220fh-notes",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/xppen.tablet.md220fh",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 439.99,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "XP-Pen store",
+          "url": "https://www.xp-pen.com/store/buy/artist-22-plus.html",
+          "basis": "Current displayed retail"
+        },
+        "launch": {
+          "amount": 459,
+          "date": "2023-11-06",
+          "precision": "day",
+          "seller": "XP-Pen store",
+          "url": "https://www.globenewswire.com/news-release/2023/11/06/2774251/0/en/xppen-launches-artist-22-plus-display-and-x3-pro-roller-stylus-with-industry-leading-16k-pen-pressure-sensitivity.html",
+          "basis": "Manufacturer-announced launch price; MSRP status uncertain"
+        },
+        "launchKind": "LAUNCH",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 439.99,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "XP-Pen store",
+            "url": "https://www.xp-pen.com/store/buy/artist-22-plus.html",
+            "basis": "Current displayed retail"
+          },
+          {
+            "kind": "LIST",
+            "amount": 549.99,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "XP-Pen store",
+            "url": "https://www.xp-pen.com/store/buy/artist-22-plus.html",
+            "basis": "Current list / crossed-out price, not historical MSRP"
+          },
+          {
+            "kind": "RETAIL",
+            "amount": 469.99,
+            "date": "2023-11-09",
+            "precision": "day",
+            "seller": "XP-Pen store",
+            "url": "https://www.parkablogs.com/content/xppen-released-artist-22-plus-pen-display",
+            "basis": "Dated observed retail"
+          },
+          {
+            "kind": "LAUNCH",
+            "amount": 459,
+            "date": "2023-11-06",
+            "precision": "day",
+            "seller": "XP-Pen store",
+            "url": "https://www.globenewswire.com/news-release/2023/11/06/2774251/0/en/xppen-launches-artist-22-plus-display-and-x3-pro-roller-stylus-with-industry-leading-16k-pen-pressure-sensitivity.html",
+            "basis": "Manufacturer-announced launch price; MSRP status uncertain"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -5509,7 +7042,45 @@
       "akaNote": null,
       "notesUrl": null,
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/huion.tablet.h951p",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 59.49,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "Huion store",
+          "url": "https://store.huion.com/products/inspiroy-2-m",
+          "basis": "Advertised new retail price"
+        },
+        "launch": {
+          "amount": 69.99,
+          "date": "2023-02-11",
+          "precision": "day",
+          "seller": "parkablogs.com",
+          "url": "https://www.parkablogs.com/content/review-huion-inspiroy-2-pen-tablet",
+          "basis": "Launch-era retail (not independently verified MSRP)"
+        },
+        "launchKind": "RETAIL",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 59.49,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Huion store",
+            "url": "https://store.huion.com/products/inspiroy-2-m",
+            "basis": "Advertised new retail price"
+          },
+          {
+            "kind": "RETAIL",
+            "amount": 69.99,
+            "date": "2023-02-11",
+            "precision": "day",
+            "seller": "parkablogs.com",
+            "url": "https://www.parkablogs.com/content/review-huion-inspiroy-2-pen-tablet",
+            "basis": "Launch-era retail (not independently verified MSRP)"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [],
       "articles": [],
@@ -5603,7 +7174,54 @@
       "akaNote": null,
       "notesUrl": null,
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/xppen.tablet.cd130fh",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 209.99,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "XP-Pen store",
+          "url": "https://www.xp-pen.com/store/buy/artist-13-2nd-gen.html",
+          "basis": "Current displayed retail"
+        },
+        "launch": {
+          "amount": 299,
+          "date": "2022-09-24",
+          "precision": "day",
+          "seller": "www.parkablogs.com",
+          "url": "https://www.parkablogs.com/content/review-xp-pen-artist-13-2nd-gen",
+          "basis": "Contemporaneous reviewer-reported official retail price"
+        },
+        "launchKind": "LAUNCH",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 209.99,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "XP-Pen store",
+            "url": "https://www.xp-pen.com/store/buy/artist-13-2nd-gen.html",
+            "basis": "Current displayed retail"
+          },
+          {
+            "kind": "LIST",
+            "amount": 299.99,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "XP-Pen store",
+            "url": "https://www.xp-pen.com/store/buy/artist-13-2nd-gen.html",
+            "basis": "Current list / crossed-out price, not historical MSRP"
+          },
+          {
+            "kind": "LAUNCH",
+            "amount": 299,
+            "date": "2022-09-24",
+            "precision": "day",
+            "seller": "www.parkablogs.com",
+            "url": "https://www.parkablogs.com/content/review-xp-pen-artist-13-2nd-gen",
+            "basis": "Contemporaneous reviewer-reported official retail price"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -5744,7 +7362,28 @@
       "akaNote": null,
       "notesUrl": null,
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/xppen.tablet.it850b",
-      "price": null,
+      "price": {
+        "launch": {
+          "amount": 69.99,
+          "date": "2022-07-18",
+          "precision": "day",
+          "seller": "parkablogs.com",
+          "url": "https://www.parkablogs.com/index.php/content/review-xp-pen-deco-m-mw-budget-drawing-pen-tablets",
+          "basis": "Early review retail, not verified MSRP"
+        },
+        "launchKind": "RETAIL",
+        "history": [
+          {
+            "kind": "RETAIL",
+            "amount": 69.99,
+            "date": "2022-07-18",
+            "precision": "day",
+            "seller": "parkablogs.com",
+            "url": "https://www.parkablogs.com/index.php/content/review-xp-pen-deco-m-mw-budget-drawing-pen-tablets",
+            "basis": "Early review retail, not verified MSRP"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [],
       "articles": [],
@@ -5836,7 +7475,54 @@
       "akaNote": null,
       "notesUrl": null,
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/huion.tablet.gs2402",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 599,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "Huion store",
+          "url": "https://store.huion.com/products/kamvas-24-series",
+          "basis": "current posted new retail"
+        },
+        "launch": {
+          "amount": 899,
+          "date": "2021-09-03",
+          "precision": "day",
+          "seller": "Huion store",
+          "url": "https://www.parkablogs.com/content/huion-back-school-2021-shopping-guide",
+          "basis": "early observed retail"
+        },
+        "launchKind": "RETAIL",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 599,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Huion store",
+            "url": "https://store.huion.com/products/kamvas-24-series",
+            "basis": "current posted new retail"
+          },
+          {
+            "kind": "LIST",
+            "amount": 899,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Huion store",
+            "url": "https://store.huion.com/products/kamvas-24-series",
+            "basis": "Current list / crossed-out price, not historical MSRP"
+          },
+          {
+            "kind": "RETAIL",
+            "amount": 899,
+            "date": "2021-09-03",
+            "precision": "day",
+            "seller": "Huion store",
+            "url": "https://www.parkablogs.com/content/huion-back-school-2021-shopping-guide",
+            "basis": "early observed retail"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [],
       "articles": [],
@@ -5928,7 +7614,54 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/huion/huion-gt2401-notes",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/huion.tablet.gt2401",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 1099,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "Huion store",
+          "url": "https://store.huion.com/products/kamvas-pro-24-4k",
+          "basis": "current posted new retail"
+        },
+        "launch": {
+          "amount": 1299,
+          "date": "2021-09-03",
+          "precision": "day",
+          "seller": "Huion store",
+          "url": "https://www.parkablogs.com/content/huion-back-school-2021-shopping-guide",
+          "basis": "early observed retail"
+        },
+        "launchKind": "RETAIL",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 1099,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Huion store",
+            "url": "https://store.huion.com/products/kamvas-pro-24-4k",
+            "basis": "current posted new retail"
+          },
+          {
+            "kind": "LIST",
+            "amount": 1299,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Huion store",
+            "url": "https://store.huion.com/products/kamvas-pro-24-4k",
+            "basis": "Current list / crossed-out price, not historical MSRP"
+          },
+          {
+            "kind": "RETAIL",
+            "amount": 1299,
+            "date": "2021-09-03",
+            "precision": "day",
+            "seller": "Huion store",
+            "url": "https://www.parkablogs.com/content/huion-back-school-2021-shopping-guide",
+            "basis": "early observed retail"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -6072,7 +7805,54 @@
       "akaNote": null,
       "notesUrl": null,
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/xppen.tablet.cd120fh",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 174.99,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "XP-Pen store",
+          "url": "https://www.xp-pen.com/store/buy/artist-12-2nd-gen.html",
+          "basis": "Current displayed retail"
+        },
+        "launch": {
+          "amount": 249,
+          "date": "2021-11-19",
+          "precision": "day",
+          "seller": "www.parkablogs.com",
+          "url": "https://www.parkablogs.com/index.php/content/review-xp-pen-artist-12-2nd-gen-gift-edition",
+          "basis": "Contemporaneous reviewer-reported official retail price"
+        },
+        "launchKind": "LAUNCH",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 174.99,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "XP-Pen store",
+            "url": "https://www.xp-pen.com/store/buy/artist-12-2nd-gen.html",
+            "basis": "Current displayed retail"
+          },
+          {
+            "kind": "LIST",
+            "amount": 249.99,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "XP-Pen store",
+            "url": "https://www.xp-pen.com/store/buy/artist-12-2nd-gen.html",
+            "basis": "Current list / crossed-out price, not historical MSRP"
+          },
+          {
+            "kind": "LAUNCH",
+            "amount": 249,
+            "date": "2021-11-19",
+            "precision": "day",
+            "seller": "www.parkablogs.com",
+            "url": "https://www.parkablogs.com/index.php/content/review-xp-pen-artist-12-2nd-gen-gift-edition",
+            "basis": "Contemporaneous reviewer-reported official retail price"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -6201,7 +7981,45 @@
       "akaNote": null,
       "notesUrl": null,
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/xppen.tablet.it1060",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 59.99,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "XP-Pen store",
+          "url": "https://xppen.us/products/deco-l",
+          "basis": "Unavailable listing only. Not a purchasable offer."
+        },
+        "launch": {
+          "amount": 69.99,
+          "date": "2022-01-03",
+          "precision": "day",
+          "seller": "parkablogs.com",
+          "url": "https://www.parkablogs.com/content/review-xp-pen-deco-lw-pen-tablet-bluetooth",
+          "basis": "Launch-era review regular retail, not explicit manufacturer MSRP"
+        },
+        "launchKind": "RETAIL",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 59.99,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "XP-Pen store",
+            "url": "https://xppen.us/products/deco-l",
+            "basis": "Unavailable listing only. Not a purchasable offer."
+          },
+          {
+            "kind": "RETAIL",
+            "amount": 69.99,
+            "date": "2022-01-03",
+            "precision": "day",
+            "seller": "parkablogs.com",
+            "url": "https://www.parkablogs.com/content/review-xp-pen-deco-lw-pen-tablet-bluetooth",
+            "basis": "Launch-era review regular retail, not explicit manufacturer MSRP"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [],
       "articles": [
@@ -6310,7 +8128,45 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/xppen/xppen-it1060b-notes",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/xppen.tablet.it1060b",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 69.99,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "XP-Pen store",
+          "url": "https://xppen.us/products/deco-lw",
+          "basis": "Unavailable listing only. Not a purchasable offer."
+        },
+        "launch": {
+          "amount": 89.99,
+          "date": "2022-01-03",
+          "precision": "day",
+          "seller": "parkablogs.com",
+          "url": "https://www.parkablogs.com/content/review-xp-pen-deco-lw-pen-tablet-bluetooth",
+          "basis": "Launch-era review regular retail, not explicit manufacturer MSRP"
+        },
+        "launchKind": "RETAIL",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 69.99,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "XP-Pen store",
+            "url": "https://xppen.us/products/deco-lw",
+            "basis": "Unavailable listing only. Not a purchasable offer."
+          },
+          {
+            "kind": "RETAIL",
+            "amount": 89.99,
+            "date": "2022-01-03",
+            "precision": "day",
+            "seller": "parkablogs.com",
+            "url": "https://www.parkablogs.com/content/review-xp-pen-deco-lw-pen-tablet-bluetooth",
+            "basis": "Launch-era review regular retail, not explicit manufacturer MSRP"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -6444,7 +8300,45 @@
       "akaNote": null,
       "notesUrl": null,
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/xppen.tablet.it850",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 49.99,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "XP-Pen store",
+          "url": "https://xppen.us/products/deco-m",
+          "basis": "Unavailable listing only. Not a purchasable offer."
+        },
+        "launch": {
+          "amount": 49.99,
+          "date": "2022-07-18",
+          "precision": "day",
+          "seller": "parkablogs.com",
+          "url": "https://www.parkablogs.com/index.php/content/review-xp-pen-deco-m-mw-budget-drawing-pen-tablets",
+          "basis": "Early review retail, not verified MSRP"
+        },
+        "launchKind": "RETAIL",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 49.99,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "XP-Pen store",
+            "url": "https://xppen.us/products/deco-m",
+            "basis": "Unavailable listing only. Not a purchasable offer."
+          },
+          {
+            "kind": "RETAIL",
+            "amount": 49.99,
+            "date": "2022-07-18",
+            "precision": "day",
+            "seller": "parkablogs.com",
+            "url": "https://www.parkablogs.com/index.php/content/review-xp-pen-deco-m-mw-budget-drawing-pen-tablets",
+            "basis": "Early review retail, not verified MSRP"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [],
       "articles": [],
@@ -6544,7 +8438,28 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/wacom/wacom-intuos/",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/wacom.tablet.ctl6100",
-      "price": null,
+      "price": {
+        "launch": {
+          "amount": 149,
+          "date": "2018-04-16",
+          "precision": "day",
+          "seller": "cerebral-overload.com",
+          "url": "https://cerebral-overload.com/2018/04/wacom-introduces-upgraded-intuos-pen-tablet-to-get-creative/",
+          "basis": "Regional Wacom launch release reproduced by Cerebral Overload; USD149, NOT verified as US MSRP"
+        },
+        "launchKind": "RETAIL",
+        "history": [
+          {
+            "kind": "RETAIL",
+            "amount": 149,
+            "date": "2018-04-16",
+            "precision": "day",
+            "seller": "cerebral-overload.com",
+            "url": "https://cerebral-overload.com/2018/04/wacom-introduces-upgraded-intuos-pen-tablet-to-get-creative/",
+            "basis": "Regional Wacom launch release reproduced by Cerebral Overload; USD149, NOT verified as US MSRP"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -6665,7 +8580,45 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/wacom/wacom-intuos/",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/wacom.tablet.ctl4100",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 39.95,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "Wacom store",
+          "url": "https://estore.wacom.com/en-us/wacom-intuos-s-black-us-ctl4100.html",
+          "basis": "Displayed new-product retail price; excludes tax/shipping"
+        },
+        "launch": {
+          "amount": 79.95,
+          "date": "2018-03-06",
+          "precision": "day",
+          "seller": "photographyblog.com",
+          "url": "https://www.photographyblog.com/news/wacom_intuos_pen_tablet_2018_for_creative_beginners_and_enthusiasts",
+          "basis": "Standard retail package launch recommended price, USD"
+        },
+        "launchKind": "LAUNCH",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 39.95,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Wacom store",
+            "url": "https://estore.wacom.com/en-us/wacom-intuos-s-black-us-ctl4100.html",
+            "basis": "Displayed new-product retail price; excludes tax/shipping"
+          },
+          {
+            "kind": "LAUNCH",
+            "amount": 79.95,
+            "date": "2018-03-06",
+            "precision": "day",
+            "seller": "photographyblog.com",
+            "url": "https://www.photographyblog.com/news/wacom_intuos_pen_tablet_2018_for_creative_beginners_and_enthusiasts",
+            "basis": "Standard retail package launch recommended price, USD"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -6906,7 +8859,28 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/wacom/one-by-wacom/wacom-ctlx72-notes",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/wacom.tablet.ctl472",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 59.95,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "Wacom store",
+          "url": "https://datavision.com/products/one-by-wacom-student-drawing-tablet",
+          "basis": "Displayed unavailable new-product listing only, NOT a confirmed purchasable offer"
+        },
+        "launchKind": null,
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 59.95,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Wacom store",
+            "url": "https://datavision.com/products/one-by-wacom-student-drawing-tablet",
+            "basis": "Displayed unavailable new-product listing only, NOT a confirmed purchasable offer"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [],
       "articles": [
@@ -7015,7 +8989,45 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/wacom/wacom-one/wacom-dtc141-notes",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/wacom.tablet.dtc141",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 299.95,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "Wacom store",
+          "url": "https://estore.wacom.com/en-us/wacom-one-14-dtc141w0.html",
+          "basis": "Current displayed retail"
+        },
+        "launch": {
+          "amount": 299.95,
+          "date": "2025-09-24",
+          "precision": "day",
+          "seller": "Wacom store",
+          "url": "https://www.cgchannel.com/2025/09/wacom-launches-new-300-wacom-one-14-pen-display/",
+          "basis": "reported launch price"
+        },
+        "launchKind": "LAUNCH",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 299.95,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Wacom store",
+            "url": "https://estore.wacom.com/en-us/wacom-one-14-dtc141w0.html",
+            "basis": "Current displayed retail"
+          },
+          {
+            "kind": "LAUNCH",
+            "amount": 299.95,
+            "date": "2025-09-24",
+            "precision": "day",
+            "seller": "Wacom store",
+            "url": "https://www.cgchannel.com/2025/09/wacom-launches-new-300-wacom-one-14-pen-display/",
+            "basis": "reported launch price"
+          }
+        ]
+      },
       "inBox": [
         "1 x Display Device",
         "1 x Wacom One Standard Pen",
@@ -7450,7 +9462,28 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/xppen/xppen-deco01v3-notes",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/xppen.tablet.deco01v3",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 47.99,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "XP-Pen store",
+          "url": "https://www.xp-pen.com/store/buy/deco-01-v3.html",
+          "basis": "Current advertised retail"
+        },
+        "launchKind": null,
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 47.99,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "XP-Pen store",
+            "url": "https://www.xp-pen.com/store/buy/deco-01-v3.html",
+            "basis": "Current advertised retail"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -7594,7 +9627,45 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/huion/huion-h1061p-notes",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/huion.tablet.h1061p",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 79.99,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "Huion store",
+          "url": "https://store.huion.com/products/inspiroy-2-l",
+          "basis": "Advertised new retail price"
+        },
+        "launch": {
+          "amount": 89.99,
+          "date": "2023-02-11",
+          "precision": "day",
+          "seller": "parkablogs.com",
+          "url": "https://www.parkablogs.com/content/review-huion-inspiroy-2-pen-tablet",
+          "basis": "Launch-era retail (not independently verified MSRP)"
+        },
+        "launchKind": "RETAIL",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 79.99,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Huion store",
+            "url": "https://store.huion.com/products/inspiroy-2-l",
+            "basis": "Advertised new retail price"
+          },
+          {
+            "kind": "RETAIL",
+            "amount": 89.99,
+            "date": "2023-02-11",
+            "precision": "day",
+            "seller": "parkablogs.com",
+            "url": "https://www.parkablogs.com/content/review-huion-inspiroy-2-pen-tablet",
+            "basis": "Launch-era retail (not independently verified MSRP)"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -7732,7 +9803,45 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/huion/huion-g930l-notes",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/huion.tablet.g930l",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 159.99,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "Huion store",
+          "url": "https://store.huion.com/products/inspiroy-giano",
+          "basis": "Advertised new retail price"
+        },
+        "launch": {
+          "amount": 199.99,
+          "date": "2022-05-25",
+          "precision": "day",
+          "seller": "parkablogs.com",
+          "url": "https://www.parkablogs.com/content/review-huion-inspiroy-giano-g930l-biggest-wireless-pen-tablet",
+          "basis": "Official retail price stated in launch-day review"
+        },
+        "launchKind": "RETAIL",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 159.99,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Huion store",
+            "url": "https://store.huion.com/products/inspiroy-giano",
+            "basis": "Advertised new retail price"
+          },
+          {
+            "kind": "RETAIL",
+            "amount": 199.99,
+            "date": "2022-05-25",
+            "precision": "day",
+            "seller": "parkablogs.com",
+            "url": "https://www.parkablogs.com/content/review-huion-inspiroy-giano-g930l-biggest-wireless-pen-tablet",
+            "basis": "Official retail price stated in launch-day review"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -7989,7 +10098,54 @@
       "akaNote": null,
       "notesUrl": null,
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/huion.tablet.gs2201",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 339,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "Huion store",
+          "url": "https://store.huion.com/products/kamvas-22-series?vid=1093",
+          "basis": "current posted new retail"
+        },
+        "launch": {
+          "amount": 399,
+          "date": "2020-08-05",
+          "precision": "day",
+          "seller": "artbooks24.rssing.com",
+          "url": "https://artbooks24.rssing.com/chan-17423475/all_p194.html",
+          "basis": "early observed retail"
+        },
+        "launchKind": "RETAIL",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 339,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Huion store",
+            "url": "https://store.huion.com/products/kamvas-22-series?vid=1093",
+            "basis": "current posted new retail"
+          },
+          {
+            "kind": "LIST",
+            "amount": 449,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Huion store",
+            "url": "https://store.huion.com/products/kamvas-22-series?vid=1093",
+            "basis": "Current list / crossed-out price, not historical MSRP"
+          },
+          {
+            "kind": "RETAIL",
+            "amount": 399,
+            "date": "2020-08-05",
+            "precision": "day",
+            "seller": "artbooks24.rssing.com",
+            "url": "https://artbooks24.rssing.com/chan-17423475/all_p194.html",
+            "basis": "early observed retail"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [],
       "articles": [],
@@ -8081,7 +10237,54 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/huion/huion-gs2202-notes",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/huion.tablet.gs2202",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 439,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "Huion store",
+          "url": "https://store.huion.com/products/kamvas-22-series?vid=1093",
+          "basis": "current posted new retail"
+        },
+        "launch": {
+          "amount": 499,
+          "date": "2020-08-05",
+          "precision": "day",
+          "seller": "artbooks24.rssing.com",
+          "url": "https://artbooks24.rssing.com/chan-17423475/all_p194.html",
+          "basis": "early observed retail"
+        },
+        "launchKind": "RETAIL",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 439,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Huion store",
+            "url": "https://store.huion.com/products/kamvas-22-series?vid=1093",
+            "basis": "current posted new retail"
+          },
+          {
+            "kind": "LIST",
+            "amount": 549,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Huion store",
+            "url": "https://store.huion.com/products/kamvas-22-series?vid=1093",
+            "basis": "Current list / crossed-out price, not historical MSRP"
+          },
+          {
+            "kind": "RETAIL",
+            "amount": 499,
+            "date": "2020-08-05",
+            "precision": "day",
+            "seller": "artbooks24.rssing.com",
+            "url": "https://artbooks24.rssing.com/chan-17423475/all_p194.html",
+            "basis": "early observed retail"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -8208,7 +10411,54 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/huion/huion-gs1331-notes",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/huion.tablet.gs1331",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 179,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "Huion store",
+          "url": "https://store.huion.com/products/kamvas-13?vid=2018",
+          "basis": "current posted new retail"
+        },
+        "launch": {
+          "amount": 239,
+          "date": "2020-05-02",
+          "precision": "day",
+          "seller": "Huion store",
+          "url": "https://www.parkablogs.com/content/review-huion-kamvas-13-pen-display-just-us-239",
+          "basis": "early observed retail"
+        },
+        "launchKind": "RETAIL",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 179,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Huion store",
+            "url": "https://store.huion.com/products/kamvas-13?vid=2018",
+            "basis": "current posted new retail"
+          },
+          {
+            "kind": "LIST",
+            "amount": 239,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Huion store",
+            "url": "https://store.huion.com/products/kamvas-13?vid=2018",
+            "basis": "Current list / crossed-out price, not historical MSRP"
+          },
+          {
+            "kind": "RETAIL",
+            "amount": 239,
+            "date": "2020-05-02",
+            "precision": "day",
+            "seller": "Huion store",
+            "url": "https://www.parkablogs.com/content/review-huion-kamvas-13-pen-display-just-us-239",
+            "basis": "early observed retail"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -8353,7 +10603,28 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/wacom/wacom-one/wacom-dtc133-notes",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/wacom.tablet.dtc133",
-      "price": null,
+      "price": {
+        "launch": {
+          "amount": 399.95,
+          "date": "2020-01-07",
+          "precision": "day",
+          "seller": "Wacom store",
+          "url": "https://www.prnewswire.com/news-releases/wacom-one--a-world-of-new-possibilities-300980646.html",
+          "basis": "MSRP"
+        },
+        "launchKind": "LAUNCH",
+        "history": [
+          {
+            "kind": "LAUNCH",
+            "amount": 399.95,
+            "date": "2020-01-07",
+            "precision": "day",
+            "seller": "Wacom store",
+            "url": "https://www.prnewswire.com/news-releases/wacom-one--a-world-of-new-possibilities-300980646.html",
+            "basis": "MSRP"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -8503,7 +10774,54 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/huion/huion-gs1562-notes",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/huion.tablet.gs1562",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 279,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "Huion store",
+          "url": "https://store.huion.com/products/kamvas-16-2021?vid=1233",
+          "basis": "current posted new retail"
+        },
+        "launch": {
+          "amount": 399,
+          "date": "2020-12-19",
+          "precision": "day",
+          "seller": "Huion store",
+          "url": "https://www.parkablogs.com/content/review-huion-kamvas-16-2021-120-srgb-pen-display?page=1",
+          "basis": "early observed retail"
+        },
+        "launchKind": "RETAIL",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 279,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Huion store",
+            "url": "https://store.huion.com/products/kamvas-16-2021?vid=1233",
+            "basis": "current posted new retail"
+          },
+          {
+            "kind": "LIST",
+            "amount": 419,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Huion store",
+            "url": "https://store.huion.com/products/kamvas-16-2021?vid=1233",
+            "basis": "Current list / crossed-out price, not historical MSRP"
+          },
+          {
+            "kind": "RETAIL",
+            "amount": 399,
+            "date": "2020-12-19",
+            "precision": "day",
+            "seller": "Huion store",
+            "url": "https://www.parkablogs.com/content/review-huion-kamvas-16-2021-120-srgb-pen-display?page=1",
+            "basis": "early observed retail"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -8630,7 +10948,63 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/wacom/wacom-cintiq/wacom-dtk2260-notes",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/wacom.tablet.dtk2260",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 999.95,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "Wacom store",
+          "url": "https://estore.wacom.com/en-us/wacom-cintiq-22-dtk2260k0a-us.html",
+          "basis": "Current displayed retail"
+        },
+        "launch": {
+          "amount": 1199,
+          "date": "2019-07-18",
+          "precision": "day",
+          "seller": "Wacom store",
+          "url": "https://www.prnewswire.com/news-releases/wacoms-cintiq-22-enhances-the-digital-creative-process-for-art-and-design-students-enthusiasts-and-budding-pros-300884395.html",
+          "basis": "MSRP as printed in launch release (whole dollars)"
+        },
+        "launchKind": "LAUNCH",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 999.95,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Wacom store",
+            "url": "https://estore.wacom.com/en-us/wacom-cintiq-22-dtk2260k0a-us.html",
+            "basis": "Current displayed retail"
+          },
+          {
+            "kind": "LIST",
+            "amount": 1299.95,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Wacom store",
+            "url": "https://estore.wacom.com/en-us/wacom-cintiq-22-dtk2260k0a-us.html",
+            "basis": "Current list / crossed-out price, not historical MSRP"
+          },
+          {
+            "kind": "RETAIL",
+            "amount": 1199.95,
+            "date": "2019-07-19",
+            "precision": "day",
+            "seller": "Wacom store",
+            "url": "https://www.cgchannel.com/2019/07/wacom-launches-the-cintiq-22/",
+            "basis": "Dated observed retail"
+          },
+          {
+            "kind": "LAUNCH",
+            "amount": 1199,
+            "date": "2019-07-18",
+            "precision": "day",
+            "seller": "Wacom store",
+            "url": "https://www.prnewswire.com/news-releases/wacoms-cintiq-22-enhances-the-digital-creative-process-for-art-and-design-students-enthusiasts-and-budding-pros-300884395.html",
+            "basis": "MSRP as printed in launch release (whole dollars)"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -8757,7 +11131,37 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/wacom/wacom-cintiq/",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/wacom.tablet.dtk1660",
-      "price": null,
+      "price": {
+        "launch": {
+          "amount": 649.95,
+          "date": "2019-01-31",
+          "precision": "day",
+          "seller": "Wacom store",
+          "url": "https://community.wacom.com/en-us/introducing-the-sweet-cintiq-16/",
+          "basis": "initial retail price reported by manufacturer"
+        },
+        "launchKind": "LAUNCH",
+        "history": [
+          {
+            "kind": "LAUNCH",
+            "amount": 649.95,
+            "date": "2019-01-31",
+            "precision": "day",
+            "seller": "Wacom store",
+            "url": "https://community.wacom.com/en-us/introducing-the-sweet-cintiq-16/",
+            "basis": "initial retail price reported by manufacturer"
+          },
+          {
+            "kind": "RETAIL",
+            "amount": 649.95,
+            "date": "2019-01-31",
+            "precision": "day",
+            "seller": "Wacom store",
+            "url": "https://community.wacom.com/en-us/introducing-the-sweet-cintiq-16/",
+            "basis": "Dated observed retail"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -8894,7 +11298,37 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/huion/huion-hs611-notes",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/huion.tablet.hs611",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 59.99,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "Walmart",
+          "url": "https://www.walmart.com/ip/258296870",
+          "basis": "Advertised new retail price"
+        },
+        "launchKind": null,
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 59.99,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Walmart",
+            "url": "https://www.walmart.com/ip/258296870",
+            "basis": "Advertised new retail price"
+          },
+          {
+            "kind": "LIST",
+            "amount": 79.99,
+            "date": "2020-12-28",
+            "precision": "day",
+            "seller": "parkablogs.com",
+            "url": "https://www.parkablogs.com/content/review-huion-hs611-drawing-tablet-has-tilt-sensitivity-and-supports-android",
+            "basis": "Later list price, not launch MSRP"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -9020,7 +11454,63 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/wacom/wacom-one/wacom-one-2023-pen-displays-notes",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/wacom.tablet.dtc121",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 219.95,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "B&H",
+          "url": "https://www.bhphotovideo.com/c/product/1778603-REG/wacom_dtc121w0a_one_12_creative_pen.html",
+          "basis": "Current displayed retail"
+        },
+        "launch": {
+          "amount": 399.99,
+          "date": "2023-08-10",
+          "precision": "day",
+          "seller": "Wacom store",
+          "url": "https://www.windowscentral.com/accessories/the-wacom-one-family-gets-a-little-bigger-with-new-pen-displays-and-tablets",
+          "basis": "announced standard bundle price"
+        },
+        "launchKind": "LAUNCH",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 219.95,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "B&H",
+            "url": "https://www.bhphotovideo.com/c/product/1778603-REG/wacom_dtc121w0a_one_12_creative_pen.html",
+            "basis": "Current displayed retail"
+          },
+          {
+            "kind": "CURRENT",
+            "amount": 124.95,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Wacom store",
+            "url": "https://estore.wacom.com/en-us/wacom-one-12-refurbished-udtc121w0a.html",
+            "basis": "Alternative offer"
+          },
+          {
+            "kind": "LAUNCH",
+            "amount": 399.99,
+            "date": "2023-08-10",
+            "precision": "day",
+            "seller": "Wacom store",
+            "url": "https://www.windowscentral.com/accessories/the-wacom-one-family-gets-a-little-bigger-with-new-pen-displays-and-tablets",
+            "basis": "announced standard bundle price"
+          },
+          {
+            "kind": "LAUNCH",
+            "amount": 299.95,
+            "date": "2023-08-10",
+            "precision": "day",
+            "seller": "Wacom store",
+            "url": "https://www.windowscentral.com/accessories/the-wacom-one-family-gets-a-little-bigger-with-new-pen-displays-and-tablets",
+            "basis": "tablet-only launch configuration"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -9140,7 +11630,63 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/wacom/wacom-one/wacom-one-2023-pen-displays-notes",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/wacom.tablet.dth134",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 599.95,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "Hunt's Photo & Video",
+          "url": "https://www.huntsphotoandvideo.com/iphone/detail.cfm?ProductID=DTH134W0A&cid=8",
+          "basis": "Current displayed retail"
+        },
+        "launch": {
+          "amount": 599.99,
+          "date": "2023-08-10",
+          "precision": "day",
+          "seller": "Wacom store",
+          "url": "https://www.windowscentral.com/accessories/the-wacom-one-family-gets-a-little-bigger-with-new-pen-displays-and-tablets",
+          "basis": "announced standard bundle price"
+        },
+        "launchKind": "LAUNCH",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 599.95,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Hunt's Photo & Video",
+            "url": "https://www.huntsphotoandvideo.com/iphone/detail.cfm?ProductID=DTH134W0A&cid=8",
+            "basis": "Current displayed retail"
+          },
+          {
+            "kind": "CURRENT",
+            "amount": 499.95,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Wacom store",
+            "url": "https://estore.wacom.com/en-us/wacom-one-13-touch-refurbished-udth134w0a.html",
+            "basis": "Alternative offer"
+          },
+          {
+            "kind": "LAUNCH",
+            "amount": 599.99,
+            "date": "2023-08-10",
+            "precision": "day",
+            "seller": "Wacom store",
+            "url": "https://www.windowscentral.com/accessories/the-wacom-one-family-gets-a-little-bigger-with-new-pen-displays-and-tablets",
+            "basis": "announced standard bundle price"
+          },
+          {
+            "kind": "LAUNCH",
+            "amount": 499.95,
+            "date": "2023-08-10",
+            "precision": "day",
+            "seller": "Wacom store",
+            "url": "https://www.windowscentral.com/accessories/the-wacom-one-family-gets-a-little-bigger-with-new-pen-displays-and-tablets",
+            "basis": "tablet-only launch configuration"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -9291,7 +11837,45 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/wacom/wacom-one/wacom-ctcx110wl-notes",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/wacom.tablet.ctc6110wl",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 149.95,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "Wacom store",
+          "url": "https://estore.wacom.com/en-us/wacom-one-m-ctc6110wlw0a.html",
+          "basis": "Displayed new-product retail price; excludes tax/shipping"
+        },
+        "launch": {
+          "amount": 149.99,
+          "date": "2023-08-10",
+          "precision": "day",
+          "seller": "prnewswire.com",
+          "url": "https://www.prnewswire.com/news-releases/introducing-the-new-wacom-one-product-family-two-creative-pen-tablets-and-two-interactive-pen-displays-with-personalization-options-and-an-abundance-of-software-in-depth-tutorials-and-exciting-community-experiences-301897148.html",
+          "basis": "Standard retail package launch recommended price, USD"
+        },
+        "launchKind": "LAUNCH",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 149.95,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Wacom store",
+            "url": "https://estore.wacom.com/en-us/wacom-one-m-ctc6110wlw0a.html",
+            "basis": "Displayed new-product retail price; excludes tax/shipping"
+          },
+          {
+            "kind": "LAUNCH",
+            "amount": 149.99,
+            "date": "2023-08-10",
+            "precision": "day",
+            "seller": "prnewswire.com",
+            "url": "https://www.prnewswire.com/news-releases/introducing-the-new-wacom-one-product-family-two-creative-pen-tablets-and-two-interactive-pen-displays-with-personalization-options-and-an-abundance-of-software-in-depth-tutorials-and-exciting-community-experiences-301897148.html",
+            "basis": "Standard retail package launch recommended price, USD"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -9441,7 +12025,45 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/wacom/wacom-one/wacom-ctcx110wl-notes",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/wacom.tablet.ctc4110wl",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 99.95,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "Wacom store",
+          "url": "https://estore.wacom.com/en-us/wacom-one-s-ctc4110wlw0a.html",
+          "basis": "Displayed new-product retail price; excludes tax/shipping"
+        },
+        "launch": {
+          "amount": 99.99,
+          "date": "2023-08-10",
+          "precision": "day",
+          "seller": "prnewswire.com",
+          "url": "https://www.prnewswire.com/news-releases/introducing-the-new-wacom-one-product-family-two-creative-pen-tablets-and-two-interactive-pen-displays-with-personalization-options-and-an-abundance-of-software-in-depth-tutorials-and-exciting-community-experiences-301897148.html",
+          "basis": "Standard retail package launch recommended price, USD"
+        },
+        "launchKind": "LAUNCH",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 99.95,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Wacom store",
+            "url": "https://estore.wacom.com/en-us/wacom-one-s-ctc4110wlw0a.html",
+            "basis": "Displayed new-product retail price; excludes tax/shipping"
+          },
+          {
+            "kind": "LAUNCH",
+            "amount": 99.99,
+            "date": "2023-08-10",
+            "precision": "day",
+            "seller": "prnewswire.com",
+            "url": "https://www.prnewswire.com/news-releases/introducing-the-new-wacom-one-product-family-two-creative-pen-tablets-and-two-interactive-pen-displays-with-personalization-options-and-an-abundance-of-software-in-depth-tutorials-and-exciting-community-experiences-301897148.html",
+            "basis": "Standard retail package launch recommended price, USD"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -9572,7 +12194,54 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/xppen/xppen-cd160fh-notes",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/xppen.tablet.cd160fh",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 259.99,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "XP-Pen store",
+          "url": "https://www.xp-pen.com/store/buy/artist-16-2nd-gen.html",
+          "basis": "Current displayed retail"
+        },
+        "launch": {
+          "amount": 399,
+          "date": "2022-05-20",
+          "precision": "day",
+          "seller": "www.parkablogs.com",
+          "url": "https://www.parkablogs.com/index.php/content/review-xp-pen-artist-16-2nd-gen",
+          "basis": "Contemporaneous launch-period standard retail price"
+        },
+        "launchKind": "LAUNCH",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 259.99,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "XP-Pen store",
+            "url": "https://www.xp-pen.com/store/buy/artist-16-2nd-gen.html",
+            "basis": "Current displayed retail"
+          },
+          {
+            "kind": "LIST",
+            "amount": 399.99,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "XP-Pen store",
+            "url": "https://www.xp-pen.com/store/buy/artist-16-2nd-gen.html",
+            "basis": "Current list / crossed-out price, not historical MSRP"
+          },
+          {
+            "kind": "LAUNCH",
+            "amount": 399,
+            "date": "2022-05-20",
+            "precision": "day",
+            "seller": "www.parkablogs.com",
+            "url": "https://www.parkablogs.com/index.php/content/review-xp-pen-artist-16-2nd-gen",
+            "basis": "Contemporaneous launch-period standard retail price"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {
@@ -9705,7 +12374,54 @@
       "akaNote": null,
       "notesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/huion/huion-gt1562-notes",
       "explorerUrl": "https://thesevenpens.github.io/DrawTabDataExplorer/entity/huion.tablet.gt1562",
-      "price": null,
+      "price": {
+        "current": {
+          "amount": 629,
+          "date": "2026-11-04",
+          "precision": "day",
+          "seller": "Huion store",
+          "url": "https://store.huion.com/products/kamvas-pro-16-4k-series",
+          "basis": "current posted new retail"
+        },
+        "launch": {
+          "amount": 899,
+          "date": "2021-06-05",
+          "precision": "day",
+          "seller": "Huion store",
+          "url": "https://www.parkablogs.com/content/review-huion-kamvas-pro-16-plus-4k",
+          "basis": "early observed retail"
+        },
+        "launchKind": "RETAIL",
+        "history": [
+          {
+            "kind": "CURRENT",
+            "amount": 629,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Huion store",
+            "url": "https://store.huion.com/products/kamvas-pro-16-4k-series",
+            "basis": "current posted new retail"
+          },
+          {
+            "kind": "LIST",
+            "amount": 899,
+            "date": "2026-11-04",
+            "precision": "day",
+            "seller": "Huion store",
+            "url": "https://store.huion.com/products/kamvas-pro-16-4k-series",
+            "basis": "Current list / crossed-out price, not historical MSRP"
+          },
+          {
+            "kind": "RETAIL",
+            "amount": 899,
+            "date": "2021-06-05",
+            "precision": "day",
+            "seller": "Huion store",
+            "url": "https://www.parkablogs.com/content/review-huion-kamvas-pro-16-plus-4k",
+            "basis": "early observed retail"
+          }
+        ]
+      },
       "inBox": null,
       "videos": [
         {

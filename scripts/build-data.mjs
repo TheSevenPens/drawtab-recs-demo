@@ -161,6 +161,44 @@ const reviews = (links, video) =>
     .map((l) => ({ title: l.Title || l.URL, url: l.URL, author: l.Author || null, date: l.PublishDate || null }))
     .sort((a, b) => (b.date ?? "").localeCompare(a.date ?? ""));
 
+
+// Prices: dated observations from recs/prices.json, never edited. Only US prices
+// in USD are shown. The current price is the newest primary CURRENT record.
+const pricesFile = fs.existsSync(path.join(root, "recs", "prices.json")) ? readJson(path.join(root, "recs", "prices.json")) : { Prices: [] };
+const pricesById = new Map();
+for (const r of pricesFile.Prices) (pricesById.get(r.EntityId) ?? pricesById.set(r.EntityId, []).get(r.EntityId)).push(r);
+const RETAILERS = [["amazon", "Amazon"], ["walmart", "Walmart"], ["newegg", "Newegg"], ["b&h", "B&H"], ["bhphoto", "B&H"], ["office depot", "Office Depot"], ["best buy", "Best Buy"]];
+function sellerName(seller, url, brandName) {
+  const s = (seller ?? "").toLowerCase();
+  const via = s.match(/via (.+)$/);
+  for (const [k, v] of RETAILERS) if ((via ? via[1] : s).includes(k)) return v;
+  const host = (url ?? "").toLowerCase();
+  for (const [k, v] of RETAILERS) if (host.includes(k.replace(/[^a-z]/g, ""))) return v;
+  const b = brandName.toLowerCase().replace(/[^a-z]/g, "");
+  if (seller && (s.replace(/[^a-z]/g, "").includes(b) || host.includes(b))) return `${brandName} store`;
+  if (seller) return seller.replace(/^www\./, "");
+  try {
+    return new URL(url).hostname.replace(/^www\./, "");
+  } catch {
+    return null;
+  }
+}
+function priceFor(id, brandName) {
+  const usd = (pricesById.get(id) ?? []).filter((r) => r.Currency === "USD" && num(r.Amount) !== null);
+  if (!usd.length) return null;
+  const view = (r) => r && { amount: r.Amount, date: r.Date ?? null, precision: r.DatePrecision ?? null, seller: sellerName(r.Seller, r.URL, brandName), url: r.URL ?? null, basis: r.Basis ?? null };
+  const newest = (kind) => usd.filter((r) => r.Kind === kind).sort((a, b) => Number(b.Primary) - Number(a.Primary) || (b.Date ?? "").localeCompare(a.Date ?? ""))[0];
+  const cur = usd.filter((r) => r.Kind === "CURRENT").sort((a, b) => (b.Date ?? "").localeCompare(a.Date ?? "") || Number(b.Primary) - Number(a.Primary))[0];
+  return {
+    current: view(cur),
+    launch: view(newest("LAUNCH") ?? newest("RETAIL")),
+    launchKind: newest("LAUNCH") ? "LAUNCH" : newest("RETAIL") ? "RETAIL" : null,
+    history: usd
+      .map((r) => ({ kind: r.Kind, ...view(r) }))
+      .sort((a, b) => (b.date ?? "").localeCompare(a.date ?? "")),
+  };
+}
+
 const items = [];
 for (const { id, history, notes, lists } of byId.values()) {
   const t = tablets.get(id);
@@ -202,7 +240,7 @@ for (const { id, history, notes, lists } of byId.values()) {
     akaNote: akaById.get(id)?.Note ?? null,
     notesUrl: notesPages[id] ?? sevenNotes ?? null,
     explorerUrl: EXPLORER + id,
-    price: null, // filled once DrawTabData carries cost data
+    price: priceFor(id, brandName),
     inBox: m.IncludedInBox ?? null,
     // Every review, by anyone, newest first: videos and written pieces apart.
     videos: reviews(m.Links, true),
@@ -287,7 +325,10 @@ for (const f of recsFile.FamilyRecs ?? []) {
     akaNote: null,
     notesUrl: f.NotesUrl ?? null,
     explorerUrl: null,
-    price: null,
+    price: (() => {
+      const cs = members.map((t) => priceFor(t.Meta.EntityId, brandName)?.current).filter(Boolean).sort((a, b) => a.amount - b.amount);
+      return cs.length ? { current: null, launch: null, launchKind: null, history: [], from: cs[0], fromCount: cs.length } : null;
+    })(),
     members: members.map((t) => ({ id: t.Meta.EntityId, name: t.Model.Name, year: num(t.Model.ReleaseYear), status: t.Model.Status ?? null })).sort((a, b) => (b.year ?? 0) - (a.year ?? 0)),
     diagRange: diags.length ? [Math.min(...diags), Math.max(...diags)] : null,
     specs: { ports: [] },

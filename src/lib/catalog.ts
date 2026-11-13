@@ -67,7 +67,7 @@ export interface Item {
 	akaNote: string | null;
 	notesUrl: string | null;
 	explorerUrl: string | null;
-	price: null;
+	price: Price | null;
 	inBox?: string[] | null;
 	videos?: LinkRef[];
 	articles?: LinkRef[];
@@ -346,6 +346,7 @@ export function cardFacts(i: Item, units: Units = 'mm'): [string, string][] {
 	if (i.kind === 'family') {
 		out.push(['type', TYPE_LABEL[i.type]]);
 		if (i.members?.length) out.push(['models', String(i.members.length)]);
+		if (i.price?.from) out.push(['price', `from ${money(i.price.from.amount)} · ${monthYear(i.price.from.date)}`]);
 		return out;
 	}
 	if (i.type === 'PENTABLET') {
@@ -358,6 +359,8 @@ export function cardFacts(i: Item, units: Units = 'mm'): [string, string][] {
 	if (i.pen?.name) out.push(['pen', penLabel(i.pen)]);
 	const rel = monthYear(i.released) ?? (i.year ? String(i.year) : null);
 	if (rel) out.push(['released', rel]);
+	const c = i.price?.current;
+	out.push(['price', c ? `${money(c.amount)} · ${priceWhere(c)}` : 'not checked yet']);
 	return out;
 }
 
@@ -370,6 +373,45 @@ export function previousRating(i: Item): string | null {
 	return before.length ? before[before.length - 1].rating : null;
 }
 
+// ---------- prices ----------
+/** One price seen at a store or in a launch announcement. US prices in USD only. */
+export interface PriceSeen {
+	amount: number;
+	date: string | null;
+	precision: 'day' | 'month' | null;
+	seller: string | null;
+	url: string | null;
+	basis: string | null;
+}
+export interface Price {
+	/** Newest advertised new retail price. */
+	current: PriceSeen | null;
+	/** Launch MSRP or announced price; an early dated retail price when there's no MSRP. */
+	launch: PriceSeen | null;
+	launchKind: 'LAUNCH' | 'RETAIL' | null;
+	history: (PriceSeen & { kind: 'LAUNCH' | 'RETAIL' | 'LIST' | 'CURRENT' })[];
+	/** Families: the lowest current price among members. */
+	from?: PriceSeen;
+	fromCount?: number;
+}
+export const PRICE_DISCLAIMER =
+	"Prices are U.S. prices in U.S. dollars, as a store listed them on the date shown. They don't include sales, promotions or discounts, and prices in other countries can be very different.";
+/** 699.95 → "$699.95", 1299 → "$1,299". */
+export const money = (n: number) =>
+	'$' + n.toLocaleString('en-US', { minimumFractionDigits: n % 1 ? 2 : 0, maximumFractionDigits: 2 });
+/** "Nov 2026 at Amazon". */
+export const priceWhere = (p: PriceSeen) => [monthYear(p.date), p.seller ? `at ${p.seller}` : null].filter(Boolean).join(' ');
+export const priceOf = (i: Item) => i.price?.current?.amount ?? i.price?.from?.amount ?? null;
+export const PRICE_BANDS: [string, number | null, number | null][] = [
+	['under $100', null, 100],
+	['$100–250', 100, 250],
+	['$250–500', 250, 500],
+	['$500–1,000', 500, 1000],
+	['$1,000+', 1000, null]
+];
+export const inPriceBand = (v: number | null, lo: number | null, hi: number | null) =>
+	v !== null && (lo === null || v >= lo) && (hi === null || v < hi);
+
 // ---------- filter state ----------
 export interface Filters {
 	q: string;
@@ -381,6 +423,8 @@ export interface Filters {
 	diagMax: string;
 	widthMin: string;
 	weightMax: string;
+	priceMin: string;
+	priceMax: string;
 	recent: string;
 	hideDisc: boolean;
 	hideAvoid: boolean;
@@ -398,6 +442,8 @@ export const defaultFilters = (): Filters => ({
 	diagMax: '',
 	widthMin: '',
 	weightMax: '',
+	priceMin: '',
+	priceMax: '',
 	recent: '',
 	hideDisc: false,
 	hideAvoid: false,
@@ -407,7 +453,7 @@ export const defaultFilters = (): Filters => ({
 });
 
 const SETS = ['ratings', 'brands', 'feats'] as const;
-const STRS = ['q', 'type', 'diagMin', 'diagMax', 'widthMin', 'weightMax', 'recent', 'mode', 'view', 'sort'] as const;
+const STRS = ['q', 'type', 'diagMin', 'diagMax', 'widthMin', 'weightMax', 'priceMin', 'priceMax', 'recent', 'mode', 'view', 'sort'] as const;
 
 /** Filters ↔ URL hash, so any filtered view is a shareable link. */
 export function filtersFromHash(hash: string): Filters {
@@ -450,6 +496,8 @@ export function matches(i: Item, f: Filters, skip?: string, now = new Date()): b
 	if (skip !== 'brands' && f.brands.size && !f.brands.has(i.brand)) return false;
 	if (skip !== 'recent' && f.recent && !(releaseTime(i.released) >= recentCutoff(f.recent, now))) return false;
 	if (f.hideAvoid && i.rating === 'AVOID') return false;
+	if (skip !== 'price' && (f.priceMin !== '' || f.priceMax !== '') && i.kind !== 'pen')
+		if (!inPriceBand(priceOf(i), f.priceMin === '' ? null : +f.priceMin, f.priceMax === '' ? null : +f.priceMax)) return false;
 	if (skip !== 'size' && i.kind === 'family') {
 		// A family matches a size range if any member does.
 		const [lo, hi] = i.diagRange ?? [null, null];
@@ -482,6 +530,8 @@ export const SORTS: Record<string, [string, (a: Item, b: Item) => number]> = {
 	'size-desc': ['size, largest', (a, b) => (diagOf(b) ?? -1) - (diagOf(a) ?? -1) || byRating(a, b)],
 	'size-asc': ['size, smallest', (a, b) => (diagOf(a) ?? 1e9) - (diagOf(b) ?? 1e9) || byRating(a, b)],
 	'weight-asc': ['weight, lightest', (a, b) => (a.specs.weight ?? 1e9) - (b.specs.weight ?? 1e9) || byRating(a, b)],
+	'price-asc': ['price, lowest', (a, b) => (priceOf(a) ?? 1e9) - (priceOf(b) ?? 1e9) || byRating(a, b)],
+	'price-desc': ['price, highest', (a, b) => (priceOf(b) ?? -1) - (priceOf(a) ?? -1) || byRating(a, b)],
 	'rated-desc': ['recently rated', (a, b) => (b.ratedSince ?? '').localeCompare(a.ratedSince ?? '') || byRating(a, b)],
 	'iaf-asc': ['pen IAF, lowest', (a, b) => (iafOf(a) ?? 1e9) - (iafOf(b) ?? 1e9) || byRating(a, b)]
 };
