@@ -426,7 +426,11 @@
 		z-index: 5;
 		margin: 0 -2rem;
 		padding: 0 2rem;
-		background: rgba(242, 239, 234, 0.88);
+		/* Experiment: a deep violet tint (#5b1a9e at 9%) over the page colour, so the bar
+		   reads as its own band; the base layer keeps scrolled cards from showing through. */
+		background:
+			linear-gradient(rgba(91, 26, 158, 0.09), rgba(91, 26, 158, 0.09)),
+			rgba(242, 239, 234, 0.88);
 		backdrop-filter: blur(10px);
 		-webkit-backdrop-filter: blur(10px);
 		border-top: 1px solid var(--line);
