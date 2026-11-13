@@ -146,8 +146,8 @@
 				<button aria-pressed={f.mode === 'expert'} onclick={() => (f.mode = 'expert')}>expert</button>
 			</div>
 			<div class="seg" role="group" aria-label="View">
-				<button aria-pressed={f.view === 'cards'} onclick={() => (f.view = 'cards')}>cards</button>
-				<button aria-pressed={f.view === 'table'} onclick={() => (f.view = 'table')}>table</button>
+				<button class="icon" aria-pressed={f.view === 'cards'} aria-label="Cards" title="Cards" onclick={() => (f.view = 'cards')}><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><rect x="1" y="1" width="6" height="6"></rect><rect x="9" y="1" width="6" height="6"></rect><rect x="1" y="9" width="6" height="6"></rect><rect x="9" y="9" width="6" height="6"></rect></svg></button>
+				<button class="icon" aria-pressed={f.view === 'table'} aria-label="Table" title="Table" onclick={() => (f.view = 'table')}><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><rect x="1" y="2" width="14" height="2"></rect><rect x="1" y="7" width="14" height="2"></rect><rect x="1" y="12" width="14" height="2"></rect></svg></button>
 			</div>
 		</div>
 	</header>
@@ -381,6 +381,12 @@
 	}
 	.seg button + button {
 		border-left: 0;
+	}
+	.seg button.icon {
+		width: 38px;
+		padding: 0;
+		display: grid;
+		place-items: center;
 	}
 	.seg button[aria-pressed='true'] {
 		background: var(--text);
