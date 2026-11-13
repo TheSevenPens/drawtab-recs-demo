@@ -1,0 +1,1256 @@
+{
+  "_about": "Seven Pens ratings and notes for drawing tablets and pens, as data. Proposed home: DrawTabData data/recs/sevenpens-recs.json. One rating per device. Ratings are dated records and are never edited: to re-rate a device, add a record. The current rating is the newest record. Records imported from the old docs carry a Context (the size page they came from); a device's current rating is the newest non-DELISTED record across those. New records don't need a Context. DECENT was merged into OK on 2026-11-13; old records keep their label and RatingAliases maps it.",
+  "RatingScale": [
+    "EXCELLENT",
+    "VERY GOOD",
+    "GOOD",
+    "OK",
+    "AVOID"
+  ],
+  "Ratings": [
+    {
+      "EntityId": "huion.tablet.g930l",
+      "Date": "2025-03-07",
+      "Rating": "GOOD",
+      "Context": "pen-tablet-recs-large",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "huion.tablet.g930l",
+      "Date": "2026-10-23",
+      "Rating": "OK",
+      "Context": "pen-tablet-recs-large",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "huion.tablet.g940l",
+      "Date": "2026-10-23",
+      "Rating": "VERY GOOD",
+      "Context": "pen-tablet-recs-large",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "huion.tablet.gs1331",
+      "Date": "2025-12-04",
+      "Rating": "DECENT",
+      "Context": "pen-display-recs-small",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "huion.tablet.gs1333",
+      "Date": "2025-12-04",
+      "Rating": "VERY GOOD",
+      "Context": "pen-display-recs-small",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "huion.tablet.gs1562",
+      "Date": "2025-12-05",
+      "Rating": "DECENT",
+      "Context": "pen-display-recs-medium",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "huion.tablet.gs1563",
+      "Date": "2025-12-05",
+      "Rating": "VERY GOOD",
+      "Context": "pen-display-recs-medium",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "huion.tablet.gs2201",
+      "Date": "2025-12-05",
+      "Rating": "DECENT",
+      "Context": "pen-display-recs-large",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "huion.tablet.gs2202",
+      "Date": "2025-12-05",
+      "Rating": "DECENT",
+      "Context": "pen-display-recs-large",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "huion.tablet.gs2203",
+      "Date": "2026-04-21",
+      "Rating": "VERY GOOD",
+      "Context": "pen-display-recs-large",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "huion.tablet.gs2402",
+      "Date": "2025-12-05",
+      "Rating": "GOOD",
+      "Context": "pen-display-recs-large",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "huion.tablet.gt1562",
+      "Date": "2026-02-20",
+      "Rating": "AVOID",
+      "Context": "pen-display-recs-medium",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "huion.tablet.gt156v2",
+      "Date": "2025-12-05",
+      "Rating": "GOOD",
+      "Context": "pen-display-recs-medium",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "huion.tablet.gt1902",
+      "Date": "2025-12-05",
+      "Rating": "EXCELLENT",
+      "Context": "pen-display-recs-medium",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "huion.tablet.gt2401",
+      "Date": "2025-12-05",
+      "Rating": "GOOD",
+      "Context": "pen-display-recs-large",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "huion.tablet.gt2701",
+      "Date": "2025-12-05",
+      "Rating": "EXCELLENT",
+      "Context": "pen-display-recs-large",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "huion.tablet.h1061p",
+      "Date": "2025-12-04",
+      "Rating": "GOOD",
+      "Context": "pen-tablet-recs-large",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "huion.tablet.h1061p",
+      "Date": "2025-12-05",
+      "Rating": "GOOD",
+      "Context": "pen-tablet-recs-medium",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "huion.tablet.h1061p",
+      "Date": "2026-10-23",
+      "Rating": "OK",
+      "Context": "pen-tablet-recs-large",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "huion.tablet.h1061p",
+      "Date": "2026-11-13",
+      "Rating": "OK",
+      "Context": "pen-tablet-recs-medium",
+      "Source": "Seven: the Oct 2026 downgrade applies to both pages"
+    },
+    {
+      "EntityId": "huion.tablet.h951p",
+      "Date": "2025-12-04",
+      "Rating": "GOOD",
+      "Context": "pen-tablet-recs-medium",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "huion.tablet.hs611",
+      "Date": "2025-12-26",
+      "Rating": "OK",
+      "Context": "pen-tablet-recs-medium",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "huion.tablet.kp1202",
+      "Date": "2026-09-27",
+      "Rating": "GOOD",
+      "Context": "mobile-device-recs",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "huion.tablet.l310",
+      "Date": "2025-12-04",
+      "Rating": "VERY GOOD",
+      "Context": "pen-tablet-recs-small",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "huion.tablet.l310",
+      "Date": "2026-10-19",
+      "Rating": "GOOD",
+      "Context": "pen-tablet-recs-small",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "huion.tablet.l610",
+      "Date": "2025-12-04",
+      "Rating": "VERY GOOD",
+      "Context": "pen-tablet-recs-medium",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "huion.tablet.l610",
+      "Date": "2026-09-17",
+      "Rating": "GOOD",
+      "Context": "pen-tablet-recs-medium",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "huion.tablet.q630m",
+      "Date": "2026-09-17",
+      "Rating": "VERY GOOD",
+      "Context": "pen-tablet-recs-medium",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "huion.tablet.q640m",
+      "Date": "2026-09-17",
+      "Rating": "VERY GOOD",
+      "Context": "pen-tablet-recs-medium",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "huion.tablet.rtp700",
+      "Date": "2025-12-26",
+      "Rating": "OK",
+      "Context": "pen-tablet-recs-medium",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "wacom.tablet.ctc4110wl",
+      "Date": "2025-12-04",
+      "Rating": "AVOID",
+      "Context": "pen-tablet-recs-medium",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "wacom.tablet.ctc4110wl",
+      "Date": "2025-12-04",
+      "Rating": "AVOID",
+      "Context": "pen-tablet-recs-small",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "wacom.tablet.ctc4110wl",
+      "Date": "2025-12-26",
+      "Rating": "DELISTED",
+      "Context": "pen-tablet-recs-medium",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "wacom.tablet.ctc6110wl",
+      "Date": "2025-12-04",
+      "Rating": "AVOID",
+      "Context": "pen-tablet-recs-medium",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "wacom.tablet.ctk4120",
+      "Date": "2026-10-19",
+      "Rating": "EXCELLENT",
+      "Context": "pen-tablet-recs-small",
+      "Source": "DrawingTabletDocs git history",
+      "Basis": "SPECS_ONLY"
+    },
+    {
+      "EntityId": "wacom.tablet.ctk6120",
+      "Date": "2026-10-19",
+      "Rating": "EXCELLENT",
+      "Context": "pen-tablet-recs-medium",
+      "Source": "DrawingTabletDocs git history",
+      "Basis": "SPECS_ONLY"
+    },
+    {
+      "EntityId": "wacom.tablet.ctl4100",
+      "Date": "2025-12-04",
+      "Rating": "GOOD",
+      "Context": "pen-tablet-recs-small",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "wacom.tablet.ctl472",
+      "Date": "2025-12-04",
+      "Rating": "GOOD",
+      "Context": "pen-tablet-recs-small",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "wacom.tablet.ctl6100",
+      "Date": "2025-12-04",
+      "Rating": "GOOD",
+      "Context": "pen-tablet-recs-medium",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "wacom.tablet.ctl672",
+      "Date": "2025-12-04",
+      "Rating": "GOOD",
+      "Context": "pen-tablet-recs-medium",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "wacom.tablet.dtc121",
+      "Date": "2025-12-04",
+      "Rating": "AVOID",
+      "Context": "pen-display-recs-small",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "wacom.tablet.dtc133",
+      "Date": "2025-12-04",
+      "Rating": "DECENT",
+      "Context": "pen-display-recs-small",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "wacom.tablet.dtc141",
+      "Date": "2025-12-04",
+      "Rating": "DECENT",
+      "Context": "pen-display-recs-small",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "wacom.tablet.dth134",
+      "Date": "2025-12-04",
+      "Rating": "AVOID",
+      "Context": "pen-display-recs-small",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "wacom.tablet.dth135",
+      "Date": "2025-12-04",
+      "Rating": "EXCELLENT",
+      "Context": "pen-display-recs-small",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "wacom.tablet.dth167",
+      "Date": "2025-12-05",
+      "Rating": "EXCELLENT",
+      "Context": "pen-display-recs-medium",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "wacom.tablet.dth172",
+      "Date": "2025-12-05",
+      "Rating": "EXCELLENT",
+      "Context": "pen-display-recs-medium",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "wacom.tablet.dth227",
+      "Date": "2025-12-05",
+      "Rating": "EXCELLENT",
+      "Context": "pen-display-recs-large",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "wacom.tablet.dth246",
+      "Date": "2025-12-05",
+      "Rating": "EXCELLENT",
+      "Context": "pen-display-recs-large",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "wacom.tablet.dth271",
+      "Date": "2025-12-05",
+      "Rating": "EXCELLENT",
+      "Context": "pen-display-recs-large",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "wacom.tablet.dtha116",
+      "Date": "2025-12-28",
+      "Rating": "EXCELLENT",
+      "Context": "mobile-device-recs",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "wacom.tablet.dtha140",
+      "Date": "2025-12-28",
+      "Rating": "EXCELLENT",
+      "Context": "mobile-device-recs",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "wacom.tablet.dtk1660",
+      "Date": "2025-12-26",
+      "Rating": "DECENT",
+      "Context": "pen-display-recs-medium",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "wacom.tablet.dtk168",
+      "Date": "2025-12-05",
+      "Rating": "EXCELLENT",
+      "Context": "pen-display-recs-medium",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "wacom.tablet.dtk2260",
+      "Date": "2025-12-26",
+      "Rating": "DECENT",
+      "Context": "pen-display-recs-large",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "wacom.tablet.dtk246",
+      "Date": "2025-12-05",
+      "Rating": "EXCELLENT",
+      "Context": "pen-display-recs-large",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "wacom.tablet.pth460",
+      "Date": "2025-12-04",
+      "Rating": "EXCELLENT",
+      "Context": "pen-tablet-recs-small",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "wacom.tablet.pth660",
+      "Date": "2025-12-04",
+      "Rating": "EXCELLENT",
+      "Context": "pen-tablet-recs-medium",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "wacom.tablet.pth860",
+      "Date": "2025-12-04",
+      "Rating": "EXCELLENT",
+      "Context": "pen-tablet-recs-large",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "wacom.tablet.ptk470",
+      "Date": "2025-12-04",
+      "Rating": "EXCELLENT",
+      "Context": "pen-tablet-recs-small",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "wacom.tablet.ptk670",
+      "Date": "2025-12-04",
+      "Rating": "EXCELLENT",
+      "Context": "pen-tablet-recs-medium",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "wacom.tablet.ptk870",
+      "Date": "2025-12-04",
+      "Rating": "EXCELLENT",
+      "Context": "pen-tablet-recs-large",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "xencelabs.tablet.lph1612ua",
+      "Date": "2026-11-13",
+      "Rating": "GOOD",
+      "Source": "Rated as the original Pen Display 16; the 16 Lite is the same tablet (Seven, 2026-11-13)"
+    },
+    {
+      "EntityId": "xencelabs.tablet.lph2412ua",
+      "Date": "2025-12-26",
+      "Rating": "VERY GOOD",
+      "Context": "pen-display-recs-large",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "xppen.tablet.9494g",
+      "Date": "2025-12-28",
+      "Rating": "OK",
+      "Context": "mobile-device-recs",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "xppen.tablet.cd120fh",
+      "Date": "2025-12-04",
+      "Rating": "GOOD",
+      "Context": "pen-display-recs-small",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "xppen.tablet.cd121fh",
+      "Date": "2025-12-04",
+      "Rating": "GOOD",
+      "Context": "pen-display-recs-small",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "xppen.tablet.cd130fh",
+      "Date": "2025-12-04",
+      "Rating": "GOOD",
+      "Context": "pen-display-recs-small",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "xppen.tablet.cd160fh",
+      "Date": "2026-02-20",
+      "Rating": "AVOID",
+      "Context": "pen-display-recs-medium",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "xppen.tablet.deco01v3",
+      "Date": "2025-12-26",
+      "Rating": "OK",
+      "Context": "pen-tablet-recs-medium",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "xppen.tablet.it1060",
+      "Date": "2025-12-04",
+      "Rating": "GOOD",
+      "Context": "pen-tablet-recs-medium",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "xppen.tablet.it1060b",
+      "Date": "2025-12-04",
+      "Rating": "GOOD",
+      "Context": "pen-tablet-recs-medium",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "xppen.tablet.it850",
+      "Date": "2025-12-04",
+      "Rating": "GOOD",
+      "Context": "pen-tablet-recs-medium",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "xppen.tablet.it850",
+      "Date": "2025-12-04",
+      "Rating": "GOOD",
+      "Context": "pen-tablet-recs-small",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "xppen.tablet.it850b",
+      "Date": "2025-12-04",
+      "Rating": "GOOD",
+      "Context": "pen-tablet-recs-medium",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "xppen.tablet.it850b",
+      "Date": "2025-12-04",
+      "Rating": "GOOD",
+      "Context": "pen-tablet-recs-small",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "xppen.tablet.md140fh",
+      "Date": "2025-12-04",
+      "Rating": "VERY GOOD",
+      "Context": "pen-display-recs-small",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "xppen.tablet.md160qh",
+      "Date": "2025-12-05",
+      "Rating": "VERY GOOD",
+      "Context": "pen-display-recs-medium",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "xppen.tablet.md160uh",
+      "Date": "2025-12-05",
+      "Rating": "VERY GOOD",
+      "Context": "pen-display-recs-medium",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "xppen.tablet.md180uh",
+      "Date": "2025-12-05",
+      "Rating": "VERY GOOD",
+      "Context": "pen-display-recs-medium",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "xppen.tablet.md220fh",
+      "Date": "2025-12-05",
+      "Rating": "GOOD",
+      "Context": "pen-display-recs-large",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "xppen.tablet.md220qh",
+      "Date": "2025-12-05",
+      "Rating": "VERY GOOD",
+      "Context": "pen-display-recs-large",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "xppen.tablet.mdp1221",
+      "Date": "2025-12-28",
+      "Rating": "OK",
+      "Context": "mobile-device-recs",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "xppen.tablet.mt0962b",
+      "Date": "2025-12-04",
+      "Rating": "VERY GOOD",
+      "Context": "pen-tablet-recs-medium",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "xppen.tablet.mt1172b",
+      "Date": "2025-12-04",
+      "Rating": "VERY GOOD",
+      "Context": "pen-tablet-recs-medium",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "xppen.tablet.mt1592b",
+      "Date": "2025-12-04",
+      "Rating": "VERY GOOD",
+      "Context": "pen-tablet-recs-large",
+      "Source": "DrawingTabletDocs git history"
+    },
+    {
+      "EntityId": "wacom.pen.acp502",
+      "Date": "2026-11-13",
+      "Rating": "EXCELLENT",
+      "Source": "Seven, 2026-11-13",
+      "Basis": "SPECS_ONLY"
+    },
+    {
+      "EntityId": "wacom.pen.acp500",
+      "Date": "2026-11-13",
+      "Rating": "EXCELLENT",
+      "Source": "Seven, 2026-11-13"
+    },
+    {
+      "EntityId": "wacom.pen.kp504e",
+      "Date": "2026-11-13",
+      "Rating": "EXCELLENT",
+      "Source": "Seven, 2026-11-13"
+    },
+    {
+      "EntityId": "huion.pen.pw600",
+      "Date": "2026-11-13",
+      "Rating": "EXCELLENT",
+      "Source": "Seven, 2026-11-13"
+    },
+    {
+      "EntityId": "huion.pen.pw600a",
+      "Date": "2026-11-13",
+      "Rating": "EXCELLENT",
+      "Source": "Seven, 2026-11-13"
+    },
+    {
+      "EntityId": "huion.pen.pw600c",
+      "Date": "2026-11-13",
+      "Rating": "EXCELLENT",
+      "Source": "Seven, 2026-11-13"
+    },
+    {
+      "EntityId": "huion.pen.pw600l",
+      "Date": "2026-11-13",
+      "Rating": "EXCELLENT",
+      "Source": "Seven, 2026-11-13"
+    },
+    {
+      "EntityId": "huion.pen.pw600s",
+      "Date": "2026-11-13",
+      "Rating": "EXCELLENT",
+      "Source": "Seven, 2026-11-13"
+    },
+    {
+      "EntityId": "xppen.pen.pd21",
+      "Date": "2026-11-13",
+      "Rating": "VERY GOOD",
+      "Source": "Seven, 2026-11-13"
+    },
+    {
+      "EntityId": "xppen.pen.pd22",
+      "Date": "2026-11-13",
+      "Rating": "VERY GOOD",
+      "Source": "Seven, 2026-11-13"
+    },
+    {
+      "EntityId": "xppen.pen.pd51",
+      "Date": "2026-11-13",
+      "Rating": "VERY GOOD",
+      "Source": "Seven, 2026-11-13"
+    },
+    {
+      "EntityId": "huion.pen.pw550",
+      "Date": "2026-11-13",
+      "Rating": "GOOD",
+      "Source": "Seven, 2026-11-13"
+    },
+    {
+      "EntityId": "huion.pen.pw550s",
+      "Date": "2026-11-13",
+      "Rating": "GOOD",
+      "Source": "Seven, 2026-11-13"
+    },
+    {
+      "EntityId": "xppen.pen.ph10b",
+      "Date": "2026-11-13",
+      "Rating": "GOOD",
+      "Source": "Seven, 2026-11-13"
+    },
+    {
+      "EntityId": "huion.pen.pw517",
+      "Date": "2026-11-13",
+      "Rating": "OK",
+      "Source": "Seven, 2026-11-13"
+    },
+    {
+      "EntityId": "xencelabs.pen.3buttonv2",
+      "Date": "2026-11-13",
+      "Rating": "OK",
+      "Source": "Seven, 2026-11-13 (placeholder until reviewed)"
+    },
+    {
+      "EntityId": "xppen.pen.pd52",
+      "Date": "2026-11-13",
+      "Rating": "OK",
+      "Source": "Seven, 2026-11-13 (placeholder until reviewed)"
+    },
+    {
+      "EntityId": "huion.pen.pw110",
+      "Date": "2026-11-13",
+      "Rating": "OK",
+      "Source": "Seven, 2026-11-13 (placeholder until reviewed)"
+    },
+    {
+      "EntityId": "wacom.pen.lp1100k",
+      "Date": "2026-11-13",
+      "Rating": "OK",
+      "Source": "Seven, 2026-11-13 (placeholder until reviewed)"
+    },
+    {
+      "EntityId": "wacom.pen.lp190k",
+      "Date": "2026-11-13",
+      "Rating": "OK",
+      "Source": "Seven, 2026-11-13 (placeholder until reviewed)"
+    },
+    {
+      "EntityId": "wacom.pen.cp923",
+      "Date": "2026-11-13",
+      "Rating": "OK",
+      "Source": "Seven, 2026-11-13 (placeholder until reviewed)"
+    },
+    {
+      "EntityId": "xppen.pen.pd04b",
+      "Date": "2026-11-13",
+      "Rating": "OK",
+      "Source": "Seven, 2026-11-13 (placeholder until reviewed)"
+    },
+    {
+      "EntityId": "xppen.pen.p05",
+      "Date": "2026-11-13",
+      "Rating": "OK",
+      "Source": "Seven, 2026-11-13 (placeholder until reviewed)"
+    },
+    {
+      "EntityId": "huion.pen.pw400",
+      "Date": "2026-11-13",
+      "Rating": "OK",
+      "Source": "Seven, 2026-11-13 (placeholder until reviewed)"
+    },
+    {
+      "EntityId": "wacom.pen.cp913",
+      "Date": "2026-11-13",
+      "Rating": "OK",
+      "Source": "Seven, 2026-11-13 (placeholder until reviewed)"
+    },
+    {
+      "EntityId": "huion.pen.pw500",
+      "Date": "2026-11-13",
+      "Rating": "OK",
+      "Source": "Seven, 2026-11-13 (placeholder until reviewed)"
+    }
+  ],
+  "Notes": [
+    {
+      "EntityId": "huion.tablet.q640m",
+      "Date": "2026-11-13",
+      "Kind": "INFO",
+      "Text": "Different from the Huion Dial 2 (Q630M); they use different pens."
+    },
+    {
+      "EntityId": "huion.tablet.hs611",
+      "Date": "2026-11-13",
+      "Kind": "INFO",
+      "Text": "Older Huion tablet with older tech, but it works fine."
+    },
+    {
+      "EntityId": "huion.tablet.rtp700",
+      "Date": "2026-11-13",
+      "Kind": "INFO",
+      "Text": "Seems OK, but limited hands-on time."
+    },
+    {
+      "EntityId": "wacom.tablet.dtc133",
+      "Date": "2026-11-13",
+      "Kind": "WARNING",
+      "Text": "Expensive for what it is and dated, but decent. A good candidate for buying used."
+    },
+    {
+      "EntityId": "wacom.tablet.dtk1660",
+      "Date": "2026-11-13",
+      "Kind": "WARNING",
+      "Text": "Excellent drawing experience but a very dated screen."
+    },
+    {
+      "EntityId": "huion.tablet.gt1562",
+      "Date": "2026-11-13",
+      "Kind": "WARNING",
+      "Text": "Lots of anti-glare sparkle."
+    },
+    {
+      "EntityId": "xppen.tablet.cd160fh",
+      "Date": "2026-11-13",
+      "Kind": "WARNING",
+      "Text": "Excessive diagonal wobble."
+    },
+    {
+      "EntityId": "wacom.tablet.dtk2260",
+      "Date": "2026-11-13",
+      "Kind": "WARNING",
+      "Text": "Excellent drawing experience. Outdated screen."
+    },
+    {
+      "EntityId": "wacom.tablet.dtha140",
+      "Date": "2026-11-13",
+      "Kind": "INFO",
+      "Text": "Best drawing experience of any current standalone tablet."
+    },
+    {
+      "EntityId": "huion.tablet.kp1202",
+      "Date": "2026-11-13",
+      "Kind": "INFO",
+      "Text": "No hands-on experience with this tablet."
+    },
+    {
+      "EntityId": "xppen.tablet.9494g",
+      "Date": "2026-11-13",
+      "Kind": "INFO",
+      "Text": "No hands-on experience with this tablet."
+    },
+    {
+      "EntityId": "xppen.tablet.mdp1221",
+      "Date": "2026-11-13",
+      "Kind": "WARNING",
+      "Text": "Tilt is noisy; turn it off in brush settings if you notice it."
+    },
+    {
+      "EntityId": "samsung.tablet.galaxytabs9fe",
+      "Date": "2026-11-13",
+      "Kind": "WARNING",
+      "Text": "General-purpose pick. The S Pen's high initial activation force makes drawing basic."
+    },
+    {
+      "EntityId": "xppen.tablet.mnp1095",
+      "Date": "2026-11-13",
+      "Kind": "INFO",
+      "Text": "Best value. Same tilt problem as the Magic Drawing Pad; no DP-IN."
+    },
+    {
+      "EntityId": "wacom.tablet.ctk4120",
+      "Date": "2026-11-13",
+      "Kind": "WARNING",
+      "Text": "Not released yet (pre-order only). Its rating is based on the specs Wacom has published, not hands-on testing."
+    },
+    {
+      "EntityId": "wacom.tablet.ctk6120",
+      "Date": "2026-11-13",
+      "Kind": "WARNING",
+      "Text": "Not released yet (pre-order only). Its rating is based on the specs Wacom has published, not hands-on testing."
+    },
+    {
+      "EntityId": "wacom.tablet.dtha116",
+      "Date": "2026-11-13",
+      "Kind": "TIP",
+      "Text": "The Pro Pen 3 is expensive to replace. UD EMR pens such as the Wacom One pen and the Samsung S Pen work as cheaper backups."
+    },
+    {
+      "EntityId": "wacom.tablet.dtha116",
+      "Date": "2026-11-13",
+      "Kind": "WARNING",
+      "Text": "It runs a customized Android, and some apps (for example ones that need a Meta login) have problems. For mainly general tablet use, a Galaxy Tab S is safer."
+    },
+    {
+      "EntityId": "wacom.tablet.dtha116",
+      "Date": "2026-11-13",
+      "Kind": "INFO",
+      "Text": "Not the same product as the Movink 13, which is a pen display that needs a computer."
+    },
+    {
+      "EntityId": "xppen.tablet.mdp1221",
+      "Date": "2026-11-13",
+      "Kind": "TIP",
+      "Text": "Stores often list the 2024 and 2025 models under the same name. Check for model number MDP1221 (Android 14)."
+    },
+    {
+      "EntityId": "xppen.tablet.mdp1221",
+      "Date": "2026-11-13",
+      "Kind": "INFO",
+      "Text": "DP-IN over USB-C means it also works as an external monitor and as a pen display."
+    },
+    {
+      "EntityId": "wacom.tablet.ctl472",
+      "Date": "2026-11-13",
+      "Kind": "INFO",
+      "Text": "Discontinued and getting harder to find. Wacom will eventually drop driver support, but older drivers keep working."
+    },
+    {
+      "EntityId": "wacom.tablet.ctl672",
+      "Date": "2026-11-13",
+      "Kind": "INFO",
+      "Text": "Discontinued and getting harder to find. Wacom will eventually drop driver support, but older drivers keep working."
+    },
+    {
+      "EntityId": "wacom.tablet.ctl672",
+      "Date": "2026-11-13",
+      "Kind": "TIP",
+      "Text": "Uses micro-USB on the tablet, not USB-C. Keep that in mind if you ever need to replace the cable."
+    },
+    {
+      "EntityId": "wacom.tablet.ctl6100",
+      "Date": "2026-11-13",
+      "Kind": "WARNING",
+      "Text": "Very expensive for what it is: a consumer tablet at a professional price."
+    },
+    {
+      "EntityId": "wacom.tablet.ctl4100",
+      "Date": "2026-11-13",
+      "Kind": "WARNING",
+      "Text": "Very expensive for what it is: a consumer tablet at a professional price."
+    },
+    {
+      "EntityId": "huion.tablet.h951p",
+      "Date": "2026-11-13",
+      "Kind": "TIP",
+      "Text": "The included PW110 pen behaves like the older PW517. The PW550 pen is generally better."
+    },
+    {
+      "EntityId": "huion.tablet.h1061p",
+      "Date": "2026-11-13",
+      "Kind": "TIP",
+      "Text": "The included PW110 pen behaves like the older PW517. The PW550 pen is generally better."
+    },
+    {
+      "EntityId": "xppen.tablet.deco01v3",
+      "Date": "2026-11-13",
+      "Kind": "WARNING",
+      "Text": "Supposed to work well with Android, but strokes were distorted on Seven's Android devices. Some people report it works."
+    },
+    {
+      "EntityId": "wacom.tablet.ctc4110wl",
+      "Date": "2026-11-13",
+      "Kind": "WARNING",
+      "Text": "Slight pressure banding; a firmware update fixes about 90% of it. The CP-923 pen has high IAF and low maximum pressure."
+    },
+    {
+      "EntityId": "wacom.tablet.ctc6110wl",
+      "Date": "2026-11-13",
+      "Kind": "WARNING",
+      "Text": "Slight pressure banding; a firmware update fixes about 90% of it. The CP-923 pen has high IAF and low maximum pressure."
+    },
+    {
+      "EntityId": "huion.tablet.l310",
+      "Date": "2026-11-13",
+      "Kind": "INFO",
+      "Text": "Some people dislike the scratchy sound of the surface, and some report air bubbles under it."
+    },
+    {
+      "EntityId": "huion.tablet.l610",
+      "Date": "2026-11-13",
+      "Kind": "INFO",
+      "Text": "Some people dislike the scratchy sound of the surface, and some report air bubbles under it."
+    },
+    {
+      "EntityId": "xencelabs.tablet.lph1612ua",
+      "Date": "2026-11-13",
+      "Kind": "INFO",
+      "Text": "The 16 Lite is the same tablet as the original Pen Display 16, sold with fewer accessories in the box. Seven's rating comes from the original."
+    },
+    {
+      "EntityId": "wacom.pen.acp502",
+      "Date": "2026-11-13",
+      "Kind": "WARNING",
+      "Text": "Not released yet (pre-order only). Its rating is based on the specs Wacom has published, not hands-on testing."
+    }
+  ],
+  "Lists": [
+    {
+      "EntityId": "wacom.tablet.ctl472",
+      "List": "BEGINNER",
+      "Date": "2026-11-13"
+    },
+    {
+      "EntityId": "wacom.tablet.ctl4100",
+      "List": "BEGINNER",
+      "Date": "2026-11-13"
+    },
+    {
+      "EntityId": "xppen.tablet.it850",
+      "List": "BEGINNER",
+      "Date": "2026-11-13"
+    },
+    {
+      "EntityId": "xppen.tablet.it850b",
+      "List": "BEGINNER",
+      "Date": "2026-11-13"
+    },
+    {
+      "EntityId": "huion.tablet.l310",
+      "List": "BEGINNER",
+      "Date": "2026-11-13"
+    },
+    {
+      "EntityId": "wacom.tablet.ctl672",
+      "List": "BEGINNER",
+      "Date": "2026-11-13"
+    },
+    {
+      "EntityId": "xppen.tablet.it850",
+      "List": "BEGINNER",
+      "Date": "2026-11-13"
+    },
+    {
+      "EntityId": "xppen.tablet.it850b",
+      "List": "BEGINNER",
+      "Date": "2026-11-13"
+    },
+    {
+      "EntityId": "xppen.tablet.it1060",
+      "List": "BEGINNER",
+      "Date": "2026-11-13"
+    },
+    {
+      "EntityId": "xppen.tablet.it1060b",
+      "List": "BEGINNER",
+      "Date": "2026-11-13"
+    },
+    {
+      "EntityId": "huion.tablet.l610",
+      "List": "BEGINNER",
+      "Date": "2026-11-13"
+    },
+    {
+      "EntityId": "huion.tablet.h951p",
+      "List": "BEGINNER",
+      "Date": "2026-11-13"
+    },
+    {
+      "EntityId": "huion.tablet.h1061p",
+      "List": "BEGINNER",
+      "Date": "2026-11-13"
+    },
+    {
+      "EntityId": "wacom.tablet.ctl6100",
+      "List": "BEGINNER",
+      "Date": "2026-11-13"
+    },
+    {
+      "EntityId": "huion.tablet.gs1333",
+      "List": "BEGINNER",
+      "Date": "2026-11-13"
+    },
+    {
+      "EntityId": "xppen.tablet.cd121fh",
+      "List": "BEGINNER",
+      "Date": "2026-11-13"
+    },
+    {
+      "EntityId": "xppen.tablet.cd130fh",
+      "List": "BEGINNER",
+      "Date": "2026-11-13"
+    },
+    {
+      "EntityId": "wacom.tablet.dtc141",
+      "List": "BEGINNER",
+      "Date": "2026-11-13"
+    },
+    {
+      "EntityId": "huion.tablet.gs1563",
+      "List": "BEGINNER",
+      "Date": "2026-11-13"
+    },
+    {
+      "EntityId": "huion.tablet.gt156v2",
+      "List": "BEGINNER",
+      "Date": "2026-11-13"
+    },
+    {
+      "EntityId": "wacom.tablet.dtha116",
+      "List": "BEGINNER",
+      "Date": "2026-11-13"
+    },
+    {
+      "EntityId": "samsung.tablet.galaxytabs9fe",
+      "List": "BEGINNER",
+      "Date": "2026-11-13"
+    }
+  ],
+  "Unmatched": [],
+  "NotCovered": [],
+  "RatingAliases": {
+    "DECENT": "OK"
+  },
+  "AlsoSoldAs": [
+    {
+      "EntityId": "xencelabs.tablet.lph1612ua",
+      "Names": [
+        "Xencelabs Pen Display 16"
+      ],
+      "Note": "Original SKU with more accessories. Same tablet."
+    }
+  ],
+  "FamilyRecs": [
+    {
+      "Id": "ipad",
+      "Name": "Apple iPad + Apple Pencil",
+      "Brand": "APPLE",
+      "Type": "STANDALONE",
+      "Rating": null,
+      "Audience": "General purpose",
+      "MemberPrefix": "apple.tablet.",
+      "MemberStatus": "ACTIVE",
+      "NotesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/apple/apple-ipad-notes",
+      "Notes": [
+        {
+          "Kind": "INFO",
+          "Text": "iPads play the role of a drawing tablet very well, and they are great general-purpose tablets."
+        },
+        {
+          "Kind": "WARNING",
+          "Text": "The Apple Pencil does not come with an iPad. Budget for buying it separately."
+        }
+      ]
+    },
+    {
+      "Id": "galaxytabs",
+      "Name": "Samsung Galaxy Tab S series",
+      "Brand": "SAMSUNG",
+      "Type": "STANDALONE",
+      "Rating": null,
+      "Audience": "General purpose",
+      "MemberPrefix": "samsung.tablet.galaxytabs",
+      "NotesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/samsung/samsung-galaxy-tab-s-series/samsung-tab-s-notes",
+      "Notes": [
+        {
+          "Kind": "TIP",
+          "Text": "The S Pen comes in the box, which keeps the cost down."
+        },
+        {
+          "Kind": "INFO",
+          "Text": "Samsung provides Android updates for 7 years, the best of any Android tablet brand."
+        },
+        {
+          "Kind": "WARNING",
+          "Text": "The S Pen has a high initial activation force, so drawing is basic. Better for notes, whiteboarding and general use."
+        },
+        {
+          "Kind": "INFO",
+          "Text": "Lots of models that vary in size and cost."
+        }
+      ]
+    },
+    {
+      "Id": "galaxytaba",
+      "Name": "Samsung Galaxy Tab A series",
+      "Brand": "SAMSUNG",
+      "Type": "STANDALONE",
+      "Rating": "AVOID",
+      "Members": [],
+      "NotesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/samsung/samsung-galaxy-tab-a-series",
+      "Notes": [
+        {
+          "Kind": "WARNING",
+          "Text": "Not recommended for drawing."
+        }
+      ]
+    },
+    {
+      "Id": "kamvasslate",
+      "Name": "Huion Kamvas Slate 11 and 13",
+      "Brand": "HUION",
+      "Type": "STANDALONE",
+      "Rating": "AVOID",
+      "Members": [],
+      "NotesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/huion/huion-standalone",
+      "Notes": [
+        {
+          "Kind": "WARNING",
+          "Text": "They use a USI pen instead of EMR. Reviewers found problems with the pen, including severe diagonal wobble. Seven has not tried them."
+        }
+      ]
+    },
+    {
+      "Id": "galaxybook360",
+      "Name": "Samsung Galaxy Book 360 (2-in-1 laptops)",
+      "Brand": "SAMSUNG",
+      "Type": "STANDALONE",
+      "Rating": null,
+      "Audience": "General purpose",
+      "Members": [
+        "samsung.tablet.galaxybook5pro360"
+      ],
+      "NotesUrl": "https://docs.sevenpens.com/drawtab/recs/2-in-1-laptop-recs",
+      "Notes": [
+        {
+          "Kind": "INFO",
+          "Text": "A laptop that folds over. The drawing experience is good, not great."
+        },
+        {
+          "Kind": "TIP",
+          "Text": "Comes with an S Pen. Many people use the Wacom CP-913 pen with it instead."
+        }
+      ]
+    },
+    {
+      "Id": "surfacepro",
+      "Name": "Microsoft Surface Pro",
+      "Brand": "MICROSOFT",
+      "Type": "STANDALONE",
+      "Rating": null,
+      "Audience": "General purpose",
+      "Members": [],
+      "NotesUrl": "https://docs.sevenpens.com/drawtab/recs/2-in-1-laptop-recs",
+      "Notes": [
+        {
+          "Kind": "INFO",
+          "Text": "The drawing experience is OK. Better suited to note-taking and whiteboarding than drawing."
+        },
+        {
+          "Kind": "WARNING",
+          "Text": "No pen in the box. The Surface Slim Pen 2 is sold separately."
+        }
+      ]
+    },
+    {
+      "Id": "pencomputers",
+      "Name": "Pen computers (Wacom MobileStudio Pro, Huion Kamvas Studio)",
+      "Brand": null,
+      "Type": "STANDALONE",
+      "Rating": "AVOID",
+      "MemberPrefix": "wacom.tablet.dthw16",
+      "Members": [
+        "wacom.tablet.dthw1320",
+        "wacom.tablet.dthw1321"
+      ],
+      "NotesUrl": "https://docs.sevenpens.com/drawtab/buying/pen-computers-bad",
+      "Notes": [
+        {
+          "Kind": "WARNING",
+          "Text": "Seven does not recommend pen computers: high purchase, support and repair costs, and no upgradability."
+        },
+        {
+          "Kind": "TIP",
+          "Text": "Some people love them. See the alternatives to pen computers in the docs before you buy one."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+	"name": "drawtab-recommendations",
+	"version": "0.1.0",
+	"private": true,
+	"description": "Seven Pens drawing tablet recommendations: filterable, sortable, specs inline.",
+	"type": "module",
+	"scripts": {
+		"dev": "vite dev --port 5178 --host",
+		"build": "vite build",
+		"preview": "vite preview --port 5178",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"data": "node scripts/build-data.mjs"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-static": "^3.0.10",
+		"@sveltejs/kit": "^2.70.3",
+		"@sveltejs/vite-plugin-svelte": "^7.0.0",
+		"@types/node": "^25.9.9",
+		"svelte": "^5.55.1",
+		"svelte-check": "^4.4.6",
+		"typescript": "^5.9.3",
+		"vite": "^8.3.1"
+	}
+}
