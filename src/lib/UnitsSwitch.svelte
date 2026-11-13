@@ -8,40 +8,29 @@
 	];
 </script>
 
-<div class="units" role="group" aria-label="Units for active area">
-	<span class="lbl">active area in</span>
-	{#each OPTIONS as [v, l] (v)}
-		<button aria-pressed={units.value === v} onclick={() => setUnits(v)}>{l}</button>
-	{/each}
-</div>
+<label class="units">
+	units
+	<select value={units.value} onchange={(e) => setUnits(e.currentTarget.value as Units)}>
+		{#each OPTIONS as [v, l] (v)}<option value={v}>{l}</option>{/each}
+	</select>
+</label>
 
 <style>
 	.units {
 		display: inline-flex;
 		align-items: center;
+		gap: 0.4rem;
 		font-size: 0.85rem;
-	}
-	.lbl {
 		color: var(--text-3);
-		margin-right: 0.4rem;
 		white-space: nowrap;
 	}
-	button {
+	select {
 		height: 32px;
-		padding: 0 0.6rem;
+		padding: 0 0.4rem;
 		border: 1px solid var(--line-strong);
 		background: var(--surface);
-		color: var(--text-2);
-		cursor: pointer;
+		color: var(--text);
 		font-size: 0.85rem;
-	}
-	button + button {
-		border-left: 0;
-	}
-	button[aria-pressed='true'] {
-		background: var(--text);
-		border-color: var(--text);
-		color: #fff;
-		font-weight: 600;
+		cursor: pointer;
 	}
 </style>
