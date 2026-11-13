@@ -42,7 +42,7 @@
 <style>
 	:global(:root) {
 		/* Ink and ground: warm off-white, near-black text. */
-		--bg: #ffffff;
+		--bg: #f7f5f2;
 		--surface: #ffffff;
 		--sunk: #ebe7e2;
 		--line: #dddad6;
