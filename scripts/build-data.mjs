@@ -1,6 +1,8 @@
-// Joins the ratings, notes and lists (recs/sevenpens-recs.json) with tablet, pen,
-// brand and family data from a DrawTabData checkout, and writes the slim
-// catalog the site loads (static/data/catalog.json).
+// Reads Seven Pens' ratings, notes and lists (data/recommendations) and prices
+// (data/prices) together with tablet, pen, brand and family data from a
+// DrawTabData checkout, adds the app-only extras in recs/app-recs.json (family
+// recommendations, "also sold as" names), and writes the slim catalog the site
+// loads (static/data/catalog.json).
 //
 // Usage:
 //   node scripts/build-data.mjs                      (finds ../GitHub/DrawTabData or the Explorer's data-repo)
@@ -113,8 +115,19 @@ const num = (v) => (v === undefined || v === null || v === "" || Number.isNaN(Nu
 const yes = (v) => (v === "YES" ? true : v === "NO" ? false : null);
 const EXPLORER = "https://thesevenpens.github.io/DrawTabDataExplorer/entity/";
 
-const recsFile = readJson(path.join(root, "recs", "sevenpens-recs.json"));
-const ratingScale = recsFile.RatingScale;
+// Ratings, notes and lists live in DrawTabData (docs/RECOMMENDATIONS.md); the
+// app keeps only what isn't a DrawTabData entity yet (recs/app-recs.json).
+const recsFile = readJson(path.join(root, "recs", "app-recs.json"));
+const recs = {
+  Ratings: readAll("recommendations", "Ratings"),
+  Notes: readAll("recommendations", "Notes"),
+  Lists: readAll("recommendations", "Lists"),
+};
+if (!recs.Ratings.length) {
+  console.error(`No ratings in ${path.join(dataDir, "recommendations")}. Use a DrawTabData checkout that has data/recommendations.`);
+  process.exit(1);
+}
+const ratingScale = ["EXCELLENT", "VERY GOOD", "GOOD", "OK", "AVOID"];
 // Stopgap: tablet -> Seven's notes page, taken from the current recs pages.
 // Belongs in DrawTabData as a REVIEW link by Seven Pens on each tablet.
 const notesPages = fs.existsSync(path.join(root, "recs", "notes-pages.json")) ? readJson(path.join(root, "recs", "notes-pages.json")) : {};
@@ -127,15 +140,15 @@ const issues = [];
 // Context, then the newest of those across contexts (DELISTED drops a context).
 const byId = new Map();
 const entry = (id) => byId.get(id) ?? byId.set(id, { id, history: [], notes: [], lists: [] }).get(id);
-for (const r of recsFile.Ratings) entry(r.EntityId).history.push({ ...r, Label: r.Rating, Rating: norm(r.Rating) });
+for (const r of recs.Ratings) entry(r.EntityId).history.push({ ...r, Label: r.OriginalRating ?? r.Rating, Rating: norm(r.Rating) });
 const akaById = new Map((recsFile.AlsoSoldAs ?? []).map((a) => [a.EntityId, a]));
 // Devices that belong to a family recommendation and have no rating of their own
 // are shown through the family card, not on their own.
 const familyMembers = (f) =>
   [...tablets.keys()].filter((id) => (f.Members ?? []).includes(id) || (f.MemberPrefix && id.startsWith(f.MemberPrefix) && (!f.MemberStatus || tablets.get(id).Model.Status === f.MemberStatus)));
 const inFamily = new Set((recsFile.FamilyRecs ?? []).flatMap(familyMembers));
-for (const n of recsFile.Notes) entry(n.EntityId).notes.push(n);
-for (const l of recsFile.Lists) entry(l.EntityId).lists.push(l);
+for (const n of recs.Notes) entry(n.EntityId).notes.push(n);
+for (const l of recs.Lists) entry(l.EntityId).lists.push(l);
 for (const u of recsFile.Unmatched ?? []) issues.push({ label: u.Label, page: u.Context, issue: u.Why });
 for (const id of byId.keys()) if (!tablets.has(id) && !pens.has(id)) issues.push({ label: id, page: "", issue: "EntityId not found in DrawTabData" });
 
@@ -164,7 +177,7 @@ const reviews = (links, video) =>
 
 // Prices: dated observations from recs/prices.json, never edited. Only US prices
 // in USD are shown. The current price is the newest primary CURRENT record.
-const pricesFile = fs.existsSync(path.join(root, "recs", "prices.json")) ? readJson(path.join(root, "recs", "prices.json")) : { Prices: [] };
+const pricesFile = { Prices: readAll("prices", "Prices").map((r) => ({ ...r, Amount: num(r.Amount) })) };
 const pricesById = new Map();
 for (const r of pricesFile.Prices) (pricesById.get(r.EntityId) ?? pricesById.set(r.EntityId, []).get(r.EntityId)).push(r);
 const RETAILERS = [["amazon", "Amazon"], ["walmart", "Walmart"], ["newegg", "Newegg"], ["b&h", "B&H"], ["bhphoto", "B&H"], ["office depot", "Office Depot"], ["best buy", "Best Buy"]];
@@ -490,5 +503,5 @@ const out = {
 };
 fs.mkdirSync(path.join(root, "static", "data"), { recursive: true });
 fs.writeFileSync(path.join(root, "static", "data", "catalog.json"), JSON.stringify(out, null, 2) + "\n");
-console.log(`Wrote static/data/catalog.json: ${items.length} tablets, ${recsFile.Ratings.length} rating records, ${recsFile.Notes.length} notes, ${issues.length} issues.`);
+console.log(`Wrote static/data/catalog.json: ${items.length} tablets, ${recs.Ratings.length} rating records, ${recs.Notes.length} notes, ${pricesFile.Prices.length} prices, ${issues.length} issues.`);
 for (const i of issues) console.log(`  ! [${i.page}] ${i.label}: ${i.issue}`);

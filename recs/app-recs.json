@@ -1,0 +1,163 @@
+{
+  "_about": "App-only recommendation extras. Seven Pens' ratings, notes and lists, and prices, live in DrawTabData (data/recommendations, data/prices; see its docs/RECOMMENDATIONS.md and docs/PRICES.md). What stays here isn't a DrawTabData entity yet: FamilyRecs (product lines such as iPads and Galaxy Tabs, matched to tablets by MemberPrefix or Members), AlsoSoldAs names, and RatingAliases for labels renamed since (DECENT became OK on 2026-11-13).",
+  "RatingAliases": {
+    "DECENT": "OK"
+  },
+  "AlsoSoldAs": [
+    {
+      "EntityId": "xencelabs.tablet.lph1612ua",
+      "Names": [
+        "Xencelabs Pen Display 16"
+      ],
+      "Note": "Original SKU with more accessories. Same tablet."
+    }
+  ],
+  "FamilyRecs": [
+    {
+      "Id": "ipad",
+      "Name": "Apple iPad + Apple Pencil",
+      "Brand": "APPLE",
+      "Type": "STANDALONE",
+      "Rating": null,
+      "Audience": "General purpose",
+      "MemberPrefix": "apple.tablet.",
+      "MemberStatus": "ACTIVE",
+      "NotesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/apple/apple-ipad-notes",
+      "Notes": [
+        {
+          "Kind": "INFO",
+          "Text": "iPads play the role of a drawing tablet very well, and they are great general-purpose tablets."
+        },
+        {
+          "Kind": "WARNING",
+          "Text": "The Apple Pencil does not come with an iPad. Budget for buying it separately."
+        }
+      ]
+    },
+    {
+      "Id": "galaxytabs",
+      "Name": "Samsung Galaxy Tab S series",
+      "Brand": "SAMSUNG",
+      "Type": "STANDALONE",
+      "Rating": null,
+      "Audience": "General purpose",
+      "MemberPrefix": "samsung.tablet.galaxytabs",
+      "NotesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/samsung/samsung-galaxy-tab-s-series/samsung-tab-s-notes",
+      "Notes": [
+        {
+          "Kind": "TIP",
+          "Text": "The S Pen comes in the box, which keeps the cost down."
+        },
+        {
+          "Kind": "INFO",
+          "Text": "Samsung provides Android updates for 7 years, the best of any Android tablet brand."
+        },
+        {
+          "Kind": "WARNING",
+          "Text": "The S Pen has a high initial activation force, so drawing is basic. Better for notes, whiteboarding and general use."
+        },
+        {
+          "Kind": "INFO",
+          "Text": "Lots of models that vary in size and cost."
+        }
+      ]
+    },
+    {
+      "Id": "galaxytaba",
+      "Name": "Samsung Galaxy Tab A series",
+      "Brand": "SAMSUNG",
+      "Type": "STANDALONE",
+      "Rating": "AVOID",
+      "Members": [],
+      "NotesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/samsung/samsung-galaxy-tab-a-series",
+      "Notes": [
+        {
+          "Kind": "WARNING",
+          "Text": "Not recommended for drawing."
+        }
+      ]
+    },
+    {
+      "Id": "kamvasslate",
+      "Name": "Huion Kamvas Slate 11 and 13",
+      "Brand": "HUION",
+      "Type": "STANDALONE",
+      "Rating": "AVOID",
+      "Members": [],
+      "NotesUrl": "https://docs.sevenpens.com/drawtab/catalog/drawtabs/huion/huion-standalone",
+      "Notes": [
+        {
+          "Kind": "WARNING",
+          "Text": "They use a USI pen instead of EMR. Reviewers found problems with the pen, including severe diagonal wobble. Seven has not tried them."
+        }
+      ]
+    },
+    {
+      "Id": "galaxybook360",
+      "Name": "Samsung Galaxy Book 360 (2-in-1 laptops)",
+      "Brand": "SAMSUNG",
+      "Type": "STANDALONE",
+      "Rating": null,
+      "Audience": "General purpose",
+      "Members": [
+        "samsung.tablet.galaxybook5pro360"
+      ],
+      "NotesUrl": "https://docs.sevenpens.com/drawtab/recs/2-in-1-laptop-recs",
+      "Notes": [
+        {
+          "Kind": "INFO",
+          "Text": "A laptop that folds over. The drawing experience is good, not great."
+        },
+        {
+          "Kind": "TIP",
+          "Text": "Comes with an S Pen. Many people use the Wacom CP-913 pen with it instead."
+        }
+      ]
+    },
+    {
+      "Id": "surfacepro",
+      "Name": "Microsoft Surface Pro",
+      "Brand": "MICROSOFT",
+      "Type": "STANDALONE",
+      "Rating": null,
+      "Audience": "General purpose",
+      "Members": [],
+      "NotesUrl": "https://docs.sevenpens.com/drawtab/recs/2-in-1-laptop-recs",
+      "Notes": [
+        {
+          "Kind": "INFO",
+          "Text": "The drawing experience is OK. Better suited to note-taking and whiteboarding than drawing."
+        },
+        {
+          "Kind": "WARNING",
+          "Text": "No pen in the box. The Surface Slim Pen 2 is sold separately."
+        }
+      ]
+    },
+    {
+      "Id": "pencomputers",
+      "Name": "Pen computers (Wacom MobileStudio Pro, Huion Kamvas Studio)",
+      "Brand": null,
+      "Type": "STANDALONE",
+      "Rating": "AVOID",
+      "MemberPrefix": "wacom.tablet.dthw16",
+      "Members": [
+        "wacom.tablet.dthw1320",
+        "wacom.tablet.dthw1321"
+      ],
+      "NotesUrl": "https://docs.sevenpens.com/drawtab/buying/pen-computers-bad",
+      "Notes": [
+        {
+          "Kind": "WARNING",
+          "Text": "Seven does not recommend pen computers: high purchase, support and repair costs, and no upgradability."
+        },
+        {
+          "Kind": "TIP",
+          "Text": "Some people love them. See the alternatives to pen computers in the docs before you buy one."
+        }
+      ]
+    }
+  ],
+  "Unmatched": [],
+  "NotCovered": []
+}
