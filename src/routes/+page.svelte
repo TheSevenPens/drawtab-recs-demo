@@ -420,7 +420,7 @@
 		z-index: 5;
 		margin: 0 -2rem;
 		padding: 0 2rem;
-		background: rgba(247, 245, 242, 0.85);
+		background: rgba(238, 234, 228, 0.88);
 		backdrop-filter: blur(10px);
 		-webkit-backdrop-filter: blur(10px);
 		border-top: 1px solid var(--line);
