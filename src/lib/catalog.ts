@@ -125,6 +125,11 @@ export const PRESSURE_BANDS: Record<PressureMetric, { lo: number; hi: number | n
 		{ lo: 900, hi: null, tier: 'X', word: 'excessive' }
 	]
 };
+export const PRESSURE_TITLE: Record<PressureMetric, string> = { IAF: 'initial activation force (IAF)', MAX: 'maximum pressure' };
+export const PRESSURE_DEF: Record<PressureMetric, string> = {
+	IAF: 'The lowest physical force required for the pen to detect pressure. Lower is better.',
+	MAX: 'The first physical force at which the pen reaches 100% pressure.'
+};
 export const tierWord = (m: PressureMetric, tier: string | null) => PRESSURE_BANDS[m].find((b) => b.tier === tier)?.word ?? null;
 
 export interface TabletRef {

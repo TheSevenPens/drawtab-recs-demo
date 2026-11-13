@@ -3,7 +3,7 @@
 	import '$lib/detail.css';
 	import Hero from '$lib/Hero.svelte';
 	import UnitsSwitch from '$lib/UnitsSwitch.svelte';
-	import PressureSection from '$lib/PressureSection.svelte';
+	import PressureSummary from '$lib/PressureSummary.svelte';
 	import { units } from '$lib/units.svelte';
 	import {
 		CONTEXT_LABEL,
@@ -217,7 +217,7 @@
 						Pressure behavior is determined by the pen, not the tablet. This tablet comes with the
 						<a href={penHref(base, pen.id)}>{penLabel(pen)}</a>{#if pen.pressure}, {pen.pressure} levels{/if}{#if pen.tilt}, with tilt{/if}{#if pen.buttons != null}, {pen.buttons} button{pen.buttons === 1 ? '' : 's'}{/if}{#if pen.eraser}, eraser{/if}.
 					</p>
-					<PressureSection {pen} />
+					<PressureSummary {pen} />
 				{:else}
 					<p class="dim">No pen recorded for this tablet in DrawTabData yet.</p>
 				{/if}

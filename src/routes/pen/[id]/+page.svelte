@@ -3,7 +3,7 @@
 	import '$lib/detail.css';
 	import Hero from '$lib/Hero.svelte';
 	import PressureSection from '$lib/PressureSection.svelte';
-	import { TYPE_LABEL, longDate, monthYear, tabletHref, tierClass, tierWord, type TabletRef } from '$lib/catalog';
+	import { PRESSURE_TITLE, TYPE_LABEL, longDate, monthYear, penHref, tabletHref, tierClass, tierWord, type TabletRef } from '$lib/catalog';
 
 	let { data } = $props();
 	const p = $derived(data.pen);
@@ -21,7 +21,8 @@
 				['TILT', yn(p.tilt), ''],
 				['IAF', p.pressureIaf ? `${p.pressureIaf.median} gf` : null, p.pressureIaf ? `median, tier ${p.pressureIaf.tier} (${tierWord('IAF', p.pressureIaf.tier)})` : ''],
 				['MAX PRESSURE', p.pressureMax ? `${p.pressureMax.median} gf` : null, p.pressureMax ? `median, tier ${p.pressureMax.tier} (${tierWord('MAX', p.pressureMax.tier)})` : ''],
-				['BUTTONS', p.buttons != null ? String(p.buttons) : null, p.eraser ? 'plus eraser' : ''],
+				['BUTTONS', p.buttons != null ? String(p.buttons) : null, ''],
+				['ERASER', p.eraser === true ? 'yes' : p.eraser === false ? 'no' : 'not recorded', ''],
 				['WEIGHT', p.weight ? `${p.weight} g` : null, ''],
 				['SIZE', p.length ? `${p.length} mm` : null, p.diameter ? `${p.diameter} mm across` : ''],
 				['TECH', tech(p.tech), '']
@@ -52,6 +53,24 @@
 		).filter(([, v]) => v !== null && v !== undefined && v !== '') as [string, string][]
 	);
 	const title = $derived(p.name);
+	// Other pens on the site in the same IAF / max-pressure tier, closest median first.
+	const sameTier = (m: 'IAF' | 'MAX') => {
+		const mine = m === 'IAF' ? p.pressureIaf : p.pressureMax;
+		if (!mine?.tier) return [];
+		return data.catalog.pens
+			.filter((o) => o.id !== p.id)
+			.map((o) => ({ pen: o, r: m === 'IAF' ? o.pressureIaf : o.pressureMax }))
+			.filter((o) => o.r?.tier === mine.tier)
+			.sort((a, b) => Math.abs(a.r!.median - mine.median) - Math.abs(b.r!.median - mine.median));
+	};
+	const peers = $derived(
+		(
+			[
+				['IAF', p.pressureIaf?.tier, sameTier('IAF')],
+				['MAX', p.pressureMax?.tier, sameTier('MAX')]
+			] as const
+		).filter(([, t]) => t)
+	);
 </script>
 
 <svelte:head>
@@ -113,6 +132,33 @@
 			<h2 id="p-pressure">pressure</h2>
 			<PressureSection pen={p} />
 		</section>
+
+		{#if peers.length}
+			<section aria-labelledby="p-peers">
+				<h2 id="p-peers">pens in the same tier</h2>
+				<div class="split">
+					{#each peers as [m, t, list] (m)}
+						<section aria-label="same {m === 'IAF' ? 'IAF' : 'max pressure'} tier">
+							<h3 class="peerhead">{PRESSURE_TITLE[m]}: tier {t} · {tierWord(m, t ?? null)}</h3>
+							{#if list.length}
+								<ul class="list">
+									{#each list as o (o.pen.id)}
+										<li class="row tier-{tierClass(o.pen.rating)}">
+											<a href={penHref(base, o.pen.id)}>{o.pen.brandName} {o.pen.name}</a>
+											{#if o.pen.modelId.toLowerCase() !== o.pen.name.toLowerCase()}<span class="mono">{o.pen.modelId}</span>{/if}
+											{#if o.pen.rating}<span class="tag">{o.pen.rating}</span>{/if}
+											<span class="sub">{o.r?.median} gf median</span>
+										</li>
+									{/each}
+								</ul>
+							{:else}
+								<p class="dim">No other pen on this site is in this tier.</p>
+							{/if}
+						</section>
+					{/each}
+				</div>
+			</section>
+		{/if}
 
 		<section aria-labelledby="p-with">
 			<h2 id="p-with">included with these tablets</h2>
