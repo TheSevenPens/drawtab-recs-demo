@@ -346,7 +346,7 @@ export function cardFacts(i: Item, units: Units = 'mm'): [string, string][] {
 	if (i.kind === 'family') {
 		out.push(['type', TYPE_LABEL[i.type]]);
 		if (i.members?.length) out.push(['models', String(i.members.length)]);
-		if (i.price?.from) out.push(['price', `from ${money(i.price.from.amount)} · ${monthYear(i.price.from.date)}`]);
+		if (i.price?.from) out.push(['price', `from ${money(i.price.from.amount)} as of ${monthYear(i.price.from.date)}`]);
 		return out;
 	}
 	if (i.type === 'PENTABLET') {
@@ -360,7 +360,7 @@ export function cardFacts(i: Item, units: Units = 'mm'): [string, string][] {
 	const rel = monthYear(i.released) ?? (i.year ? String(i.year) : null);
 	if (rel) out.push(['released', rel]);
 	const c = i.price?.current;
-	out.push(['price', c ? `${money(c.amount)} · ${priceWhere(c)}` : 'not checked yet']);
+	out.push(['price', c ? `${money(c.amount)} as of ${monthYear(c.date)}` : 'not checked yet']);
 	return out;
 }
 

@@ -23,7 +23,7 @@
 		{ key: 'iaf', label: 'PEN IAF', simple: false, big: true, cell: (i) => or(i.pen?.iaf, ' gf'), sort: (a, b) => (a.pen?.iaf ?? 1e9) - (b.pen?.iaf ?? 1e9) },
 		{ key: 'released', label: 'RELEASED', simple: true, cell: (i) => monthYear(i.released) ?? or(i.year), sort: (a, b) => (releaseTime(a.released) || 0) - (releaseTime(b.released) || 0) },
 		{ key: 'notes', label: 'NOTES', simple: false, cell: (i) => (i.notes.length ? `${i.notes.length}${i.notes.some((n) => n.kind === 'WARNING') ? ' ⚠' : ''}` : ''), sort: (a, b) => a.notes.length - b.notes.length },
-		{ key: 'price', label: 'PRICE', simple: true, cell: (i) => (i.price?.current ? `${money(i.price.current.amount)} · ${monthYear(i.price.current.date)}` : i.price?.from ? `from ${money(i.price.from.amount)}` : '—'), sort: (a, b) => (priceOf(a) ?? 1e9) - (priceOf(b) ?? 1e9) }
+		{ key: 'price', label: 'PRICE', simple: true, cell: (i) => (i.price?.current ? `${money(i.price.current.amount)} as of ${monthYear(i.price.current.date)}` : i.price?.from ? `from ${money(i.price.from.amount)}` : '—'), sort: (a, b) => (priceOf(a) ?? 1e9) - (priceOf(b) ?? 1e9) }
 	];
 	const pf = (i: Item) => i.penFacts;
 	const tiered = (v: number | null | undefined, t: string | null | undefined) => (v == null ? '—' : `${v} gf${t ? ` · ${t} tier` : ''}`);
