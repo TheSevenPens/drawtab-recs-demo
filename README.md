@@ -26,8 +26,10 @@ Then open http://localhost:5178.
 
 ## Rebuild the data
 
-The app reads `static/data/catalog.json`. Rebuild it after changing the ratings
-or after pulling DrawTabData:
+The app reads `static/data/catalog.json`, built from a DrawTabData checkout.
+Ratings, notes, lists and prices are DrawTabData data now
+(`data/recommendations/`, `data/prices/`), so to change a rating or add a
+price check, change DrawTabData, then rebuild here:
 
 ```
 npm run data                                  (finds ..\GitHub\DrawTabData or the Explorer's data-repo)
@@ -53,19 +55,26 @@ The output is in `build/`. Every recommendation gets its own page at
 
 ## Layout
 
-- `recs/sevenpens-recs.json`: ratings for tablets and pens (dated, with history), notes, lists
-  (beginner picks), "also sold as" names and family recommendations. This is
-  the data that should eventually move into DrawTabData.
+- DrawTabData `data/recommendations/sevenpens-{ratings,notes,lists}.json`:
+  Seven's dated ratings for tablets and pens, notes and the beginner list
+  (see DrawTabData `docs/RECOMMENDATIONS.md`).
+- DrawTabData `data/prices/<BRAND>-prices.json`: dated price observations,
+  imported from the price workbook by DrawTabData `scripts/import-prices.py`
+  (see `docs/PRICES.md`).
+- `recs/app-recs.json`: what isn't a DrawTabData entity yet: family
+  recommendations (iPad, Galaxy Tab S, …), "also sold as" names and rating
+  label aliases.
 - `recs/notes-pages.json`: tablet to "Seven's notes" page links (stopgap until
   DrawTabData carries them).
-- `scripts/build-data.mjs`: joins the recs with DrawTabData specs and writes the catalog.
+- `scripts/build-data.mjs`: reads DrawTabData (specs, pressure, ratings, prices) plus
+  `recs/app-recs.json` and writes the catalog.
 - `src/lib/catalog.ts`: types, filtering, sorting and labels.
 - `src/routes/+page.svelte`: the main page (simple / expert, cards / table).
 - `src/routes/device/[id]/`, `pen/[id]/`, `family/[id]/`: detail pages.
 - `static/data/catalog.json`: the generated catalog the site loads. Specs,
   pens, families, links and pressure measurements come from the public
-  [DrawTabData](https://github.com/TheSevenPens/DrawTabData) repo; ratings
-  and notes come from `recs/`.
+  [DrawTabData](https://github.com/TheSevenPens/DrawTabData) repo; so do
+  ratings, notes and prices; family recommendations come from `recs/`.
 
 ## Rules the data follows
 
