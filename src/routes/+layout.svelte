@@ -175,8 +175,8 @@
 	.glow.a {
 		left: -20vw;
 		right: -20vw;
-		bottom: -30vh;
-		height: 66vh;
+		bottom: -15vh;
+		height: 33vh;
 		background:
 			radial-gradient(45% 55% at 22% 60%, rgba(214, 20, 124, 0.55), rgba(214, 20, 124, 0) 72%),
 			radial-gradient(40% 50% at 60% 72%, rgba(242, 110, 34, 0.5), rgba(242, 110, 34, 0) 72%),
@@ -185,10 +185,10 @@
 	}
 	/* Top-right corner: a softer magenta/violet glow. */
 	.glow.b {
-		top: -45vh;
+		top: -22vh;
 		right: -25vw;
 		width: 75vw;
-		height: 85vh;
+		height: 42vh;
 		background:
 			radial-gradient(50% 50% at 60% 50%, rgba(236, 0, 140, 0.28), rgba(236, 0, 140, 0) 70%),
 			radial-gradient(45% 45% at 30% 60%, rgba(125, 69, 224, 0.2), rgba(125, 69, 224, 0) 70%);
@@ -208,7 +208,7 @@
 			transform: translate3d(-4vw, 0, 0) scale(1);
 		}
 		to {
-			transform: translate3d(4vw, -3vh, 0) scale(1.06);
+			transform: translate3d(4vw, -1.5vh, 0) scale(1.06);
 		}
 	}
 	@keyframes drift-b {
@@ -216,7 +216,7 @@
 			transform: translate3d(0, 0, 0) scale(1);
 		}
 		to {
-			transform: translate3d(-6vw, 4vh, 0) scale(1.08);
+			transform: translate3d(-6vw, 2vh, 0) scale(1.08);
 		}
 	}
 	@keyframes drift-c {
