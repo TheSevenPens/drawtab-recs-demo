@@ -60,7 +60,7 @@
 		align-items: baseline;
 		gap: 0.5rem 1.5rem;
 		padding: 0.85rem 1.1rem;
-		background: var(--wash);
+		background: var(--surface);
 	}
 	.k {
 		font-size: 0.72rem;

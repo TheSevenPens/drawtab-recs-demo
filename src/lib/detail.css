@@ -38,7 +38,11 @@
 }
 .detail .tile {
 	padding: 0.9rem 1.1rem;
-	background: var(--wash);
+	/* White on the off-white page, with a thin bar in the rating colour on top. The pale
+	   rating wash sat too close to the page background (#f2efea). */
+	background: var(--surface);
+	border-top: 3px solid transparent;
+	border-image: var(--band) 1;
 	display: flex;
 	flex-direction: column;
 	gap: 0.25rem;
