@@ -73,7 +73,7 @@ export interface Item {
 	articles?: LinkRef[];
 	makerLinks?: LinkRef[];
 	specs: Specs;
-	pen: { id: string; name: string; modelId: string; iaf: number | null; iafTier?: string | null; iafSamples: number } | null;
+	pen: { id: string; name: string; modelId: string; iaf: number | null; iafTier?: string | null; rating?: string | null; iafSamples: number } | null;
 	members?: { id: string; name: string; year: number | null; status: string | null }[];
 	/** Pen items only. */
 	penFacts?: {

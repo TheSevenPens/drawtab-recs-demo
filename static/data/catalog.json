@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-13T22:06:09.539Z",
+  "builtAt": "2026-11-13T22:08:53.932Z",
   "source": {
     "drawTabDataCommit": "43bac09",
     "schemaVersion": 1
@@ -103,6 +103,7 @@
         "buttons": 2,
         "iaf": null,
         "iafTier": null,
+        "rating": "EXCELLENT",
         "iafSamples": 0
       }
     },
@@ -197,6 +198,7 @@
         "buttons": 2,
         "iaf": null,
         "iafTier": null,
+        "rating": "EXCELLENT",
         "iafSamples": 0
       }
     },
@@ -371,6 +373,7 @@
         "buttons": 3,
         "iaf": 3.7,
         "iafTier": "B",
+        "rating": "EXCELLENT",
         "iafSamples": 12
       }
     },
@@ -563,6 +566,7 @@
         "buttons": 3,
         "iaf": 3.7,
         "iafTier": "B",
+        "rating": "EXCELLENT",
         "iafSamples": 12
       }
     },
@@ -717,6 +721,7 @@
         "buttons": 3,
         "iaf": 3.7,
         "iafTier": "B",
+        "rating": "EXCELLENT",
         "iafSamples": 12
       }
     },
@@ -854,6 +859,7 @@
         "buttons": 3,
         "iaf": 3.7,
         "iafTier": "B",
+        "rating": "EXCELLENT",
         "iafSamples": 12
       }
     },
@@ -1014,6 +1020,7 @@
         "buttons": 3,
         "iaf": 3.7,
         "iafTier": "B",
+        "rating": "EXCELLENT",
         "iafSamples": 12
       }
     },
@@ -1203,6 +1210,7 @@
         "buttons": 3,
         "iaf": 3.7,
         "iafTier": "B",
+        "rating": "EXCELLENT",
         "iafSamples": 12
       }
     },
@@ -1398,6 +1406,7 @@
         "buttons": 3,
         "iaf": 3.7,
         "iafTier": "B",
+        "rating": "EXCELLENT",
         "iafSamples": 12
       }
     },
@@ -1587,6 +1596,7 @@
         "buttons": 3,
         "iaf": 3.7,
         "iafTier": "B",
+        "rating": "EXCELLENT",
         "iafSamples": 12
       }
     },
@@ -1774,6 +1784,7 @@
         "buttons": 3,
         "iaf": 3.7,
         "iafTier": "B",
+        "rating": "EXCELLENT",
         "iafSamples": 12
       }
     },
@@ -2016,6 +2027,7 @@
         "buttons": 3,
         "iaf": 4.9,
         "iafTier": "C",
+        "rating": "EXCELLENT",
         "iafSamples": 5
       }
     },
@@ -2156,6 +2168,7 @@
         "buttons": 3,
         "iaf": 4.9,
         "iafTier": "C",
+        "rating": "EXCELLENT",
         "iafSamples": 5
       }
     },
@@ -2319,6 +2332,7 @@
         "buttons": 3,
         "iaf": 3.7,
         "iafTier": "B",
+        "rating": "EXCELLENT",
         "iafSamples": 12
       }
     },
@@ -2468,6 +2482,7 @@
         "buttons": 3,
         "iaf": 3.7,
         "iafTier": "B",
+        "rating": "EXCELLENT",
         "iafSamples": 12
       }
     },
@@ -2667,6 +2682,7 @@
         "buttons": 3,
         "iaf": 3.7,
         "iafTier": "B",
+        "rating": "EXCELLENT",
         "iafSamples": 12
       }
     },
@@ -2822,6 +2838,7 @@
         "buttons": 2,
         "iaf": 3.8,
         "iafTier": "B",
+        "rating": "EXCELLENT",
         "iafSamples": 7
       }
     },
@@ -2975,6 +2992,7 @@
         "buttons": 2,
         "iaf": 3.8,
         "iafTier": "B",
+        "rating": "EXCELLENT",
         "iafSamples": 7
       }
     },
@@ -3122,6 +3140,7 @@
         "buttons": 2,
         "iaf": 3.8,
         "iafTier": "B",
+        "rating": "EXCELLENT",
         "iafSamples": 7
       }
     },
@@ -3281,6 +3300,7 @@
         "buttons": 2,
         "iaf": 3.8,
         "iafTier": "B",
+        "rating": "EXCELLENT",
         "iafSamples": 7
       }
     },
@@ -3423,6 +3443,7 @@
         "buttons": 3,
         "iaf": 4.9,
         "iafTier": "C",
+        "rating": "EXCELLENT",
         "iafSamples": 5
       }
     },
@@ -3569,6 +3590,7 @@
         "buttons": 3,
         "iaf": 4.9,
         "iafTier": "C",
+        "rating": "EXCELLENT",
         "iafSamples": 5
       }
     },
@@ -3742,6 +3764,7 @@
         "buttons": 2,
         "iaf": 4.5,
         "iafTier": "C",
+        "rating": "EXCELLENT",
         "iafSamples": 3
       }
     },
@@ -3935,6 +3958,7 @@
         "buttons": null,
         "iaf": 4.4,
         "iafTier": "C",
+        "rating": "VERY GOOD",
         "iafSamples": 6
       }
     },
@@ -4128,6 +4152,7 @@
         "buttons": 2,
         "iaf": 4.5,
         "iafTier": "C",
+        "rating": "EXCELLENT",
         "iafSamples": 3
       }
     },
@@ -4311,6 +4336,7 @@
         "buttons": 2,
         "iaf": 4.5,
         "iafTier": "C",
+        "rating": "EXCELLENT",
         "iafSamples": 3
       }
     },
@@ -4510,6 +4536,7 @@
         "buttons": null,
         "iaf": 2.5,
         "iafTier": "B",
+        "rating": "VERY GOOD",
         "iafSamples": 1
       }
     },
@@ -4693,6 +4720,7 @@
         "buttons": null,
         "iaf": 4.4,
         "iafTier": "C",
+        "rating": "VERY GOOD",
         "iafSamples": 6
       }
     },
@@ -4907,6 +4935,7 @@
         "buttons": null,
         "iaf": 4.4,
         "iafTier": "C",
+        "rating": "VERY GOOD",
         "iafSamples": 6
       }
     },
@@ -5091,6 +5120,7 @@
         "buttons": null,
         "iaf": 4.4,
         "iafTier": "C",
+        "rating": "VERY GOOD",
         "iafSamples": 6
       }
     },
@@ -5247,6 +5277,7 @@
         "buttons": null,
         "iaf": 3.7,
         "iafTier": "B",
+        "rating": "OK",
         "iafSamples": 3
       }
     },
@@ -5378,6 +5409,7 @@
         "buttons": null,
         "iaf": 4.4,
         "iafTier": "C",
+        "rating": "VERY GOOD",
         "iafSamples": 6
       }
     },
@@ -5509,6 +5541,7 @@
         "buttons": null,
         "iaf": 4.4,
         "iafTier": "C",
+        "rating": "VERY GOOD",
         "iafSamples": 6
       }
     },
@@ -5680,6 +5713,7 @@
         "buttons": null,
         "iaf": 4.4,
         "iafTier": "C",
+        "rating": "VERY GOOD",
         "iafSamples": 6
       }
     },
@@ -5845,6 +5879,7 @@
         "buttons": 2,
         "iaf": 7.3,
         "iafTier": "D",
+        "rating": "OK",
         "iafSamples": 7
       }
     },
@@ -5978,6 +6013,7 @@
         "buttons": 1,
         "iaf": null,
         "iafTier": null,
+        "rating": "EXCELLENT",
         "iafSamples": 0
       }
     },
@@ -6142,6 +6178,7 @@
         "buttons": null,
         "iaf": null,
         "iafTier": null,
+        "rating": "EXCELLENT",
         "iafSamples": 0
       }
     },
@@ -6348,6 +6385,7 @@
         "buttons": null,
         "iaf": null,
         "iafTier": null,
+        "rating": "OK",
         "iafSamples": 0
       }
     },
@@ -6533,6 +6571,7 @@
         "buttons": 2,
         "iaf": 8.2,
         "iafTier": "D",
+        "rating": "GOOD",
         "iafSamples": 1
       }
     },
@@ -6678,6 +6717,7 @@
         "buttons": 2,
         "iaf": 8.2,
         "iafTier": "D",
+        "rating": "GOOD",
         "iafSamples": 1
       }
     },
@@ -6867,6 +6907,7 @@
         "buttons": null,
         "iaf": 3.7,
         "iafTier": "B",
+        "rating": "OK",
         "iafSamples": 3
       }
     },
@@ -7040,6 +7081,7 @@
         "buttons": null,
         "iaf": 4.4,
         "iafTier": "C",
+        "rating": "VERY GOOD",
         "iafSamples": 6
       }
     },
@@ -7179,6 +7221,7 @@
         "buttons": 2,
         "iaf": 9,
         "iafTier": "D",
+        "rating": "OK",
         "iafSamples": 2
       }
     },
@@ -7362,6 +7405,7 @@
         "buttons": null,
         "iaf": 5.1,
         "iafTier": "C",
+        "rating": "GOOD",
         "iafSamples": 4
       }
     },
@@ -7484,6 +7528,7 @@
         "buttons": null,
         "iaf": 5.1,
         "iafTier": "C",
+        "rating": "GOOD",
         "iafSamples": 4
       }
     },
@@ -7624,6 +7669,7 @@
         "buttons": 2,
         "iaf": 7.3,
         "iafTier": "D",
+        "rating": "OK",
         "iafSamples": 7
       }
     },
@@ -7816,6 +7862,7 @@
         "buttons": 2,
         "iaf": 7.3,
         "iafTier": "D",
+        "rating": "OK",
         "iafSamples": 7
       }
     },
@@ -7991,6 +8038,7 @@
         "buttons": null,
         "iaf": 5.1,
         "iafTier": "C",
+        "rating": "GOOD",
         "iafSamples": 4
       }
     },
@@ -8139,6 +8187,7 @@
         "buttons": null,
         "iaf": 5.1,
         "iafTier": "C",
+        "rating": "GOOD",
         "iafSamples": 4
       }
     },
@@ -8306,6 +8355,7 @@
         "buttons": null,
         "iaf": 5.1,
         "iafTier": "C",
+        "rating": "GOOD",
         "iafSamples": 4
       }
     },
@@ -8445,6 +8495,7 @@
         "buttons": null,
         "iaf": 5.1,
         "iafTier": "C",
+        "rating": "GOOD",
         "iafSamples": 4
       }
     },
@@ -8588,6 +8639,7 @@
         "buttons": 2,
         "iaf": 5.8,
         "iafTier": "C",
+        "rating": "OK",
         "iafSamples": 4
       }
     },
@@ -8748,6 +8800,7 @@
         "buttons": 2,
         "iaf": 5.8,
         "iafTier": "C",
+        "rating": "OK",
         "iafSamples": 4
       }
     },
@@ -8869,6 +8922,7 @@
         "buttons": 2,
         "iaf": 5.2,
         "iafTier": "C",
+        "rating": "OK",
         "iafSamples": 4
       }
     },
@@ -9006,6 +9060,7 @@
         "buttons": 2,
         "iaf": 5.2,
         "iafTier": "C",
+        "rating": "OK",
         "iafSamples": 4
       }
     },
@@ -9190,6 +9245,7 @@
         "buttons": 2,
         "iaf": 9.3,
         "iafTier": "D",
+        "rating": "OK",
         "iafSamples": 4
       }
     },
@@ -9333,6 +9389,7 @@
         "buttons": null,
         "iaf": 3,
         "iafTier": "B",
+        "rating": "VERY GOOD",
         "iafSamples": 4
       }
     },
@@ -9478,6 +9535,7 @@
         "buttons": null,
         "iaf": 1.7,
         "iafTier": "A",
+        "rating": "OK",
         "iafSamples": 1
       }
     },
@@ -9624,6 +9682,7 @@
         "buttons": null,
         "iaf": 6.8,
         "iafTier": "D",
+        "rating": "OK",
         "iafSamples": 4
       }
     },
@@ -9821,6 +9880,7 @@
         "buttons": 2,
         "iaf": 9,
         "iafTier": "D",
+        "rating": "OK",
         "iafSamples": 2
       }
     },
@@ -10016,6 +10076,7 @@
         "buttons": 2,
         "iaf": 7.3,
         "iafTier": "D",
+        "rating": "OK",
         "iafSamples": 7
       }
     },
@@ -10124,6 +10185,7 @@
         "buttons": 2,
         "iaf": null,
         "iafTier": null,
+        "rating": "OK",
         "iafSamples": 0
       }
     },
@@ -10264,6 +10326,7 @@
         "buttons": 2,
         "iaf": 7.3,
         "iafTier": "D",
+        "rating": "OK",
         "iafSamples": 7
       }
     },
@@ -10439,6 +10502,7 @@
         "buttons": 2,
         "iaf": 7.3,
         "iafTier": "D",
+        "rating": "OK",
         "iafSamples": 7
       }
     },
@@ -10626,6 +10690,7 @@
         "buttons": 2,
         "iaf": 7.3,
         "iafTier": "D",
+        "rating": "OK",
         "iafSamples": 7
       }
     },
@@ -10804,6 +10869,7 @@
         "buttons": 1,
         "iaf": 9.9,
         "iafTier": "D",
+        "rating": "OK",
         "iafSamples": 4
       }
     },
@@ -10973,6 +11039,7 @@
         "buttons": 2,
         "iaf": 7.3,
         "iafTier": "D",
+        "rating": "OK",
         "iafSamples": 7
       }
     },
@@ -11157,6 +11224,7 @@
         "buttons": 2,
         "iaf": 3.8,
         "iafTier": "B",
+        "rating": "EXCELLENT",
         "iafSamples": 7
       }
     },
@@ -11325,6 +11393,7 @@
         "buttons": 2,
         "iaf": 3.8,
         "iafTier": "B",
+        "rating": "EXCELLENT",
         "iafSamples": 7
       }
     },
@@ -11488,6 +11557,7 @@
         "buttons": 2,
         "iaf": 10.7,
         "iafTier": "F",
+        "rating": "OK",
         "iafSamples": 1
       }
     },
@@ -11665,6 +11735,7 @@
         "buttons": 2,
         "iaf": 9.3,
         "iafTier": "D",
+        "rating": "OK",
         "iafSamples": 4
       }
     },
@@ -11867,6 +11938,7 @@
         "buttons": 2,
         "iaf": 9.3,
         "iafTier": "D",
+        "rating": "OK",
         "iafSamples": 4
       }
     },
@@ -12044,6 +12116,7 @@
         "buttons": 2,
         "iaf": 9.3,
         "iafTier": "D",
+        "rating": "OK",
         "iafSamples": 4
       }
     },
@@ -12226,6 +12299,7 @@
         "buttons": 2,
         "iaf": 9.3,
         "iafTier": "D",
+        "rating": "OK",
         "iafSamples": 4
       }
     },
@@ -12407,6 +12481,7 @@
         "buttons": null,
         "iaf": 5.1,
         "iafTier": "C",
+        "rating": "GOOD",
         "iafSamples": 4
       }
     },
@@ -12594,6 +12669,7 @@
         "buttons": 2,
         "iaf": 7.3,
         "iafTier": "D",
+        "rating": "OK",
         "iafSamples": 7
       }
     },
@@ -12972,6 +13048,7 @@
         "buttons": null,
         "iaf": 1.7,
         "iafTier": "A",
+        "rating": "OK",
         "iafSamples": 1
       }
     },

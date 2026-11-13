@@ -299,7 +299,7 @@ for (const { id, history, notes, lists } of byId.values()) {
       battery: num(sa?.BatteryCapacity),
     },
     pen: pen
-      ? { id: pen.EntityId, name: pen.PenName, modelId: pen.PenId, eraser: pen.Eraser ?? null, buttons: num(pen.ButtonCount), iaf: pressureFor(pen.EntityId, "IAF")?.median ?? null, iafTier: pressureFor(pen.EntityId, "IAF")?.tier ?? null, iafSamples: pressureFor(pen.EntityId, "IAF")?.units.length ?? 0 }
+      ? { id: pen.EntityId, name: pen.PenName, modelId: pen.PenId, eraser: pen.Eraser ?? null, buttons: num(pen.ButtonCount), iaf: pressureFor(pen.EntityId, "IAF")?.median ?? null, iafTier: pressureFor(pen.EntityId, "IAF")?.tier ?? null, rating: byId.has(pen.EntityId) ? current(byId.get(pen.EntityId).history).rating : null, iafSamples: pressureFor(pen.EntityId, "IAF")?.units.length ?? 0 }
       : null,
   });
 }

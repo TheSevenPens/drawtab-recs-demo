@@ -6,6 +6,8 @@
 	import { units } from './units.svelte';
 	let { list, expert = false }: { list: Item[]; expert?: boolean } = $props();
 
+	const PEN_SCALE = ['EXCELLENT', 'VERY GOOD', 'GOOD', 'OK', 'AVOID'];
+	const penRank = (i: Item) => (i.pen?.rating && PEN_SCALE.includes(i.pen.rating) ? PEN_SCALE.indexOf(i.pen.rating) : PEN_SCALE.length);
 	type Col = { key: string; label: string; simple: boolean; cell: (i: Item) => string; sort: (a: Item, b: Item) => number; big?: boolean };
 	const yn = (v: boolean | null | undefined) => (v === true ? 'yes' : v === false ? 'no' : '—');
 	const or = (v: unknown, unit = '') => (v === null || v === undefined || v === '' ? '—' : `${v}${unit}`);
@@ -20,7 +22,7 @@
 		{ key: 'tilt', label: 'TILT', simple: false, cell: (i) => (i.specs.tilt == null ? '—' : i.specs.tilt > 0 ? 'yes' : 'no'), sort: (a, b) => (a.specs.tilt ?? 0) - (b.specs.tilt ?? 0) },
 		{ key: 'stand', label: 'STAND', simple: false, cell: (i) => (i.specs.includedStand ? 'in box' : i.specs.legs ? 'legs' : yn(i.specs.includedStand)), sort: () => 0 },
 		{ key: 'wireless', label: 'WIRELESS', simple: false, cell: (i) => yn(i.specs.bluetooth), sort: () => 0 },
-		{ key: 'iaf', label: 'PEN IAF', simple: false, big: true, cell: (i) => (i.pen?.iafTier ? `${i.pen.iafTier} tier` : '—'), sort: (a, b) => (a.pen?.iaf ?? 1e9) - (b.pen?.iaf ?? 1e9) },
+		{ key: 'penrating', label: 'PEN RATING', simple: false, cell: (i) => i.pen?.rating?.toLowerCase() ?? '—', sort: (a, b) => penRank(a) - penRank(b) },
 		{ key: 'released', label: 'RELEASED', simple: true, cell: (i) => monthYear(i.released) ?? or(i.year), sort: (a, b) => (releaseTime(a.released) || 0) - (releaseTime(b.released) || 0) },
 		{ key: 'notes', label: 'NOTES', simple: false, cell: (i) => (i.notes.length ? `${i.notes.length}${i.notes.some((n) => n.kind === 'WARNING') ? ' ⚠' : ''}` : ''), sort: (a, b) => a.notes.length - b.notes.length },
 		{ key: 'price', label: 'PRICE', simple: true, cell: (i) => (i.price?.current ? `${money(i.price.current.amount)} as of ${monthYear(i.price.current.date)}` : i.price?.from ? `from ${money(i.price.from.amount)}` : '—'), sort: (a, b) => (priceOf(a) ?? 1e9) - (priceOf(b) ?? 1e9) }
