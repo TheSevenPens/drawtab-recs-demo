@@ -3,7 +3,8 @@
 	import { deviceHref, cardFacts, shortName, sizeLabel, sortedNotes, tierClass, ratingWord, LIST_LABEL, shownLists, type Item } from './catalog';
 
 	import { units } from './units.svelte';
-	let { item, expert = false }: { item: Item; expert?: boolean } = $props();
+	// variant: a lower-half style being tried out on /card-options (none = the current look).
+	let { item, expert = false, variant = '' }: { item: Item; expert?: boolean; variant?: string } = $props();
 	const href = $derived(deviceHref(base, item));
 	const facts = $derived(cardFacts(item, units.value));
 	// Pen cards stay short: the release row says "(expected)" instead of a note.
@@ -18,7 +19,7 @@
 	);
 </script>
 
-<a class="card tier-{tierClass(item.rating)}" class:pen={item.kind === 'pen'} {href}>
+<a class="card tier-{tierClass(item.rating)} {variant ? `v-${variant}` : ''}" class:pen={item.kind === 'pen'} {href}>
 	<div class="band">
 		<div class="top"><span class="size">{sizeLabel(item)}</span></div>
 		<div class="brand">{item.brandName}</div>
@@ -187,5 +188,65 @@
 	}
 	.note.tip {
 		border-color: var(--tip);
+	}
+
+	/* ---- Lower-half options under review (/card-options). ---- */
+	/* Dark lower halves: white text, softened labels and chips. */
+	.card:is(.v-black, .v-glass, .v-shade) .body {
+		color: #fff;
+	}
+	.card:is(.v-black, .v-glass, .v-shade) dt {
+		color: rgba(255, 255, 255, 0.68);
+	}
+	.card:is(.v-black, .v-glass, .v-shade) .flag {
+		background: rgba(255, 255, 255, 0.16);
+		color: #fff;
+	}
+	.card:is(.v-black, .v-glass, .v-shade) .flag.warn {
+		color: #ffc9a8;
+	}
+	.card:is(.v-black, .v-glass, .v-shade) .note {
+		border-color: rgba(255, 255, 255, 0.45);
+	}
+	.card:is(.v-black, .v-glass, .v-shade) .note.warning {
+		border-color: #ff9a62;
+	}
+	/* 1. Solid near-black. */
+	.card.v-black {
+		background: #17151a;
+	}
+	/* 2. Dark gradient, slightly see-through so the page colour tints it. */
+	.card.v-glass {
+		background: linear-gradient(180deg, rgba(23, 21, 26, 0.94), rgba(23, 21, 26, 0.8));
+	}
+	/* 3. No background: the text sits on the page. */
+	.card.v-none {
+		background: transparent;
+	}
+	.card.v-none .flag {
+		background: var(--surface);
+	}
+	/* 4. The band's own colour carried down, a shade deeper. */
+	.card.v-shade {
+		background: linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.44)), var(--band);
+	}
+	/* 5. The band's colour, lightened (as if see-through over the page). */
+	.card.v-tint {
+		background: linear-gradient(rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.84)), var(--band);
+	}
+	.card.v-tint .flag {
+		background: rgba(255, 255, 255, 0.85);
+	}
+	/* 6. White, with a thin rating-colour frame round the lower half. */
+	.card.v-frame {
+		background: var(--surface);
+	}
+	.card.v-frame .body {
+		border: 2px solid transparent;
+		border-top: 0;
+		border-image: var(--band) 1;
+	}
+	.card.v-frame .flag {
+		background: var(--surface-2, #f1efec);
 	}
 </style>
