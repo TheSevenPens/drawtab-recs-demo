@@ -5,6 +5,7 @@
 	import ResultsTable from '$lib/ResultsTable.svelte';
 	import UnitsSwitch from '$lib/UnitsSwitch.svelte';
 	import FamilyCard from '$lib/FamilyCard.svelte';
+	import PenCompatWarning from '$lib/PenCompatWarning.svelte';
 	import { collapseFamilies, type CardEntry } from '$lib/family-groups';
 	import { familyCards, setCollapseFamilies } from '$lib/units.svelte';
 	import {
@@ -275,6 +276,8 @@
 			</div>
 		{/if}
 	</div>
+
+	{#if f.type === 'PEN'}<PenCompatWarning />{/if}
 
 	{#if !list.length}
 		<p class="empty">Nothing matches these filters. Try another size or clear a filter.</p>

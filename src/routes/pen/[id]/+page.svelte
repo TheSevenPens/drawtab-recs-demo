@@ -1,4 +1,5 @@
 <script lang="ts">
+	import PenCompatWarning from '$lib/PenCompatWarning.svelte';
 	import { base } from '$app/paths';
 	import '$lib/detail.css';
 	import Hero from '$lib/Hero.svelte';
@@ -109,6 +110,8 @@
 	/>
 
 	<main class="content">
+		<PenCompatWarning />
+
 		{#if notes.length}
 			<section aria-labelledby="p-know">
 				<h2 id="p-know">things to know</h2>
