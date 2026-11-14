@@ -11,10 +11,22 @@ function initial(): Units {
 	return 'mm';
 }
 export const units = $state({ value: 'mm' as Units, loaded: false });
+// Card view only: fold a family's devices (same rating) into one card. Remembered too.
+const FAM_KEY = 'recs-collapse-families';
+export const familyCards = $state({ collapse: false });
 export function loadUnits() {
 	if (units.loaded) return;
 	units.value = initial();
+	try {
+		familyCards.collapse = localStorage.getItem(FAM_KEY) === '1';
+	} catch {}
 	units.loaded = true;
+}
+export function setCollapseFamilies(v: boolean) {
+	familyCards.collapse = v;
+	try {
+		localStorage.setItem(FAM_KEY, v ? '1' : '');
+	} catch {}
 }
 export function setUnits(v: Units) {
 	units.value = v;

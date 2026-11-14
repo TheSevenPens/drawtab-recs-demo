@@ -4,6 +4,9 @@
 	import Card from '$lib/Card.svelte';
 	import ResultsTable from '$lib/ResultsTable.svelte';
 	import UnitsSwitch from '$lib/UnitsSwitch.svelte';
+	import FamilyCard from '$lib/FamilyCard.svelte';
+	import { collapseFamilies, type CardEntry } from '$lib/family-groups';
+	import { familyCards, setCollapseFamilies } from '$lib/units.svelte';
 	import {
 		FEATURES,
 		NOT_RATED,
@@ -61,6 +64,10 @@
 		}
 		return [...g];
 	});
+
+	// Card entries for a run of items: one per item, or family cards when that setting is on.
+	const entries = (xs: Item[]): CardEntry[] =>
+		familyCards.collapse ? collapseFamilies(xs, catalog.families) : xs.map((item) => ({ kind: 'item', item }));
 
 	// Facet counts leave their own facet out, so each count says what you'd get by picking it.
 	const count = (skip: string, pred: (i: Item) => boolean) => items.filter((i) => matches(i, f, skip) && pred(i)).length;
@@ -177,6 +184,12 @@
 				</button>
 			{/if}
 			<span class="push"></span>
+			{#if f.type !== 'PEN' && f.view === 'cards'}
+				<label class="famtoggle" title="Show the models of one family as a single card (cards view only)">
+					<input type="checkbox" checked={familyCards.collapse} onchange={(e) => setCollapseFamilies(e.currentTarget.checked)} />
+					group families
+				</label>
+			{/if}
 			{#if f.type !== 'PEN'}<UnitsSwitch />{/if}
 			<label class="sortlbl">sort
 				<select bind:value={f.sort}>
@@ -272,13 +285,17 @@
 					<span class="count" aria-label="{members.length} devices">{members.length}</span>
 				</div>
 				<div class="grid">
-					{#each members as i (i.id)}<Card item={i} expert={f.mode === 'expert'} />{/each}
+					{#each entries(members) as e (e.kind === 'item' ? e.item.id : e.group.id)}
+						{#if e.kind === 'item'}<Card item={e.item} expert={f.mode === 'expert'} />{:else}<FamilyCard group={e.group} />{/if}
+					{/each}
 				</div>
 			</section>
 		{/each}
 	{:else}
 		<div class="grid">
-			{#each list as i (i.id)}<Card item={i} expert={f.mode === 'expert'} />{/each}
+			{#each entries(list) as e (e.kind === 'item' ? e.item.id : e.group.id)}
+				{#if e.kind === 'item'}<Card item={e.item} expert={f.mode === 'expert'} />{:else}<FamilyCard group={e.group} />{/if}
+			{/each}
 		</div>
 	{/if}
 
@@ -475,6 +492,21 @@
 	}
 	.push {
 		margin-left: auto;
+	}
+	.famtoggle {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.4rem;
+		font-size: 0.85rem;
+		color: var(--text-2);
+		white-space: nowrap;
+		cursor: pointer;
+	}
+	.famtoggle input {
+		width: 16px;
+		height: 16px;
+		margin: 0;
+		accent-color: var(--text);
 	}
 	.sortlbl {
 		display: flex;
