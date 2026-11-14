@@ -9,6 +9,7 @@
 	import {
 		CONTEXT_LABEL,
 		LIST_LABEL,
+		shownLists,
 		TYPE_LABEL,
 		TYPE_PLURAL,
 		areaLabel,
@@ -102,7 +103,7 @@
 		`${i.rating ? `Rated ${i.rating.toLowerCase()} by Seven Pens.` : ''} ${TYPE_LABEL[i.type]}${sizeLabel(i) ? `, ${sizeLabel(i)}` : ''}${resolutionLabel(s) ? `, ${resolutionLabel(s)}` : ''}${i.pen ? `, ${i.pen.name} pen` : ''}.`.trim()
 	);
 	const badges = $derived(
-		[...i.lists.map((l) => LIST_LABEL[l] ?? l), i.status === 'DISCONTINUED' ? 'discontinued' : null, i.ratingBasis === 'SPECS_ONLY' ? 'rated on specs only' : null].filter(Boolean) as string[]
+		[...shownLists(i).map((l) => LIST_LABEL[l] ?? l), i.status === 'DISCONTINUED' ? 'discontinued' : null, i.ratingBasis === 'SPECS_ONLY' ? 'rated on specs only' : null].filter(Boolean) as string[]
 	);
 	const links = $derived(
 		[

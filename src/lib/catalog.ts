@@ -224,6 +224,10 @@ export const CONTEXT_LABEL: Record<string, string> = {
 	'mobile-device-recs': 'mobile devices page'
 };
 export const LIST_LABEL: Record<string, string> = { BEGINNER: 'beginner pick' };
+/** Lists hidden in the app for now (Seven is rethinking scenario-based picks). The data
+ * stays in DrawTabData; drop a list from this set to show its tag and filter again. */
+export const HIDDEN_LISTS = new Set(['BEGINNER']);
+export const shownLists = (i: Pick<Item, 'lists'>) => i.lists.filter((l) => !HIDDEN_LISTS.has(l));
 
 /** Rating key used for grouping and CSS: "VERY GOOD" → "verygood". */
 export const ratingKey = (i: Pick<Item, 'rating'>) => i.rating ?? NOT_RATED;
@@ -264,7 +268,8 @@ export const RECENT: [string, string][] = [
 	['3', 'last 3 years']
 ];
 
-export const FEATURES: [string, string, (i: Item) => boolean][] = [
+type Feature = [string, string, (i: Item) => boolean];
+const ALL_FEATURES: Feature[] = [
 	['stand', 'stand in the box or built-in legs', (i) => i.specs.includedStand === true || i.specs.legs === true],
 	['tilt', 'supports tilt', (i) => (i.specs.tilt ?? 0) > 0],
 	['wireless', 'wireless (Bluetooth)', (i) => i.specs.bluetooth === true],
@@ -274,6 +279,7 @@ export const FEATURES: [string, string, (i: Item) => boolean][] = [
 	['usbc', 'USB-C on the device', (i) => i.specs.ports.includes('USB_C')],
 	['beginner', 'on a beginner list', (i) => i.lists.includes('BEGINNER')]
 ];
+export const FEATURES = ALL_FEATURES.filter(([k]) => !(k === 'beginner' && HIDDEN_LISTS.has('BEGINNER')));
 
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 const MONTHS_LONG = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];

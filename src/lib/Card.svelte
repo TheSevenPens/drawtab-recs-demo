@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	import { deviceHref, cardFacts, shortName, sizeLabel, sortedNotes, tierClass, ratingWord, LIST_LABEL, type Item } from './catalog';
+	import { deviceHref, cardFacts, shortName, sizeLabel, sortedNotes, tierClass, ratingWord, LIST_LABEL, shownLists, type Item } from './catalog';
 
 	import { units } from './units.svelte';
 	let { item, expert = false }: { item: Item; expert?: boolean } = $props();
@@ -13,7 +13,7 @@
 			item.status === 'DISCONTINUED' ? 'discontinued' : null,
 			item.ratingBasis === 'SPECS_ONLY' && item.kind !== 'pen' ? 'not released yet' : null,
 			item.kind === 'family' ? 'product family' : null,
-			...item.lists.map((l) => LIST_LABEL[l] ?? l.toLowerCase())
+			...shownLists(item).map((l) => LIST_LABEL[l] ?? l.toLowerCase())
 		].filter(Boolean) as string[]
 	);
 </script>
