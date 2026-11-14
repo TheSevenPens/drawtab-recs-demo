@@ -39,6 +39,8 @@
 	const lb = (g: number) => `${(g / 453.6).toFixed(1)} lb`;
 	const area = $derived(areaLabel(s, units.value));
 
+	const ANTI_GLARE: Record<string, string> = { ETCHEDGLASS: 'etched glass', AGFILM: 'film' };
+
 	// Tiles: the things a buyer compares first.
 	type Tile = [string, string | null, string, string?];
 	const glance = $derived(
@@ -46,8 +48,9 @@
 			[
 				i.type === 'PENTABLET'
 					? ['ACTIVE AREA', s.activeDiagIn ? `${s.activeDiagIn}″` : null, area ?? '']
-					: ['DISPLAY', s.activeDiagIn ? `${s.activeDiagIn}″` : null, area ? `active area ${area}` : ''],
-				i.type !== 'PENTABLET' ? ['RESOLUTION', s.resolution, [(s.pixelsW ?? 0) >= 3840 ? '4K' : null, s.laminated ? 'laminated' : null, s.panel].filter(Boolean).join(', ')] : null,
+					: ['ACTIVE AREA', s.activeDiagIn ? `${s.activeDiagIn}″` : null, area ?? ''],
+				i.type !== 'PENTABLET' ? ['DISPLAY PANEL', s.resolution, [(s.pixelsW ?? 0) >= 3840 ? '4K' : null, s.laminated ? 'laminated' : null, s.panel].filter(Boolean).join(', ')] : null,
+				i.type !== 'PENTABLET' ? ['ANTI-GLARE', ANTI_GLARE[s.antiGlare ?? ''] ?? null, ''] : null,
 				i.type !== 'PENTABLET' ? ['COLOR', s.srgb ? `${s.srgb}% sRGB` : null, [s.adobeRgb && `${s.adobeRgb}% Adobe RGB`, s.dciP3 && `${s.dciP3}% DCI-P3`].filter(Boolean).join(', ')] : null,
 				['PRICE', i.price?.current ? money(i.price.current.amount) : null, i.price?.current ? priceWhere(i.price.current) : '', '#d-price'],
 				['WEIGHT', s.weight ? (s.weight >= 1000 ? `${(s.weight / 1000).toFixed(2).replace(/0$/, '')} kg` : `${s.weight} g`) : null, s.weight ? lb(s.weight) : ''],
@@ -104,7 +107,7 @@
 	const links = $derived(
 		[
 			i.notesUrl ? { href: i.notesUrl, label: i.kind === 'family' ? 'read more' : "read Seven's notes", primary: true } : null,
-			i.explorerUrl ? { href: i.explorerUrl, label: 'every spec in the explorer' } : null
+			i.explorerUrl ? { href: i.explorerUrl, label: 'open in Explorer' } : null
 		].filter(Boolean) as { href: string; label: string; primary?: boolean }[]
 	);
 	// Reviews by everyone, not just Seven: videos and written pieces apart,

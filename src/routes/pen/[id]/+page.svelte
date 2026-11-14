@@ -105,7 +105,7 @@
 		rating={p.rating ? p.rating.toLowerCase() : 'not rated'}
 		badges={p.ratingBasis === 'SPECS_ONLY' ? ['rated on specs only'] : []}
 		since={p.ratedSince ? `rated since ${monthYear(p.ratedSince, true)}` : null}
-		links={[{ href: p.explorerUrl, label: 'every spec in the explorer' }]}
+		links={[{ href: p.explorerUrl, label: 'open in Explorer' }]}
 	/>
 
 	<main class="content">
