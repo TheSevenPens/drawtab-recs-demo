@@ -53,11 +53,9 @@
 		text-decoration: none;
 		color: var(--text);
 		background: var(--wash);
-		transition: transform 0.12s ease, box-shadow 0.12s ease;
 	}
 	.card:hover {
 		color: var(--text);
-		transform: translateY(-2px);
 	}
 	.card:hover .name {
 		text-decoration: underline;
