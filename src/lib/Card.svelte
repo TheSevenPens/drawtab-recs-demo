@@ -53,7 +53,9 @@
 		row-gap: 0;
 		text-decoration: none;
 		color: var(--text);
-		background: var(--wash);
+		/* The band colour carried down, lightened as if see-through over the page
+		   (option 5 on /card-options, chosen Nov 2026). */
+		background: linear-gradient(rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.84)), var(--band);
 	}
 	.card:hover {
 		color: var(--text);
@@ -166,7 +168,7 @@
 	}
 	.flag {
 		padding: 0.15rem 0.5rem;
-		background: rgba(255, 255, 255, 0.75);
+		background: rgba(255, 255, 255, 0.85);
 		font-size: 0.72rem;
 		font-weight: 700;
 		letter-spacing: 0.08em;
@@ -230,12 +232,10 @@
 	.card.v-shade {
 		background: linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.44)), var(--band);
 	}
-	/* 5. The band's colour, lightened (as if see-through over the page). */
-	.card.v-tint {
-		background: linear-gradient(rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.84)), var(--band);
-	}
-	.card.v-tint .flag {
-		background: rgba(255, 255, 255, 0.85);
+	/* 5. The band's colour, lightened: now the default look above. */
+	/* The old pale rating wash, kept for comparison. */
+	.card.v-wash {
+		background: var(--wash);
 	}
 	/* 6. White, with a thin rating-colour frame round the lower half. */
 	.card.v-frame {
