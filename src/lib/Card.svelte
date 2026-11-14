@@ -114,7 +114,7 @@
 		margin-top: 0.4rem;
 		padding: 0.15rem 0.5rem;
 		background: rgba(0, 0, 0, 0.3);
-		font: 500 0.875rem var(--mono);
+		font: 600 0.875rem var(--sans);
 		letter-spacing: 0.03em;
 	}
 	/* Pens have no size line, so their band can be shorter. */

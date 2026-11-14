@@ -165,7 +165,7 @@
 		padding: 0.1rem 0.45rem;
 		background: var(--text);
 		color: #fff;
-		font: 500 0.8rem var(--mono);
+		font: 600 0.8rem var(--sans);
 	}
 	td.big {
 		font-size: 1.35rem;

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	// Compact, bold page header for device, pen and family pages: brand big and
-	// first, the name, and the model number in a mono chip, all within ~200px.
+	// first, the name, and the model number in a dark chip, all within ~200px.
 	type Link = { href: string; label: string; primary?: boolean };
 	let {
 		brand,
@@ -187,7 +187,7 @@
 	.model {
 		padding: 0.2rem 0.7rem;
 		background: rgba(0, 0, 0, 0.32);
-		font: 700 clamp(1rem, 1.6vw, 1.3rem) var(--mono);
+		font: 700 clamp(1rem, 1.6vw, 1.3rem) var(--sans);
 		letter-spacing: 0.04em;
 	}
 	.aka {

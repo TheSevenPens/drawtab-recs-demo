@@ -137,7 +137,7 @@
 	color: var(--text-3);
 }
 .detail .list .mono {
-	font: 500 0.85rem var(--mono);
+	font: 600 0.85rem var(--sans);
 	color: var(--text-2);
 }
 .detail .tag {
