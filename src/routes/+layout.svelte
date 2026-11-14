@@ -3,23 +3,13 @@
 	import { loadUnits } from '$lib/units.svelte';
 	let { children } = $props();
 
-	// Big text mode (for streams and screen sharing), remembered per browser.
-	let big = $state(false);
 	onMount(() => {
 		loadUnits();
+		// The big-text toggle is gone; drop its remembered setting.
 		try {
-			big = localStorage.getItem('recs-big') === '1';
+			localStorage.removeItem('recs-big');
 		} catch {}
 	});
-	$effect(() => {
-		document.documentElement.classList.toggle('big', big);
-	});
-	function toggleBig() {
-		big = !big;
-		try {
-			localStorage.setItem('recs-big', big ? '1' : '');
-		} catch {}
-	}
 </script>
 
 <div class="ground">
@@ -34,9 +24,6 @@
 	<div class="content">
 		{@render children()}
 	</div>
-	<button class="bigtoggle" aria-pressed={big} onclick={toggleBig} title="Larger text, for streams and screen sharing">
-		{big ? 'normal text' : 'big text'}
-	</button>
 </div>
 
 <style>
@@ -82,16 +69,7 @@
 		--tip-wash: #eaf2fb;
 		--mono: 'JetBrains Mono', ui-monospace, 'Cascadia Mono', Consolas, monospace;
 		--sans: 'Open Sans', 'Segoe UI', system-ui, sans-serif;
-		--scale: 1;
 		color-scheme: light;
-	}
-	/* On <html>, not <body>: the root font size below is computed on <html>, which can't
-	   see a variable set on its child. (It was on body, so the toggle did nothing.) */
-	:global(html.big) {
-		--scale: 1.25;
-	}
-	:global(html) {
-		font-size: calc(16px * var(--scale));
 	}
 	:global(body) {
 		margin: 0;
@@ -233,23 +211,5 @@
 		.glow {
 			animation: none;
 		}
-	}
-	.bigtoggle {
-		position: fixed;
-		right: 16px;
-		bottom: 16px;
-		min-height: 40px;
-		padding: 0 14px;
-		border: 1px solid var(--line-strong);
-		background: var(--surface);
-		color: var(--text-2);
-		font-size: 0.85rem;
-		cursor: pointer;
-		z-index: 10;
-	}
-	.bigtoggle[aria-pressed='true'] {
-		background: var(--text);
-		color: #fff;
-		border-color: var(--text);
 	}
 </style>

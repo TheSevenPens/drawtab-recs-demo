@@ -11,7 +11,6 @@
 		SORTS,
 		TYPES,
 		TYPE_PLURAL,
-		CONTEXT_LABEL,
 		PRICE_BANDS,
 		PRICE_DISCLAIMER,
 		inPriceBand,
@@ -110,16 +109,6 @@
 	const reset = () => (f = { ...defaultFilters(), mode: f.mode, view: f.view });
 	const anyFilter = $derived(filtersToHash({ ...f, mode: 'simple', view: 'cards', sort: 'rating' }) !== '');
 
-	let copied = $state('');
-	async function copyLink() {
-		try {
-			await navigator.clipboard.writeText(location.href);
-			copied = 'copied';
-		} catch {
-			copied = 'copy failed';
-		}
-		setTimeout(() => (copied = ''), 1500);
-	}
 	const heading = (g: string) => (g === NOT_RATED ? 'general purpose & unrated' : g.toLowerCase());
 </script>
 
@@ -293,23 +282,6 @@
 		</div>
 	{/if}
 
-	<footer class="foot">
-		<p>
-			Ratings by Seven Pens. Specs from <a href="https://github.com/TheSevenPens/DrawTabData">DrawTabData</a>{catalog.source.drawTabDataCommit ? ` @ ${catalog.source.drawTabDataCommit}` : ''},
-			built {catalog.builtAt.slice(0, 10)}. IAF is initial activation force, measured by Seven.
-		</p>
-		<p>{PRICE_DISCLAIMER}</p>
-		{#if catalog.issues.length + catalog.notCovered.length}
-			<details>
-				<summary>Data gaps found while building this ({catalog.issues.length + catalog.notCovered.length})</summary>
-				<ul>
-					{#each catalog.issues as x, k (k)}<li>{CONTEXT_LABEL[x.page] ?? x.page}: {x.label}. {x.issue}</li>{/each}
-					{#each catalog.notCovered as x, k (k)}<li>{x.page}: {x.label}. {x.why}</li>{/each}
-				</ul>
-			</details>
-		{/if}
-		<p><button class="textbtn" onclick={copyLink}>{copied || 'copy a link to this exact view'}</button></p>
-	</footer>
 </div>
 
 <style>
@@ -630,18 +602,6 @@
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(min(290px, 100%), 1fr));
 		gap: 1rem;
-	}
-
-	.foot {
-		margin-top: 2rem;
-		padding-top: 1.25rem;
-		border-top: 1px solid var(--line);
-		color: var(--text-3);
-		font-size: 0.85rem;
-		line-height: 1.5;
-	}
-	.foot p {
-		margin: 0 0 0.5rem;
 	}
 
 	@media (max-width: 700px) {
