@@ -65,9 +65,12 @@
 		return [...g];
 	});
 
+	// "Group families" is parked while Seven thinks it over: set this to true to bring back
+	// the checkbox. While it's false, grouping stays off even if a browser remembers it on.
+	const FAMILY_GROUPING = false;
 	// Card entries for a run of items: one per item, or family cards when that setting is on.
 	const entries = (xs: Item[]): CardEntry[] =>
-		familyCards.collapse ? collapseFamilies(xs, catalog.families) : xs.map((item) => ({ kind: 'item', item }));
+		FAMILY_GROUPING && familyCards.collapse ? collapseFamilies(xs, catalog.families) : xs.map((item) => ({ kind: 'item', item }));
 
 	// Facet counts leave their own facet out, so each count says what you'd get by picking it.
 	const count = (skip: string, pred: (i: Item) => boolean) => items.filter((i) => matches(i, f, skip) && pred(i)).length;
@@ -184,7 +187,7 @@
 				</button>
 			{/if}
 			<span class="push"></span>
-			{#if f.type !== 'PEN' && f.view === 'cards'}
+			{#if FAMILY_GROUPING && f.type !== 'PEN' && f.view === 'cards'}
 				<label class="famtoggle" title="Show the models of one family as a single card (cards view only)">
 					<input type="checkbox" checked={familyCards.collapse} onchange={(e) => setCollapseFamilies(e.currentTarget.checked)} />
 					group families
